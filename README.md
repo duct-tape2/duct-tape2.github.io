@@ -16,6 +16,7 @@ Public-safe inquiry paths:
 Direct PayPal checkouts:
 
 - Storefront Review ($49): https://www.paypal.me/sks7178/49
+- Anki Deck Review ($49): https://www.paypal.me/sks7178/49
 - Setup Service ($99): https://www.paypal.me/sks7178/99
 - Japanese Anki Pack ($29): https://www.paypal.me/sks7178/29
 - AI Money Stack ($25): https://www.paypal.me/sks7178/25
