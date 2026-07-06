@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Storefront Signal Check</title>
+  <meta name="description" content="A browser-based checklist for scoring a small digital-product storefront before launch, with direct paths to feedback, review, or setup help.">
+  <link rel="canonical" href="https://duct-tape2.github.io/storefront-checker/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="duct-tape2">
+  <meta property="og:title" content="Free Storefront Signal Check">
+  <meta property="og:description" content="Score a small digital-product storefront for buyer readiness before launch.">
+  <meta property="og:url" content="https://duct-tape2.github.io/storefront-checker/">
+  <meta property="og:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="900">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Storefront Signal Check">
+  <meta name="twitter:description" content="Score a small digital-product storefront for buyer readiness before launch.">
+  <meta name="twitter:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Free Storefront Signal Check",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Any",
+    "url": "https://duct-tape2.github.io/storefront-checker/",
+    "description": "A browser-based checklist for scoring a small digital-product storefront before launch.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://duct-tape2.github.io/storefront-checker/"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "duct-tape2",
+      "url": "https://duct-tape2.github.io/"
+    }
+  }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      --ink: #161b22;
+      --muted: #5d6470;
+      --paper: #fbfaf6;
+      --panel: #ffffff;
+      --line: #d8d2c5;
+      --teal: #176b63;
+      --yellow: #f0b949;
+      --coral: #c94c3d;
+      --blue: #223a5e;
+    }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(22,27,34,.05) 1px, transparent 1px),
+        linear-gradient(180deg, #f7f2e8 0%, #fbfaf6 36%, #eef3f0 100%);
+      background-size: 48px 48px, auto;
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      line-height: 1.5;
+    }
+    a { color: var(--teal); }
+    .shell {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 22px 0 48px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: end;
+      padding: 24px 0 18px;
+      border-bottom: 2px solid var(--ink);
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--coral);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 780px;
+      font-size: clamp(38px, 6vw, 72px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+    .top-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 330px;
+      gap: 22px;
+      align-items: start;
+      padding-top: 22px;
+    }
+    .workbench, .scoreboard, .item, .field {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.88);
+    }
+    .workbench {
+      padding: 20px;
+    }
+    .field {
+      display: grid;
+      gap: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    label, legend {
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: .02em;
+    }
+    input[type="url"] {
+      width: 100%;
+      min-height: 44px;
+      padding: 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font: inherit;
+    }
+    fieldset {
+      margin: 0 0 18px;
+      padding: 0;
+      border: 0;
+    }
+    legend {
+      margin-bottom: 10px;
+      color: var(--blue);
+      text-transform: uppercase;
+    }
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .item {
+      min-height: 88px;
+      display: grid;
+      grid-template-columns: 26px minmax(0, 1fr);
+      gap: 10px;
+      align-items: start;
+      padding: 14px;
+    }
+    .item input {
+      width: 20px;
+      height: 20px;
+      margin: 2px 0 0;
+      accent-color: var(--teal);
+    }
+    .item strong {
+      display: block;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.2;
+    }
+    .item span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .scoreboard {
+      position: sticky;
+      top: 16px;
+      padding: 18px;
+      border-color: var(--ink);
+      box-shadow: 8px 8px 0 rgba(22,27,34,.12);
+    }
+    .score {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin: 0;
+      font-size: 58px;
+      line-height: .95;
+      font-weight: 900;
+    }
+    .score span {
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .meter {
+      height: 12px;
+      margin: 16px 0;
+      border: 1px solid var(--ink);
+      background: #ede7d9;
+    }
+    .bar {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--coral), var(--yellow), var(--teal));
+      transition: width .18s ease;
+    }
+    .verdict {
+      margin: 0 0 16px;
+      color: var(--blue);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-weight: 900;
+    }
+    .summary {
+      min-height: 104px;
+      margin: 0 0 16px;
+      color: var(--muted);
+    }
+    .actions, .side-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .side-actions { flex-direction: column; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 14px;
+      border: 1px solid var(--ink);
+      border-radius: 0;
+      color: #fff;
+      background: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 14px;
+      font-weight: 850;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn.secondary {
+      color: var(--ink);
+      background: transparent;
+    }
+    .btn.money { background: var(--teal); }
+    .btn.review { background: var(--blue); }
+  .fineprint {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    footer {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 0 0 42px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer a { color: var(--blue); }
+    @media (max-width: 880px) {
+      header, main { grid-template-columns: 1fr; }
+      .top-actions { justify-content: flex-start; }
+      .scoreboard { position: static; }
+      .check-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div>
+        <p class="eyebrow">free storefront signal check</p>
+        <h1>Score A Product Page Before You Send Traffic</h1>
+      </div>
+      <nav class="top-actions" aria-label="Page actions">
+        <a class="btn secondary" href="https://duct-tape2.github.io/">All offers</a>
+        <a class="btn secondary" href="https://duct-tape2.github.io/storefront-starter/">$19 kit</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="workbench" aria-label="Storefront checklist">
+        <div class="field">
+          <label for="store-url">Public storefront URL</label>
+          <input id="store-url" type="url" placeholder="https://example.com/product-page">
+        </div>
+
+        <fieldset>
+          <legend>Search And Sharing</legend>
+          <div class="check-grid">
+            <label class="item"><input type="checkbox" data-check="Readable page title"><span><strong>Readable page title</strong><span>Product or service name is visible in the browser title.</span></span></label>
+            <label class="item"><input type="checkbox" data-check="Meta description"><span><strong>Meta description</strong><span>Search preview says what the buyer gets.</span></span></label>
+            <label class="item"><input type="checkbox" data-check="Open Graph image"><span><strong>Open Graph image</strong><span>Social preview has title, description, and image.</span></span></label>
+            <label class="item"><input type="checkbox" data-check="Canonical URL"><span><strong>Canonical URL</strong><span>The main public URL is unambiguous.</span></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Buying Path</legend>
+          <div class="check-grid">
+            <label class="item"><input type="checkbox" data-check="Clear price"><span><strong>Clear price</strong><span>The price is visible before a buyer clicks away.</span></span></label>
+            <label class="item"><input type="checkbox" data-check="Payment link"><span><strong>Payment link</strong><span>Payment CTA goes to a real checkout or payment page.</span></span></label>
+            <label class="item"><input type="checkbox" data-check="Delivery instructions"><span><strong>Delivery instructions</strong><span>The buyer knows what to send after payment.</span></span></label>
+            <label class="item"><input type="checkbox" data-check="Buyer help path"><span><strong>Buyer help path</strong><span>There is a public-safe way to ask for help.</span></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Trust Signals</legend>
+          <div class="check-grid">
+            <label class="item"><input type="checkbox" data-check="Free sample or preview"><span><strong>Free sample or preview</strong><span>A buyer can inspect something before paying.</span></span></label>
+            <label class="item"><input type="checkbox" data-check="Support email"><span><strong>Support email</strong><span>There is a non-public path for delivery context.</span></span></label>
+            <label class="item"><input type="checkbox" data-check="Refund or support terms"><span><strong>Refund or support terms</strong><span>Support boundaries are stated before payment.</span></span></label>
+            <label class="item"><input type="checkbox" data-check="Paid next step"><span><strong>Paid next step</strong><span>Review, setup, or full kit path is visible.</span></span></label>
+          </div>
+        </fieldset>
+
+        <div class="actions">
+          <button class="btn secondary" type="button" id="mark-sample">Mark sample pass</button>
+          <button class="btn secondary" type="button" id="clear-checks">Clear</button>
+          <button class="btn" type="button" id="copy-summary">Copy result</button>
+        </div>
+      </section>
+
+      <aside class="scoreboard" aria-live="polite">
+        <p class="score"><strong id="score">0</strong><span>/12</span></p>
+        <div class="meter" aria-hidden="true"><div class="bar" id="bar"></div></div>
+        <p class="verdict" id="verdict">Not ready for traffic</p>
+        <p class="summary" id="summary">Add the buyer signals that are already true. The paid next step becomes easier to choose once the basics are visible.</p>
+        <div class="side-actions">
+          <a class="btn secondary" id="feedback-link" href="https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=storefront-feedback.yml">Request public feedback</a>
+          <a class="btn review" href="https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml">Book $49 review</a>
+          <a class="btn money" href="https://www.paypal.me/sks7178/99">Book $99 setup</a>
+        </div>
+        <p class="fineprint">Public-safe only. Do not post payment IDs, credentials, private files, or customer data in GitHub issues.</p>
+      </aside>
+    </main>
+  </div>
+
+  <script>
+    const checks = Array.from(document.querySelectorAll('[data-check]'));
+    const scoreEl = document.getElementById('score');
+    const barEl = document.getElementById('bar');
+    const verdictEl = document.getElementById('verdict');
+    const summaryEl = document.getElementById('summary');
+    const urlEl = document.getElementById('store-url');
+    const feedbackLink = document.getElementById('feedback-link');
+
+    function scoreText(score) {
+      if (score >= 12) return ['Buyer-ready', 'This page has the core buyer signals. Send targeted traffic and watch paid replies.'];
+      if (score >= 9) return ['Ready enough to share', 'Patch the missing signals, then ask for feedback or publish to one relevant channel.'];
+      if (score >= 6) return ['Patch before sharing', 'The page has a base, but buyers may still miss payment, support, or trust details.'];
+      return ['Not ready for traffic', 'Fix the visible buyer path before spending more effort on traffic.'];
+    }
+
+    function buildSummary() {
+      const checked = checks.filter((item) => item.checked).map((item) => item.dataset.check);
+      const missing = checks.filter((item) => !item.checked).map((item) => item.dataset.check);
+      const target = urlEl.value.trim() || 'No URL added';
+      return [
+        'Storefront Signal Check',
+        `URL: ${target}`,
+        `Score: ${checked.length}/12`,
+        `Passed: ${checked.join(', ') || 'none'}`,
+        `Missing: ${missing.join(', ') || 'none'}`
+      ].join('\\n');
+    }
+
+    function update() {
+      const score = checks.filter((item) => item.checked).length;
+      const [verdict, summary] = scoreText(score);
+      scoreEl.textContent = score;
+      barEl.style.width = `${(score / checks.length) * 100}%`;
+      verdictEl.textContent = verdict;
+      summaryEl.textContent = summary;
+      const title = encodeURIComponent(`[FEEDBACK] ${score}/12 storefront check`);
+      feedbackLink.href = `https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=storefront-feedback.yml&title=${title}`;
+    }
+
+    checks.forEach((item) => item.addEventListener('change', update));
+    urlEl.addEventListener('input', update);
+    document.getElementById('mark-sample').addEventListener('click', () => {
+      checks.forEach((item) => { item.checked = true; });
+      update();
+    });
+    document.getElementById('clear-checks').addEventListener('click', () => {
+      checks.forEach((item) => { item.checked = false; });
+      update();
+    });
+    document.getElementById('copy-summary').addEventListener('click', async () => {
+      const text = buildSummary();
+      try {
+        await navigator.clipboard.writeText(text);
+        summaryEl.textContent = 'Copied the result. Paste it into a feedback request, review request, or your launch note.';
+      } catch (error) {
+        summaryEl.textContent = text;
+      }
+    });
+    update();
+  </script>
+  <footer>
+    Support email: <a href="mailto:sks7178@gmail.com">sks7178@gmail.com</a>.
+    Sample report: <a href="https://github.com/duct-tape2/github-pages-storefront-starter/blob/main/examples/storefront-review-sample.md">storefront review sample</a>.
+    Refund and support terms are listed on the paid offer pages before payment.
+  </footer>
+</body>
+</html>
