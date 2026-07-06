@@ -13,6 +13,14 @@ Public-safe inquiry paths:
 - Product delivery email: mailto:sks7178@gmail.com?subject=paid%20digital%20product%20delivery
 - Service booking email: mailto:sks7178@gmail.com?subject=paid%20service%20booking
 
+Direct PayPal checkouts:
+
+- Storefront Review ($49): https://www.paypal.me/sks7178/49
+- Setup Service ($99): https://www.paypal.me/sks7178/99
+- Japanese Anki Pack ($29): https://www.paypal.me/sks7178/29
+- AI Money Stack ($25): https://www.paypal.me/sks7178/25
+- Storefront Starter ($19): https://www.paypal.me/sks7178/19
+
 Current DIY kit:
 
 - GitHub Pages Storefront Starter: https://duct-tape2.github.io/storefront-starter/
