@@ -14,5 +14,6 @@ Public-safe inquiry paths:
 Current DIY kit:
 
 - GitHub Pages Storefront Starter: https://duct-tape2.github.io/storefront-starter/
+- Sample repo: https://github.com/duct-tape2/github-pages-storefront-starter
 
 Do not post private payment details, credentials, private files, or customer data in public issues. Use email for private delivery context.
