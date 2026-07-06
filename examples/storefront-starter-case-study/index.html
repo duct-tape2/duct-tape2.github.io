@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live GitHub Pages Storefront Example</title>
+  <meta name="description" content="A live example of a buyer-ready GitHub Pages storefront for a small digital product, with a free template, checker, $19 DIY kit, $49 review, and $99 setup path.">
+  <link rel="canonical" href="https://duct-tape2.github.io/examples/storefront-starter-case-study/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="duct-tape2">
+  <meta property="og:title" content="Live GitHub Pages Storefront Example">
+  <meta property="og:description" content="See how a small digital product storefront is wired: offer, sample, payment, delivery help, review, and setup path.">
+  <meta property="og:url" content="https://duct-tape2.github.io/examples/storefront-starter-case-study/">
+  <meta property="og:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="900">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Live GitHub Pages Storefront Example">
+  <meta name="twitter:description" content="A public example showing the buyer-ready pieces behind a small GitHub Pages storefront.">
+  <meta name="twitter:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Live GitHub Pages Storefront Example",
+    "description": "A public example showing how a small digital product storefront is wired for buyer trust, payment, and delivery.",
+    "image": "https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png",
+    "author": {
+      "@type": "Organization",
+      "name": "duct-tape2",
+      "url": "https://duct-tape2.github.io/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "duct-tape2",
+      "url": "https://duct-tape2.github.io/"
+    },
+    "datePublished": "2026-07-06",
+    "dateModified": "2026-07-06",
+    "mainEntityOfPage": "https://duct-tape2.github.io/examples/storefront-starter-case-study/"
+  }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: #1d1b18;
+      background: #f8f6f0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.58;
+    }
+    a { color: #12606b; }
+    .hero {
+      min-height: 72vh;
+      display: flex;
+      align-items: flex-end;
+      color: #fff;
+      background:
+        linear-gradient(180deg, rgba(5, 22, 28, .05), rgba(5, 22, 28, .82)),
+        url("https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png") center / cover no-repeat;
+      padding: 44px 22px;
+    }
+    .hero-inner, .wrap {
+      width: min(1010px, 100%);
+      margin: 0 auto;
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #bae6fd;
+      font-size: 13px;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 850px;
+      margin: 0;
+      font-size: clamp(42px, 6vw, 78px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+    .lead {
+      max-width: 760px;
+      margin: 22px 0 0;
+      color: #f5f8fb;
+      font-size: 20px;
+    }
+    .actions, .mini-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 28px 0 0;
+    }
+    .btn, .mini {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      font-weight: 850;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .btn {
+      min-height: 48px;
+      padding: 0 18px;
+      border: 1px solid #fff;
+      color: #111;
+      background: #fff;
+    }
+    .btn.secondary {
+      color: #fff;
+      background: rgba(255, 255, 255, .09);
+    }
+    .wrap { padding: 34px 22px 58px; }
+    section {
+      padding: 30px 0;
+      border-bottom: 1px solid #ded9ce;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 30px;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 21px;
+      line-height: 1.25;
+    }
+    .note {
+      max-width: 780px;
+      color: #555;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 15px;
+      margin-top: 18px;
+    }
+    .panel {
+      min-height: 170px;
+      padding: 19px;
+      border: 1px solid #ded9ce;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .panel strong {
+      display: inline-flex;
+      margin-bottom: 10px;
+      color: #12606b;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+    .offer {
+      border-top: 3px solid #12606b;
+    }
+    .mini {
+      min-height: 40px;
+      padding: 0 13px;
+      border: 1px solid #12606b;
+      color: #fff;
+      background: #12606b;
+      font-size: 14px;
+    }
+    .mini.secondary {
+      color: #12606b;
+      background: transparent;
+    }
+    ul { padding-left: 20px; }
+    li { margin: 8px 0; }
+    footer {
+      padding: 28px 22px 44px;
+      color: #555;
+      text-align: center;
+    }
+    @media (max-width: 820px) {
+      .hero { min-height: 80vh; }
+      .grid { grid-template-columns: 1fr; }
+      .btn, .mini { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Live storefront example</p>
+      <h1>See The Buyer-Ready Pieces Behind A GitHub Pages Storefront</h1>
+      <p class="lead">This is not a fake customer story. It is a public teardown of the Storefront Starter itself: the offer page, free sample, payment path, delivery help, review path, and setup service.</p>
+      <div class="actions">
+        <a class="btn" href="https://duct-tape2.github.io/storefront-starter/">Open live product page</a>
+        <a class="btn secondary" href="https://duct-tape2.github.io/storefront-checker/">Run free checker</a>
+        <a class="btn secondary" href="https://www.paypal.me/sks7178/19">Buy $19 kit</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>What This Example Proves</h2>
+      <p class="note">A small digital product can be buyer-ready without a custom backend. The useful part is the structure: visitors can inspect something real, understand the paid upgrade, pay, and know where support or delivery happens.</p>
+      <div class="grid">
+        <article class="panel">
+          <strong>Inspect first</strong>
+          <h3>Free sample and demo</h3>
+          <p>The public repo, live demo, free checklist, and release ZIP let a buyer inspect the style before paying.</p>
+        </article>
+        <article class="panel">
+          <strong>Pay clearly</strong>
+          <h3>Direct checkout path</h3>
+          <p>The product page and buy page both expose the $19 checkout, then route private delivery details to email.</p>
+        </article>
+        <article class="panel">
+          <strong>Ask safely</strong>
+          <h3>Public-safe support</h3>
+          <p>GitHub issue forms handle non-private buyer questions, while payment details and delivery addresses stay out of public issues.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>The Live Links</h2>
+      <p class="note">These are the exact public surfaces behind the example. They are deliberately plain and inspectable so another small product owner can copy the pattern.</p>
+      <div class="grid">
+        <article class="panel offer">
+          <h3>Product page</h3>
+          <p>Primary paid offer with price, free checker, feedback path, review path, setup path, and delivery help.</p>
+          <div class="mini-actions">
+            <a class="mini" href="https://duct-tape2.github.io/storefront-starter/">View page</a>
+            <a class="mini secondary" href="https://duct-tape2.github.io/buy/">Buy direct</a>
+          </div>
+        </article>
+        <article class="panel offer">
+          <h3>Free template repo</h3>
+          <p>Template, checklist, demo, issue forms, and README structure for a small digital-product storefront.</p>
+          <div class="mini-actions">
+            <a class="mini" href="https://github.com/duct-tape2/github-pages-storefront-starter">View repo</a>
+            <a class="mini secondary" href="https://github.com/new?template_name=github-pages-storefront-starter&amp;template_owner=duct-tape2">Use template</a>
+          </div>
+        </article>
+        <article class="panel offer">
+          <h3>Browser checker</h3>
+          <p>Quick buyer-readiness check for metadata, checkout link, support path, sample, refund terms, and delivery route.</p>
+          <div class="mini-actions">
+            <a class="mini" href="https://duct-tape2.github.io/storefront-checker/">Run checker</a>
+            <a class="mini secondary" href="https://github.com/duct-tape2/ai-money-stack/blob/main/examples/sample-output/storefront_check_ai_money_stack.md">Sample report</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Copy The Pattern</h2>
+      <ul>
+        <li>Use one product page as the canonical paid offer.</li>
+        <li>Put a free sample or demo above any heavy explanation.</li>
+        <li>Offer a direct checkout, but also include an issue form for public-safe questions.</li>
+        <li>Put private delivery details in email, not public GitHub issues.</li>
+        <li>Add a low-friction review offer before the full setup service.</li>
+        <li>Run the storefront checker before sharing the page anywhere.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pick Your Next Step</h2>
+      <div class="grid">
+        <article class="panel offer">
+          <h3>Free</h3>
+          <p>Use the template and run your current page through the browser checker.</p>
+          <div class="mini-actions">
+            <a class="mini" href="https://github.com/new?template_name=github-pages-storefront-starter&amp;template_owner=duct-tape2">Use template</a>
+            <a class="mini secondary" href="https://duct-tape2.github.io/storefront-checker/">Run checker</a>
+          </div>
+        </article>
+        <article class="panel offer">
+          <h3>$49 review</h3>
+          <p>Send a public URL and get a written buyer-readiness fix list before rebuilding the page.</p>
+          <div class="mini-actions">
+            <a class="mini" href="https://www.paypal.me/sks7178/49">Book $49</a>
+            <a class="mini secondary" href="https://duct-tape2.github.io/storefront-review/">Review details</a>
+          </div>
+        </article>
+        <article class="panel offer">
+          <h3>$99 setup</h3>
+          <p>Turn one existing repo or small product into a buyer-ready GitHub Pages page.</p>
+          <div class="mini-actions">
+            <a class="mini" href="https://www.paypal.me/sks7178/99">Book $99</a>
+            <a class="mini secondary" href="https://duct-tape2.github.io/ai-money-stack/repo-to-revenue/">Setup details</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Scope Boundary</h2>
+      <p class="note">This example is for ordinary digital products, templates, learning packs, and small service pages. I do not take security, vulnerability, exploit, bypass, jailbreak, credential, spam, fake-review, or personal-data scraping work.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://duct-tape2.github.io/">All offers</a> - <a href="https://duct-tape2.github.io/guides/github-pages-storefront/">Storefront guide</a> - <a href="mailto:sks7178@gmail.com">sks7178@gmail.com</a>
+  </footer>
+</body>
+</html>

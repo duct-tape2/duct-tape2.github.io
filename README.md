@@ -30,6 +30,7 @@ Current DIY kit:
 
 - GitHub Pages Storefront Starter: https://duct-tape2.github.io/storefront-starter/
 - Free storefront launch guide: https://duct-tape2.github.io/guides/github-pages-storefront/
+- Live storefront example: https://duct-tape2.github.io/examples/storefront-starter-case-study/
 - Free Anki deck packaging guide: https://duct-tape2.github.io/guides/anki-deck-packaging/
 - Storefront Starter delivery help: https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=buy-kit.yml
 - Free browser storefront checker: https://duct-tape2.github.io/storefront-checker/
