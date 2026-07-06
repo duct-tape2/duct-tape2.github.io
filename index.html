@@ -151,6 +151,20 @@
       max-width: 760px;
       color: #555;
     }
+    .delivery-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .delivery-list article {
+      border-top: 2px solid #165e6f;
+      padding-top: 14px;
+    }
+    .delivery-list h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
     ul { padding-left: 20px; }
     li { margin: 7px 0; }
     footer {
@@ -160,7 +174,7 @@
     }
     @media (max-width: 760px) {
       .hero { min-height: 82vh; }
-      .grid { grid-template-columns: 1fr; }
+      .grid, .delivery-list { grid-template-columns: 1fr; }
       .btn, .mini { width: 100%; }
     }
   </style>
@@ -241,6 +255,37 @@
     </section>
 
     <section>
+      <h2>After Payment</h2>
+      <p class="note">Pay with the matching PayPal button, then email the delivery note so the order can be matched without posting private payment details in public.</p>
+      <div class="delivery-list">
+        <article>
+          <h3>Digital products</h3>
+          <ul>
+            <li>Use the product name in the email subject.</li>
+            <li>Include the delivery email and a short public-safe note.</li>
+            <li>Do not post full transaction IDs or screenshots in GitHub issues.</li>
+          </ul>
+          <div class="mini-actions">
+            <a class="mini" href="mailto:sks7178@gmail.com?subject=paid%20digital%20product%20delivery">Email product delivery note</a>
+            <a class="mini secondary" href="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml">Buyer help</a>
+          </div>
+        </article>
+        <article>
+          <h3>Fixed-price services</h3>
+          <ul>
+            <li>Use the service name in the email subject.</li>
+            <li>Send public repo/page links first; private files can follow by email.</li>
+            <li>If the fit is unclear, ask publicly before paying.</li>
+          </ul>
+          <div class="mini-actions">
+            <a class="mini" href="mailto:sks7178@gmail.com?subject=paid%20service%20booking">Email service booking note</a>
+            <a class="mini secondary" href="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=service-inquiry.yml">Ask first</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
       <h2>Free Tool</h2>
       <p class="note">Use the Storefront Checker before hiring me or before publishing your own product page. It checks page availability, social cards, payment links, support email, sample links, refund/support terms, and buyer contact paths.</p>
       <div class="actions">
@@ -251,7 +296,7 @@
 
     <section>
       <h2>Order Help</h2>
-      <p class="note">Use GitHub issues for public-safe questions only. Send private delivery addresses, payment references, or project files by email.</p>
+      <p class="note">Use GitHub issues for public-safe questions only. Send private delivery addresses, payment references, or project files by email. Refund/support terms are listed on each offer page before payment.</p>
       <div class="actions">
         <a class="btn" href="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=service-inquiry.yml">Ask About A Service</a>
         <a class="btn secondary" href="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml">Get Buyer Help</a>

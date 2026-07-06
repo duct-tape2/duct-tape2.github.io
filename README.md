@@ -10,6 +10,8 @@ Public-safe inquiry paths:
 
 - Service inquiry: https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=service-inquiry.yml
 - Buyer help: https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml
+- Product delivery email: mailto:sks7178@gmail.com?subject=paid%20digital%20product%20delivery
+- Service booking email: mailto:sks7178@gmail.com?subject=paid%20service%20booking
 
 Current DIY kit:
 
