@@ -7,6 +7,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://duct-tape2.github.io/buy/</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://duct-tape2.github.io/storefront-starter/</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
