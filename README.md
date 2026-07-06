@@ -25,6 +25,7 @@ Direct PayPal checkouts:
 Current DIY kit:
 
 - GitHub Pages Storefront Starter: https://duct-tape2.github.io/storefront-starter/
+- Storefront Starter delivery help: https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=buy-kit.yml
 - Free browser storefront checker: https://duct-tape2.github.io/storefront-checker/
 - Storefront Review page: https://duct-tape2.github.io/storefront-review/
 - Anki Deck Review page: https://duct-tape2.github.io/anki-deck-review/
