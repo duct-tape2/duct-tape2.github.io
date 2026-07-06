@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Main products and services hub
+    url: https://duct-tape2.github.io/
+    about: See all current products, services, free tools, prices, and scope boundaries.
+  - name: Private service or delivery email
+    url: mailto:sks7178@gmail.com?subject=duct-tape2%20order%20or%20service%20inquiry
+    about: Use email for delivery addresses, payment references, private files, and non-public context.
+  - name: Repo-to-Revenue service details
+    url: https://duct-tape2.github.io/ai-money-stack/repo-to-revenue/
+    about: Fixed-price GitHub Pages/product page setup service.
+  - name: Anki Deck Packaging service details
+    url: https://duct-tape2.github.io/japanese-anki-pack/anki-deck-packaging/
+    about: Fixed-price Anki deck packaging service.

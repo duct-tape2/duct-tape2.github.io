@@ -1,0 +1,52 @@
+name: Buyer Help
+description: Ask for delivery help or confirm a public-safe paid order.
+title: "[BUY] "
+labels: ["buyer-inquiry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for delivery help after buying, or for public-safe pre-purchase questions.
+
+        Do not post full PayPal transaction IDs, payment screenshots, passwords, API keys, private customer data, or private files here.
+
+        After payment, email sks7178@gmail.com with your delivery email and a short public-safe confirmation. I may ask for a partial transaction reference by email only.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product or booking
+      options:
+        - AI Money Stack - PayPal $25
+        - Easy Japanese Pack - PayPal $29
+        - Repo-to-Revenue Setup - PayPal $99
+        - Anki Deck Packaging - PayPal $99
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: What do you need?
+      options:
+        - Delivery after payment
+        - Pre-purchase question
+        - Download or link problem
+        - Refund or support question
+    validations:
+      required: true
+  - type: textarea
+    id: public-note
+    attributes:
+      label: Public-safe note
+      description: Do not include private payment details. A short description is enough.
+      placeholder: I paid for the $29 pack and emailed private confirmation, or I need help choosing the right offer.
+    validations:
+      required: true
+  - type: input
+    id: email-sent
+    attributes:
+      label: Did you email private delivery details?
+      description: Answer yes/no. Do not write the delivery email address if you prefer to keep it private.
+      placeholder: yes
+    validations:
+      required: false

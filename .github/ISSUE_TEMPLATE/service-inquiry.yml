@@ -1,0 +1,59 @@
+name: Service Inquiry
+description: Ask about a fixed-price service before booking.
+title: "[SERVICE] "
+labels: ["service-inquiry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for checking the service first.
+
+        Public-safe only: do not post passwords, API keys, payment details, private customer data, copyrighted files, or private transaction IDs here.
+
+        For private context, email sks7178@gmail.com with the subject "service inquiry".
+
+        Scope boundary: I do not take security, vulnerability, exploit, bypass, jailbreak, spam, credential, fake-review, or scraping-personal-data work.
+  - type: dropdown
+    id: offer
+    attributes:
+      label: Service
+      options:
+        - Repo-to-Revenue GitHub Pages Setup - $99
+        - Anki Deck Packaging Service - $99
+        - Not sure yet
+    validations:
+      required: true
+  - type: textarea
+    id: public-url
+    attributes:
+      label: Public URL or context
+      description: Share only public pages, repos, sample files, or a short non-private summary.
+      placeholder: https://github.com/yourname/yourrepo or a short public-safe summary
+    validations:
+      required: true
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: Desired deliverable
+      description: What should be finished by the end of the service?
+      placeholder: A GitHub Pages landing page, payment CTA, sample download, README polish, and delivery checklist.
+    validations:
+      required: true
+  - type: dropdown
+    id: payment-status
+    attributes:
+      label: Payment status
+      options:
+        - Asking before payment
+        - Paid with PayPal and emailed private confirmation
+        - Need a different checkout link
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Public-safe notes
+      description: Anything else that is safe to share publicly.
+      placeholder: Deadline, preferred output format, current blocker, or public examples.
+    validations:
+      required: false
