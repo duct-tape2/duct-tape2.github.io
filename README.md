@@ -31,6 +31,7 @@ Current DIY kit:
 - GitHub Pages Storefront Starter: https://duct-tape2.github.io/storefront-starter/
 - Free storefront launch guide: https://duct-tape2.github.io/guides/github-pages-storefront/
 - Live storefront example: https://duct-tape2.github.io/examples/storefront-starter-case-study/
+- Live AI Money sample output example: https://duct-tape2.github.io/examples/ai-money-stack-sample-output/
 - Free Anki deck packaging guide: https://duct-tape2.github.io/guides/anki-deck-packaging/
 - Live Japanese Anki sample deck example: https://duct-tape2.github.io/examples/japanese-anki-sample-deck/
 - Storefront Starter delivery help: https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=buy-kit.yml
