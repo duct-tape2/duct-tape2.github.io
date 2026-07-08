@@ -26,6 +26,7 @@ Direct PayPal checkouts:
 - Japanese Anki Pack ($29): https://www.paypal.me/sks7178/29
 - AI Money Stack ($25): https://www.paypal.me/sks7178/25
 - Storefront Starter ($19): https://www.paypal.me/sks7178/19
+- Free tools thank-you tip ($5): https://www.paypal.me/sks7178/5
 
 Current DIY kit:
 
