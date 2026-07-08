@@ -37,6 +37,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://duct-tape2.github.io/guides/paypal-static-storefront/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://duct-tape2.github.io/examples/storefront-starter-case-study/</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>

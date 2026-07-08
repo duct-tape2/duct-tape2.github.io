@@ -33,6 +33,7 @@ Current DIY kit:
 - Repo-to-Revenue Launch Bundle: https://duct-tape2.github.io/repo-to-revenue-launch-bundle/
 - GitHub Pages Storefront Starter: https://duct-tape2.github.io/storefront-starter/
 - Free storefront launch guide: https://duct-tape2.github.io/guides/github-pages-storefront/
+- PayPal static storefront checklist: https://duct-tape2.github.io/guides/paypal-static-storefront/
 - Live storefront example: https://duct-tape2.github.io/examples/storefront-starter-case-study/
 - Live AI Money sample output example: https://duct-tape2.github.io/examples/ai-money-stack-sample-output/
 - Free Anki deck packaging guide: https://duct-tape2.github.io/guides/anki-deck-packaging/
