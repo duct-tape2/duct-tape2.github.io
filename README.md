@@ -19,6 +19,7 @@ Public-safe inquiry paths:
 
 Direct PayPal checkouts:
 
+- Repo-to-Revenue Launch Bundle ($39): https://www.paypal.me/sks7178/39
 - Storefront Review ($49): https://www.paypal.me/sks7178/49
 - Anki Deck Review ($49): https://www.paypal.me/sks7178/49
 - Setup Service ($99): https://www.paypal.me/sks7178/99
@@ -28,6 +29,7 @@ Direct PayPal checkouts:
 
 Current DIY kit:
 
+- Repo-to-Revenue Launch Bundle: https://duct-tape2.github.io/repo-to-revenue-launch-bundle/
 - GitHub Pages Storefront Starter: https://duct-tape2.github.io/storefront-starter/
 - Free storefront launch guide: https://duct-tape2.github.io/guides/github-pages-storefront/
 - Live storefront example: https://duct-tape2.github.io/examples/storefront-starter-case-study/
