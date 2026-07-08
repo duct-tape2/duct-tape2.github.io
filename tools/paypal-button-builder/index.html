@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PayPal Button Builder For Static Storefronts</title>
+  <meta name="description" content="Generate a PayPal.Me checkout link, delivery email note, and copy-ready HTML button for a small static storefront or GitHub Pages digital product.">
+  <link rel="canonical" href="https://duct-tape2.github.io/tools/paypal-button-builder/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="duct-tape2">
+  <meta property="og:title" content="PayPal Button Builder For Static Storefronts">
+  <meta property="og:description" content="Build a price-specific PayPal.Me button, delivery mailto, and static HTML checkout snippet for one small product page.">
+  <meta property="og:url" content="https://duct-tape2.github.io/tools/paypal-button-builder/">
+  <meta property="og:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PayPal Button Builder">
+  <meta name="twitter:description" content="Generate a PayPal.Me button and delivery note for a static storefront.">
+  <meta name="twitter:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PayPal Button Builder For Static Storefronts",
+    "url": "https://duct-tape2.github.io/tools/paypal-button-builder/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Any",
+    "description": "A browser-only generator for PayPal.Me checkout links, delivery email notes, and static storefront HTML buttons.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "duct-tape2",
+      "url": "https://github.com/duct-tape2"
+    }
+  }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      --ink: #161616;
+      --muted: #656565;
+      --paper: #fbfaf7;
+      --line: #d9d2c7;
+      --field: #ffffff;
+      --teal: #0e6674;
+      --teal-2: #074c58;
+      --amber: #f4b000;
+      --red: #9f2d20;
+    }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(14, 102, 116, .08) 1px, transparent 1px),
+        linear-gradient(rgba(14, 102, 116, .06) 1px, transparent 1px),
+        var(--paper);
+      background-size: 34px 34px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    a { color: var(--teal); }
+    .top {
+      min-height: 38vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 42px 22px 24px;
+      color: #fff;
+      background:
+        linear-gradient(180deg, rgba(9, 31, 36, .32), rgba(9, 31, 36, .9)),
+        url("https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png") center / cover no-repeat;
+    }
+    .top-inner, .wrap {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: #b9e7f0;
+      font-size: 13px;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 840px;
+      margin: 0;
+      font-size: clamp(38px, 6vw, 72px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+    .lead {
+      max-width: 760px;
+      margin: 18px 0 0;
+      color: #f3f7f8;
+      font-size: 19px;
+    }
+    .wrap { padding: 26px 22px 56px; }
+    .builder {
+      display: grid;
+      grid-template-columns: minmax(290px, 390px) minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .92);
+      box-shadow: 0 18px 42px rgba(22, 22, 22, .08);
+    }
+    .controls {
+      padding: 18px;
+    }
+    .preview {
+      padding: 18px;
+    }
+    .field {
+      display: grid;
+      gap: 7px;
+      margin-bottom: 14px;
+    }
+    label {
+      color: #333;
+      font-size: 13px;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+    input, select, textarea {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid #cfc7bb;
+      border-radius: 6px;
+      color: var(--ink);
+      background: var(--field);
+      font: inherit;
+      padding: 10px 12px;
+    }
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 110px;
+      gap: 10px;
+    }
+    .status {
+      min-height: 22px;
+      color: var(--red);
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .actions, .mini-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    button, .btn, .mini {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      border-radius: 6px;
+      border: 1px solid var(--teal);
+      color: #fff;
+      background: var(--teal);
+      font: inherit;
+      font-weight: 850;
+      text-decoration: none;
+      cursor: pointer;
+      padding: 0 14px;
+      white-space: nowrap;
+    }
+    .btn.secondary, .mini.secondary, button.secondary {
+      color: var(--teal);
+      background: transparent;
+    }
+    button.copy-ok {
+      border-color: var(--amber);
+      color: #111;
+      background: var(--amber);
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 27px;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 0 0 6px;
+      font-size: 18px;
+      line-height: 1.25;
+    }
+    .result-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .result {
+      min-height: 136px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .result code {
+      display: block;
+      overflow-wrap: anywhere;
+      color: var(--teal-2);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 13px;
+    }
+    .storefront-sample {
+      margin-top: 12px;
+      padding: 18px;
+      border: 1px solid #1b1b1b;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .sample-title {
+      margin: 0 0 4px;
+      font-size: 24px;
+      font-weight: 900;
+    }
+    .sample-price {
+      margin: 0 0 12px;
+      color: var(--teal-2);
+      font-size: 32px;
+      font-weight: 950;
+    }
+    .sample-button {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      color: #fff;
+      background: var(--teal-2);
+      font-weight: 900;
+      text-decoration: none;
+      padding: 0 16px;
+    }
+    .sample-note {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .code-block {
+      margin-top: 14px;
+    }
+    .sales {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    .sales-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .offer {
+      min-height: 170px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .offer strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--teal-2);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+    .offer p {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .offer .price {
+      margin: 0 0 8px;
+      color: var(--ink);
+      font-size: 28px;
+      font-weight: 950;
+    }
+    footer {
+      padding: 28px 22px 42px;
+      color: var(--muted);
+      text-align: center;
+    }
+    @media (max-width: 900px) {
+      .builder { grid-template-columns: 1fr; }
+      .sales-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 640px) {
+      .top { min-height: 50vh; }
+      .split, .result-grid, .sales-grid { grid-template-columns: 1fr; }
+      button, .btn, .mini { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <p class="eyebrow">Free Static Checkout Tool</p>
+      <h1>PayPal Button Builder For Static Storefronts</h1>
+      <p class="lead">Generate a price-specific PayPal.Me link, delivery email note, and copy-ready HTML snippet for one small digital product page.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="builder" aria-label="PayPal button builder">
+      <form class="panel controls" id="builder-form">
+        <div class="field">
+          <label for="paypal-name">PayPal.Me name</label>
+          <input id="paypal-name" name="paypal-name" value="sks7178" autocomplete="off" inputmode="url">
+        </div>
+
+        <div class="field">
+          <label for="product-name">Product or service</label>
+          <input id="product-name" name="product-name" value="GitHub Pages Storefront Starter" autocomplete="off">
+        </div>
+
+        <div class="split">
+          <div class="field">
+            <label for="price">Price</label>
+            <input id="price" name="price" value="19" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="currency">Currency</label>
+            <select id="currency" name="currency">
+              <option value="USD" selected>USD</option>
+              <option value="KRW">KRW</option>
+              <option value="EUR">EUR</option>
+              <option value="JPY">JPY</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="delivery-email">Delivery email</label>
+          <input id="delivery-email" name="delivery-email" value="sks7178@gmail.com" type="email">
+        </div>
+
+        <div class="field">
+          <label for="sample-url">Sample or preview URL</label>
+          <input id="sample-url" name="sample-url" value="https://duct-tape2.github.io/storefront-starter/free-checklist.md?sample=1" inputmode="url">
+        </div>
+
+        <div class="field">
+          <label for="support-url">Buyer help URL</label>
+          <input id="support-url" name="support-url" value="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml" inputmode="url">
+        </div>
+
+        <div class="field">
+          <label for="refund-note">Refund or support note</label>
+          <input id="refund-note" name="refund-note" value="Refund if I cannot deliver the scoped ZIP or written setup.">
+        </div>
+
+        <div class="status" id="status" role="status" aria-live="polite"></div>
+        <div class="actions">
+          <button type="button" id="reset-button" class="secondary">Reset example</button>
+          <a class="btn secondary" href="https://duct-tape2.github.io/guides/paypal-static-storefront/">Checklist</a>
+          <a class="btn secondary" href="https://duct-tape2.github.io/storefront-checker/">Checker</a>
+        </div>
+      </form>
+
+      <div class="panel preview">
+        <h2>Generated Checkout Block</h2>
+        <div class="result-grid">
+          <article class="result">
+            <h3>Payment URL</h3>
+            <code id="payment-url"></code>
+            <div class="mini-actions">
+              <button type="button" class="copy" data-copy="payment-url">Copy URL</button>
+              <a class="mini secondary" id="test-payment" href="https://www.paypal.me/sks7178/19">Open</a>
+            </div>
+          </article>
+
+          <article class="result">
+            <h3>Delivery Mailto</h3>
+            <code id="delivery-mailto"></code>
+            <div class="mini-actions">
+              <button type="button" class="copy" data-copy="delivery-mailto">Copy mailto</button>
+              <a class="mini secondary" id="test-mailto" href="mailto:sks7178@gmail.com">Open</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="storefront-sample" aria-label="Generated storefront preview">
+          <p class="sample-title" id="sample-title">GitHub Pages Storefront Starter</p>
+          <p class="sample-price" id="sample-price">$19 USD</p>
+          <a class="sample-button" id="sample-button" href="https://www.paypal.me/sks7178/19">Buy now - PayPal $19</a>
+          <p class="sample-note" id="sample-note">After payment, email sks7178@gmail.com with payer name/email prefix, approximate payment time, and delivery email.</p>
+        </div>
+
+        <div class="code-block">
+          <label for="html-snippet">HTML snippet</label>
+          <textarea id="html-snippet" readonly></textarea>
+          <div class="mini-actions">
+            <button type="button" class="copy" data-copy="html-snippet">Copy HTML</button>
+            <button type="button" class="copy" data-copy="github-markdown">Copy Markdown</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="github-markdown">GitHub README block</label>
+          <textarea id="github-markdown" readonly></textarea>
+        </div>
+      </div>
+    </section>
+
+    <section class="sales">
+      <h2>Paid Fast Paths</h2>
+      <div class="sales-grid">
+        <article class="offer">
+          <strong>DIY Kit</strong>
+          <p class="price">$19</p>
+          <p>Static storefront template, buyer forms, and delivery checklist.</p>
+          <a class="mini" href="https://www.paypal.me/sks7178/19">Buy $19</a>
+        </article>
+        <article class="offer">
+          <strong>Launch Bundle</strong>
+          <p class="price">$39</p>
+          <p>Storefront Starter plus AI Money Stack in one delivery ZIP.</p>
+          <a class="mini" href="https://www.paypal.me/sks7178/39">Buy $39</a>
+        </article>
+        <article class="offer">
+          <strong>Storefront Review</strong>
+          <p class="price">$49</p>
+          <p>Written buyer-readiness report for one public product page.</p>
+          <a class="mini" href="https://www.paypal.me/sks7178/49">Book $49</a>
+        </article>
+        <article class="offer">
+          <strong>Done For You</strong>
+          <p class="price">$99</p>
+          <p>One repo or small product turned into a buyer-ready page.</p>
+          <a class="mini" href="https://www.paypal.me/sks7178/99">Book $99</a>
+        </article>
+        <article class="offer">
+          <strong>Thank You Tip</strong>
+          <p class="price">$5</p>
+          <p>Use this if the builder helped and you do not need a paid kit yet.</p>
+          <a class="mini" href="https://www.paypal.me/sks7178/5">Tip $5</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    GitHub: <a href="https://github.com/duct-tape2">@duct-tape2</a> - Email: <a href="mailto:sks7178@gmail.com">sks7178@gmail.com</a>
+  </footer>
+
+  <script>
+    const fields = {
+      paypal: document.getElementById("paypal-name"),
+      product: document.getElementById("product-name"),
+      price: document.getElementById("price"),
+      currency: document.getElementById("currency"),
+      email: document.getElementById("delivery-email"),
+      sample: document.getElementById("sample-url"),
+      support: document.getElementById("support-url"),
+      refund: document.getElementById("refund-note")
+    };
+
+    const outputs = {
+      status: document.getElementById("status"),
+      paymentUrl: document.getElementById("payment-url"),
+      deliveryMailto: document.getElementById("delivery-mailto"),
+      html: document.getElementById("html-snippet"),
+      markdown: document.getElementById("github-markdown"),
+      testPayment: document.getElementById("test-payment"),
+      testMailto: document.getElementById("test-mailto"),
+      sampleTitle: document.getElementById("sample-title"),
+      samplePrice: document.getElementById("sample-price"),
+      sampleButton: document.getElementById("sample-button"),
+      sampleNote: document.getElementById("sample-note")
+    };
+
+    function cleanPaypalName(value) {
+      return value.replace(/^https?:\/\/(www\.)?paypal\.me\//i, "").replace(/[^a-zA-Z0-9._-]/g, "").slice(0, 60);
+    }
+
+    function cleanPrice(value) {
+      const normalized = value.replace(/,/g, "").replace(/[^\d.]/g, "");
+      const parsed = Number.parseFloat(normalized);
+      if (!Number.isFinite(parsed) || parsed <= 0) return "";
+      return String(Math.round(parsed * 100) / 100).replace(/\.0$/, "");
+    }
+
+    function escapeHtml(value) {
+      return value.replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        "\"": "&quot;",
+        "'": "&#39;"
+      })[char]);
+    }
+
+    function formatMoney(price, currency) {
+      if (currency === "USD") return "$" + price;
+      if (currency === "KRW") return price + " KRW";
+      if (currency === "EUR") return "EUR " + price;
+      if (currency === "JPY") return "JPY " + price;
+      return price + " " + currency;
+    }
+
+    function buildMailto(email, product, paymentUrl) {
+      const subject = encodeURIComponent(product + " delivery");
+      const body = encodeURIComponent([
+        "Offer: " + product,
+        "Payment method: PayPal",
+        "Payment URL: " + paymentUrl,
+        "Payer name or email prefix: ",
+        "Approx payment time: ",
+        "Delivery email: "
+      ].join("\n"));
+      return "mailto:" + encodeURIComponent(email) + "?subject=" + subject + "&body=" + body;
+    }
+
+    function render() {
+      const paypal = cleanPaypalName(fields.paypal.value || "sks7178");
+      const product = (fields.product.value || "Digital product").trim().slice(0, 90);
+      const price = cleanPrice(fields.price.value || "19");
+      const currency = fields.currency.value || "USD";
+      const email = (fields.email.value || "sks7178@gmail.com").trim().slice(0, 120);
+      const sample = (fields.sample.value || "").trim().slice(0, 240);
+      const support = (fields.support.value || "").trim().slice(0, 240);
+      const refund = (fields.refund.value || "").trim().slice(0, 200);
+      const problems = [];
+
+      if (!paypal) problems.push("PayPal.Me name required.");
+      if (!price) problems.push("Valid price required.");
+      if (!email.includes("@")) problems.push("Delivery email required.");
+
+      const paymentUrl = paypal && price ? "https://www.paypal.me/" + paypal + "/" + price : "";
+      const payLabel = price ? "Buy now - PayPal " + formatMoney(price, currency) : "Buy now";
+      const mailto = paymentUrl ? buildMailto(email, product, paymentUrl) : "";
+
+      outputs.status.textContent = problems.join(" ");
+      outputs.paymentUrl.textContent = paymentUrl;
+      outputs.deliveryMailto.textContent = mailto;
+      outputs.testPayment.href = paymentUrl || "#";
+      outputs.testMailto.href = mailto || "#";
+      outputs.sampleTitle.textContent = product;
+      outputs.samplePrice.textContent = formatMoney(price || "19", currency);
+      outputs.sampleButton.textContent = payLabel;
+      outputs.sampleButton.href = paymentUrl || "#";
+      outputs.sampleNote.textContent = "After payment, email " + email + " with payer name/email prefix, approximate payment time, and delivery email.";
+
+      const safeProduct = escapeHtml(product);
+      const safeEmail = escapeHtml(email);
+      const safeSample = escapeHtml(sample);
+      const safeSupport = escapeHtml(support);
+      const safeRefund = escapeHtml(refund);
+      const safePayment = escapeHtml(paymentUrl);
+      const safeMailto = escapeHtml(mailto);
+      const safePayLabel = escapeHtml(payLabel);
+
+      outputs.html.value = [
+        '<section class="product-checkout">',
+        '  <h2>' + safeProduct + '</h2>',
+        '  <p><strong>' + escapeHtml(formatMoney(price || "19", currency)) + '</strong></p>',
+        sample ? '  <p><a href="' + safeSample + '">View free sample</a></p>' : '',
+        '  <p><a href="' + safePayment + '">' + safePayLabel + '</a></p>',
+        '  <p>After payment, email <a href="' + safeMailto + '">' + safeEmail + '</a> with payer name/email prefix, approximate payment time, and delivery email.</p>',
+        refund ? '  <p>' + safeRefund + '</p>' : '',
+        support ? '  <p><a href="' + safeSupport + '">Buyer help</a></p>' : '',
+        '</section>'
+      ].filter(Boolean).join("\n");
+
+      outputs.markdown.value = [
+        "## " + product,
+        "",
+        "- Price: " + formatMoney(price || "19", currency),
+        sample ? "- Free sample: " + sample : "",
+        "- PayPal checkout: " + paymentUrl,
+        "- Delivery email: " + email,
+        refund ? "- Refund/support note: " + refund : "",
+        support ? "- Buyer help: " + support : ""
+      ].filter(Boolean).join("\n");
+    }
+
+    async function copyValue(id, button) {
+      const node = document.getElementById(id);
+      const value = "value" in node ? node.value : node.textContent;
+      if (!value) return;
+      try {
+        await navigator.clipboard.writeText(value);
+      } catch (error) {
+        const temp = document.createElement("textarea");
+        temp.value = value;
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand("copy");
+        temp.remove();
+      }
+      button.classList.add("copy-ok");
+      button.textContent = "Copied";
+      setTimeout(() => {
+        button.classList.remove("copy-ok");
+        button.textContent = button.dataset.originalText;
+      }, 1100);
+    }
+
+    Object.values(fields).forEach((field) => field.addEventListener("input", render));
+    document.querySelectorAll(".copy").forEach((button) => {
+      button.dataset.originalText = button.textContent;
+      button.addEventListener("click", () => copyValue(button.dataset.copy, button));
+    });
+    document.getElementById("reset-button").addEventListener("click", () => {
+      fields.paypal.value = "sks7178";
+      fields.product.value = "GitHub Pages Storefront Starter";
+      fields.price.value = "19";
+      fields.currency.value = "USD";
+      fields.email.value = "sks7178@gmail.com";
+      fields.sample.value = "https://duct-tape2.github.io/storefront-starter/free-checklist.md?sample=1";
+      fields.support.value = "https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml";
+      fields.refund.value = "Refund if I cannot deliver the scoped ZIP or written setup.";
+      render();
+    });
+    render();
+  </script>
+</body>
+</html>
