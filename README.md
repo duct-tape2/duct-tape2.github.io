@@ -34,6 +34,7 @@ Current DIY kit:
 - GitHub Pages Storefront Starter: https://duct-tape2.github.io/storefront-starter/
 - Free storefront launch guide: https://duct-tape2.github.io/guides/github-pages-storefront/
 - PayPal static storefront checklist: https://duct-tape2.github.io/guides/paypal-static-storefront/
+- Static storefront page builder: https://duct-tape2.github.io/tools/static-storefront-builder/
 - PayPal button builder: https://duct-tape2.github.io/tools/paypal-button-builder/
 - Live storefront example: https://duct-tape2.github.io/examples/storefront-starter-case-study/
 - Live AI Money sample output example: https://duct-tape2.github.io/examples/ai-money-stack-sample-output/

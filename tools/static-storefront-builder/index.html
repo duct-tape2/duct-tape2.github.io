@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Static Storefront Page Builder</title>
+  <meta name="description" content="Generate a copy-ready static product page, PayPal.Me checkout link, delivery email note, product schema, and README block for a small digital product.">
+  <link rel="canonical" href="https://duct-tape2.github.io/tools/static-storefront-builder/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="duct-tape2">
+  <meta property="og:title" content="Static Storefront Page Builder">
+  <meta property="og:description" content="Build a static product page with PayPal checkout, delivery email, schema, and README copy from one form.">
+  <meta property="og:url" content="https://duct-tape2.github.io/tools/static-storefront-builder/">
+  <meta property="og:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Static Storefront Page Builder">
+  <meta name="twitter:description" content="Generate a buyer-ready static product page and checkout block from one form.">
+  <meta name="twitter:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Static Storefront Page Builder",
+    "url": "https://duct-tape2.github.io/tools/static-storefront-builder/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Any",
+    "description": "A browser-only generator for static product pages, PayPal.Me checkout links, delivery email notes, Product schema, and GitHub README storefront copy.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "duct-tape2",
+      "url": "https://github.com/duct-tape2"
+    }
+  }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      --ink: #171a1f;
+      --muted: #606874;
+      --paper: #f7f5ef;
+      --panel: #ffffff;
+      --line: #d7d0c3;
+      --field: #fffdf8;
+      --teal: #0f6771;
+      --teal-dark: #073f47;
+      --brick: #a53c2f;
+      --gold: #e6ae36;
+      --blue: #263c65;
+    }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(15, 103, 113, .06) 1px, transparent 1px),
+        linear-gradient(rgba(38, 60, 101, .05) 1px, transparent 1px),
+        linear-gradient(180deg, #fbfaf7 0%, #f1f5f4 100%);
+      background-size: 36px 36px, 36px 36px, auto;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    a { color: var(--teal); }
+    .wrap {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 24px 0 52px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: end;
+      padding: 10px 0 18px;
+      border-bottom: 2px solid var(--ink);
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--brick);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 860px;
+      margin: 0;
+      font-size: clamp(34px, 5.8vw, 68px);
+      line-height: .96;
+      letter-spacing: 0;
+    }
+    .lead {
+      max-width: 780px;
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .top-actions, .actions, .mini-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .top-actions { justify-content: flex-end; }
+    .btn, button, .mini {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      border: 1px solid var(--teal);
+      border-radius: 6px;
+      color: #fff;
+      background: var(--teal);
+      cursor: pointer;
+      font: inherit;
+      font-weight: 850;
+      padding: 0 14px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .btn.secondary, button.secondary, .mini.secondary {
+      color: var(--teal);
+      background: transparent;
+    }
+    button.copy-ok {
+      border-color: var(--gold);
+      color: #111;
+      background: var(--gold);
+    }
+    main {
+      display: grid;
+      grid-template-columns: minmax(290px, 410px) minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+      padding-top: 20px;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .92);
+      box-shadow: 0 18px 40px rgba(23, 26, 31, .08);
+    }
+    form.panel, .output.panel { padding: 18px; }
+    .field {
+      display: grid;
+      gap: 7px;
+      margin-bottom: 13px;
+    }
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 112px;
+      gap: 10px;
+    }
+    label {
+      color: #30343a;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    input, select, textarea {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid #cfc7ba;
+      border-radius: 6px;
+      color: var(--ink);
+      background: var(--field);
+      font: inherit;
+      padding: 10px 12px;
+    }
+    textarea {
+      min-height: 104px;
+      resize: vertical;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .status {
+      min-height: 22px;
+      color: var(--brick);
+      font-size: 13px;
+      font-weight: 850;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 28px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 0 0 7px;
+      font-size: 18px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    .preview-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 220px;
+      gap: 16px;
+      padding: 18px;
+      border: 1px solid var(--ink);
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(15, 103, 113, .08), transparent 45%),
+        #fff;
+    }
+    .product-name {
+      margin: 0;
+      font-size: clamp(26px, 4vw, 44px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+    .product-sub {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+    .price-box {
+      align-self: start;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fffdf7;
+    }
+    .price {
+      margin: 0 0 10px;
+      color: var(--teal-dark);
+      font-size: 38px;
+      font-weight: 950;
+      line-height: 1;
+    }
+    .sample-list {
+      margin: 16px 0 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+    .result-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .result {
+      min-height: 132px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    code {
+      display: block;
+      overflow-wrap: anywhere;
+      color: var(--teal-dark);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+    }
+    .code-stack {
+      display: grid;
+      gap: 13px;
+      margin-top: 14px;
+    }
+    .sales {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 4px;
+    }
+    .offer {
+      min-height: 166px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .offer strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--teal-dark);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .offer p {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .offer .offer-price {
+      margin: 0 0 8px;
+      color: var(--ink);
+      font-size: 30px;
+      font-weight: 950;
+    }
+    footer {
+      padding: 26px 16px 42px;
+      color: var(--muted);
+      text-align: center;
+    }
+    @media (max-width: 980px) {
+      header, main, .preview-card { grid-template-columns: 1fr; }
+      .top-actions { justify-content: flex-start; }
+      .sales { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 20px, 680px); }
+      .split, .result-grid, .sales { grid-template-columns: 1fr; }
+      button, .btn, .mini { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <p class="eyebrow">Free Static Storefront Tool</p>
+        <h1>Static Storefront Page Builder</h1>
+        <p class="lead">Turn one product idea into a static sales page, PayPal checkout link, delivery email, Product schema, and GitHub README block without a backend.</p>
+      </div>
+      <div class="top-actions">
+        <a class="btn" href="https://duct-tape2.github.io/buy/">Open paid options</a>
+        <a class="btn secondary" href="https://duct-tape2.github.io/storefront-checker/">Run checker</a>
+      </div>
+    </header>
+
+    <main>
+      <form class="panel" id="builder-form">
+        <div class="field">
+          <label for="product-name">Product name</label>
+          <input id="product-name" value="GitHub Pages Storefront Starter" autocomplete="off">
+        </div>
+
+        <div class="field">
+          <label for="subtitle">Short promise</label>
+          <input id="subtitle" value="A DIY template kit for turning a small repo or digital download into a buyer-ready GitHub Pages storefront.">
+        </div>
+
+        <div class="split">
+          <div class="field">
+            <label for="price">Price</label>
+            <input id="price" value="19" inputmode="decimal">
+          </div>
+          <div class="field">
+            <label for="currency">Currency</label>
+            <select id="currency">
+              <option value="USD" selected>USD</option>
+              <option value="KRW">KRW</option>
+              <option value="EUR">EUR</option>
+              <option value="JPY">JPY</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="paypal-name">PayPal.Me name</label>
+          <input id="paypal-name" value="sks7178" autocomplete="off" inputmode="url">
+        </div>
+
+        <div class="field">
+          <label for="delivery-email">Delivery email</label>
+          <input id="delivery-email" value="sks7178@gmail.com" type="email">
+        </div>
+
+        <div class="field">
+          <label for="sample-url">Free sample or preview URL</label>
+          <input id="sample-url" value="https://duct-tape2.github.io/storefront-starter/free-checklist.md" inputmode="url">
+        </div>
+
+        <div class="field">
+          <label for="buyer-help">Buyer help URL</label>
+          <input id="buyer-help" value="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml" inputmode="url">
+        </div>
+
+        <div class="field">
+          <label for="included">What buyers get</label>
+          <textarea id="included">Editable HTML storefront template
+Buyer and service inquiry issue forms
+Launch checklist and delivery email workflow</textarea>
+        </div>
+
+        <div class="field">
+          <label for="refund">Refund or support note</label>
+          <input id="refund" value="14-day refund if the ZIP cannot be opened or listed files are missing. No revenue guarantees.">
+        </div>
+
+        <div class="status" id="status" role="status" aria-live="polite"></div>
+        <div class="actions">
+          <button type="button" id="reset-button" class="secondary">Reset example</button>
+          <a class="btn secondary" href="https://duct-tape2.github.io/tools/paypal-button-builder/">Button only</a>
+          <a class="btn secondary" href="https://duct-tape2.github.io/guides/paypal-static-storefront/">Checklist</a>
+        </div>
+      </form>
+
+      <section class="panel output" aria-label="Generated storefront output">
+        <h2>Generated Storefront</h2>
+        <div class="preview-card">
+          <div>
+            <p class="product-name" id="preview-title">GitHub Pages Storefront Starter</p>
+            <p class="product-sub" id="preview-subtitle">A DIY template kit for turning a small repo or digital download into a buyer-ready GitHub Pages storefront.</p>
+            <ul class="sample-list" id="preview-list"></ul>
+          </div>
+          <div class="price-box">
+            <p class="price" id="preview-price">$19</p>
+            <a class="btn" id="preview-buy" href="https://www.paypal.me/sks7178/19">Buy now</a>
+            <div class="mini-actions" style="margin-top:10px">
+              <a class="mini secondary" id="preview-sample" href="https://duct-tape2.github.io/storefront-starter/free-checklist.md">Sample</a>
+              <a class="mini secondary" id="preview-help" href="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml">Help</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-grid">
+          <article class="result">
+            <h3>Payment URL</h3>
+            <code id="payment-url"></code>
+            <div class="mini-actions">
+              <button type="button" class="copy" data-copy="payment-url">Copy URL</button>
+              <a class="mini secondary" id="open-payment" href="https://www.paypal.me/sks7178/19">Open</a>
+            </div>
+          </article>
+          <article class="result">
+            <h3>Delivery Mailto</h3>
+            <code id="delivery-mailto"></code>
+            <div class="mini-actions">
+              <button type="button" class="copy" data-copy="delivery-mailto">Copy mailto</button>
+              <a class="mini secondary" id="open-mailto" href="mailto:sks7178@gmail.com">Open</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="code-stack">
+          <div class="field">
+            <label for="page-html">Full static page HTML</label>
+            <textarea id="page-html" readonly></textarea>
+            <div class="mini-actions">
+              <button type="button" class="copy" data-copy="page-html">Copy page HTML</button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="schema-json">Product schema JSON-LD</label>
+            <textarea id="schema-json" readonly></textarea>
+            <div class="mini-actions">
+              <button type="button" class="copy" data-copy="schema-json">Copy schema</button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="readme-block">GitHub README block</label>
+            <textarea id="readme-block" readonly></textarea>
+            <div class="mini-actions">
+              <button type="button" class="copy" data-copy="readme-block">Copy README</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sales" aria-label="Paid next steps">
+        <article class="offer">
+          <strong>DIY Kit</strong>
+          <p class="offer-price">$19</p>
+          <p>Template files, buyer forms, and delivery checklist.</p>
+          <a class="mini" href="https://www.paypal.me/sks7178/19">Buy $19</a>
+        </article>
+        <article class="offer">
+          <strong>Launch Bundle</strong>
+          <p class="offer-price">$39</p>
+          <p>Storefront Starter plus AI Money Stack in one ZIP.</p>
+          <a class="mini" href="https://www.paypal.me/sks7178/39">Buy $39</a>
+        </article>
+        <article class="offer">
+          <strong>Storefront Review</strong>
+          <p class="offer-price">$49</p>
+          <p>A written buyer-readiness report for one page.</p>
+          <a class="mini" href="https://www.paypal.me/sks7178/49">Book $49</a>
+        </article>
+        <article class="offer">
+          <strong>Done For You</strong>
+          <p class="offer-price">$99</p>
+          <p>One repo or small product turned into a buyer-ready page.</p>
+          <a class="mini" href="https://www.paypal.me/sks7178/99">Book $99</a>
+        </article>
+        <article class="offer">
+          <strong>Thank You Tip</strong>
+          <p class="offer-price">$5</p>
+          <p>Use this if the builder helped and you do not need a paid kit yet.</p>
+          <a class="mini" href="https://www.paypal.me/sks7178/5">Tip $5</a>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    Scope: no security, exploit, bypass, credential, fake-review, spam, or private-data scraping work. GitHub: <a href="https://github.com/duct-tape2">@duct-tape2</a> - Email: <a href="mailto:sks7178@gmail.com">sks7178@gmail.com</a>
+  </footer>
+
+  <script>
+    const fields = {
+      product: document.getElementById("product-name"),
+      subtitle: document.getElementById("subtitle"),
+      price: document.getElementById("price"),
+      currency: document.getElementById("currency"),
+      paypal: document.getElementById("paypal-name"),
+      email: document.getElementById("delivery-email"),
+      sample: document.getElementById("sample-url"),
+      help: document.getElementById("buyer-help"),
+      included: document.getElementById("included"),
+      refund: document.getElementById("refund")
+    };
+
+    const outputs = {
+      status: document.getElementById("status"),
+      title: document.getElementById("preview-title"),
+      subtitle: document.getElementById("preview-subtitle"),
+      price: document.getElementById("preview-price"),
+      list: document.getElementById("preview-list"),
+      buy: document.getElementById("preview-buy"),
+      sample: document.getElementById("preview-sample"),
+      help: document.getElementById("preview-help"),
+      paymentUrl: document.getElementById("payment-url"),
+      mailto: document.getElementById("delivery-mailto"),
+      openPayment: document.getElementById("open-payment"),
+      openMailto: document.getElementById("open-mailto"),
+      html: document.getElementById("page-html"),
+      schema: document.getElementById("schema-json"),
+      readme: document.getElementById("readme-block")
+    };
+
+    function cleanPaypalName(value) {
+      return value.replace(/^https?:\/\/(www\.)?paypal\.me\//i, "").replace(/[^a-zA-Z0-9._-]/g, "").slice(0, 60);
+    }
+
+    function cleanPrice(value) {
+      const parsed = Number.parseFloat(String(value).replace(/,/g, "").replace(/[^\d.]/g, ""));
+      if (!Number.isFinite(parsed) || parsed <= 0) return "";
+      return String(Math.round(parsed * 100) / 100).replace(/\.0$/, "");
+    }
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        "\"": "&quot;",
+        "'": "&#39;"
+      })[char]);
+    }
+
+    function formatMoney(price, currency) {
+      if (currency === "USD") return "$" + price;
+      if (currency === "KRW") return price + " KRW";
+      if (currency === "EUR") return "EUR " + price;
+      if (currency === "JPY") return "JPY " + price;
+      return price + " " + currency;
+    }
+
+    function lines(value) {
+      return String(value).split("\n").map((item) => item.trim()).filter(Boolean).slice(0, 8);
+    }
+
+    function buildMailto(email, product, paymentUrl) {
+      const subject = encodeURIComponent(product + " delivery");
+      const body = encodeURIComponent([
+        "Offer: " + product,
+        "Payment method: PayPal",
+        "Payment URL: " + paymentUrl,
+        "Payer name or email prefix:",
+        "Approx payment time:",
+        "Delivery email:",
+        "Public-safe note:"
+      ].join("\n"));
+      return "mailto:" + encodeURIComponent(email) + "?subject=" + subject + "&body=" + body;
+    }
+
+    function render() {
+      const product = (fields.product.value || "Digital product").trim().slice(0, 90);
+      const subtitle = (fields.subtitle.value || "A small digital product with a clear checkout and delivery flow.").trim().slice(0, 180);
+      const price = cleanPrice(fields.price.value || "19");
+      const currency = fields.currency.value || "USD";
+      const paypal = cleanPaypalName(fields.paypal.value || "sks7178");
+      const email = (fields.email.value || "sks7178@gmail.com").trim().slice(0, 120);
+      const sample = (fields.sample.value || "").trim().slice(0, 260);
+      const help = (fields.help.value || "").trim().slice(0, 260);
+      const included = lines(fields.included.value);
+      const refund = (fields.refund.value || "").trim().slice(0, 220);
+      const problems = [];
+
+      if (!price) problems.push("Valid price required.");
+      if (!paypal) problems.push("PayPal.Me name required.");
+      if (!email.includes("@")) problems.push("Delivery email required.");
+
+      const paymentUrl = price && paypal ? "https://www.paypal.me/" + paypal + "/" + price : "";
+      const mailto = paymentUrl ? buildMailto(email, product, paymentUrl) : "";
+      const money = formatMoney(price || "19", currency);
+
+      outputs.status.textContent = problems.join(" ");
+      outputs.title.textContent = product;
+      outputs.subtitle.textContent = subtitle;
+      outputs.price.textContent = money;
+      outputs.buy.href = paymentUrl || "#";
+      outputs.buy.textContent = "Buy now - " + money;
+      outputs.sample.href = sample || "#";
+      outputs.help.href = help || "#";
+      outputs.paymentUrl.textContent = paymentUrl;
+      outputs.mailto.textContent = mailto;
+      outputs.openPayment.href = paymentUrl || "#";
+      outputs.openMailto.href = mailto || "#";
+      outputs.list.innerHTML = "";
+      included.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        outputs.list.appendChild(li);
+      });
+
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": product,
+        "description": subtitle,
+        "offers": {
+          "@type": "Offer",
+          "price": price || "19",
+          "priceCurrency": currency,
+          "availability": "https://schema.org/InStock",
+          "url": paymentUrl
+        }
+      };
+      outputs.schema.value = JSON.stringify(schema, null, 2);
+
+      const safeProduct = escapeHtml(product);
+      const safeSubtitle = escapeHtml(subtitle);
+      const safeMoney = escapeHtml(money);
+      const safePayment = escapeHtml(paymentUrl);
+      const safeMailto = escapeHtml(mailto);
+      const safeEmail = escapeHtml(email);
+      const safeSample = escapeHtml(sample);
+      const safeHelp = escapeHtml(help);
+      const safeRefund = escapeHtml(refund);
+      const li = included.map((item) => "          <li>" + escapeHtml(item) + "</li>").join("\n");
+      const schemaText = escapeHtml(JSON.stringify(schema));
+
+      outputs.html.value = [
+        "<!doctype html>",
+        "<html lang=\"en\">",
+        "<head>",
+        "  <meta charset=\"utf-8\">",
+        "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+        "  <title>" + safeProduct + "</title>",
+        "  <meta name=\"description\" content=\"" + safeSubtitle + "\">",
+        "  <script type=\"application/ld+json\">" + schemaText + "<\\/script>",
+        "  <style>body{font-family:system-ui,sans-serif;line-height:1.5;margin:0;color:#171a1f;background:#f7f5ef}.wrap{max-width:920px;margin:0 auto;padding:32px 18px}.hero{border:1px solid #d7d0c3;background:#fff;padding:24px;border-radius:8px}.price{font-size:42px;font-weight:900}.btn{display:inline-flex;min-height:44px;align-items:center;padding:0 16px;background:#0f6771;color:#fff;text-decoration:none;border-radius:6px;font-weight:800}</style>",
+        "</head>",
+        "<body>",
+        "  <main class=\"wrap\">",
+        "    <section class=\"hero\">",
+        "      <h1>" + safeProduct + "</h1>",
+        "      <p>" + safeSubtitle + "</p>",
+        "      <p class=\"price\">" + safeMoney + "</p>",
+        "      <a class=\"btn\" href=\"" + safePayment + "\">Buy now - " + safeMoney + "</a>",
+        sample ? "      <p><a href=\"" + safeSample + "\">View free sample</a></p>" : "",
+        "      <h2>What you get</h2>",
+        "      <ul>",
+        li,
+        "      </ul>",
+        "      <p>After payment, email <a href=\"" + safeMailto + "\">" + safeEmail + "</a> with payer name/email prefix, approximate payment time, and delivery email.</p>",
+        refund ? "      <p>" + safeRefund + "</p>" : "",
+        help ? "      <p><a href=\"" + safeHelp + "\">Buyer help</a></p>" : "",
+        "    </section>",
+        "  </main>",
+        "</body>",
+        "</html>"
+      ].filter(Boolean).join("\n");
+
+      outputs.readme.value = [
+        "## " + product,
+        "",
+        subtitle,
+        "",
+        "- Price: " + money,
+        "- Checkout: " + paymentUrl,
+        sample ? "- Free sample: " + sample : "",
+        "- Delivery email: " + email,
+        help ? "- Buyer help: " + help : "",
+        "",
+        "What buyers get:",
+        ...included.map((item) => "- " + item),
+        refund ? "" : null,
+        refund ? "Refund/support: " + refund : null
+      ].filter((line) => line !== null).join("\n");
+    }
+
+    async function copyValue(id, button) {
+      const node = document.getElementById(id);
+      const value = "value" in node ? node.value : node.textContent;
+      if (!value) return;
+      try {
+        await navigator.clipboard.writeText(value);
+      } catch (error) {
+        const temp = document.createElement("textarea");
+        temp.value = value;
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand("copy");
+        temp.remove();
+      }
+      button.classList.add("copy-ok");
+      button.textContent = "Copied";
+      setTimeout(() => {
+        button.classList.remove("copy-ok");
+        button.textContent = button.dataset.originalText;
+      }, 1100);
+    }
+
+    Object.values(fields).forEach((field) => field.addEventListener("input", render));
+    document.querySelectorAll(".copy").forEach((button) => {
+      button.dataset.originalText = button.textContent;
+      button.addEventListener("click", () => copyValue(button.dataset.copy, button));
+    });
+    document.getElementById("reset-button").addEventListener("click", () => {
+      fields.product.value = "GitHub Pages Storefront Starter";
+      fields.subtitle.value = "A DIY template kit for turning a small repo or digital download into a buyer-ready GitHub Pages storefront.";
+      fields.price.value = "19";
+      fields.currency.value = "USD";
+      fields.paypal.value = "sks7178";
+      fields.email.value = "sks7178@gmail.com";
+      fields.sample.value = "https://duct-tape2.github.io/storefront-starter/free-checklist.md";
+      fields.help.value = "https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml";
+      fields.included.value = "Editable HTML storefront template\nBuyer and service inquiry issue forms\nLaunch checklist and delivery email workflow";
+      fields.refund.value = "14-day refund if the ZIP cannot be opened or listed files are missing. No revenue guarantees.";
+      render();
+    });
+    render();
+  </script>
+</body>
+</html>
