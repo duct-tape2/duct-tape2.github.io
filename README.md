@@ -36,6 +36,7 @@ Current DIY kit:
 
 - Repo-to-Revenue Launch Bundle: https://duct-tape2.github.io/repo-to-revenue-launch-bundle/
 - GitHub Pages Storefront Starter: https://duct-tape2.github.io/storefront-starter/
+- Offer Chooser: https://duct-tape2.github.io/tools/offer-chooser/
 - Digital Product Storefront Audit Checklist: https://duct-tape2.github.io/guides/digital-product-storefront-audit/
 - Free storefront launch guide: https://duct-tape2.github.io/guides/github-pages-storefront/
 - PayPal static storefront checklist: https://duct-tape2.github.io/guides/paypal-static-storefront/

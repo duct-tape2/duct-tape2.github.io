@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offer Chooser For duct-tape2 Products</title>
+  <meta name="description" content="Pick the right duct-tape2 product, review, service, or support option and go straight to the matching PayPal checkout, email note, and public-safe help form.">
+  <link rel="canonical" href="https://duct-tape2.github.io/tools/offer-chooser/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="duct-tape2">
+  <meta property="og:title" content="Offer Chooser For duct-tape2 Products">
+  <meta property="og:description" content="Choose between the $5 tip, $9 starter, $19 kits, $49 reviews, and $99 setup services without guessing at checkout.">
+  <meta property="og:url" content="https://duct-tape2.github.io/tools/offer-chooser/">
+  <meta property="og:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Offer Chooser">
+  <meta name="twitter:description" content="Select the right checkout and delivery note for one small product, review, or setup job.">
+  <meta name="twitter:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Offer Chooser For duct-tape2 Products",
+    "url": "https://duct-tape2.github.io/tools/offer-chooser/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Any",
+    "description": "A browser-only chooser for duct-tape2 direct checkout links, email notes, and buyer help paths.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "duct-tape2",
+      "url": "https://github.com/duct-tape2"
+    }
+  }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      --ink: #171818;
+      --muted: #5f666d;
+      --paper: #f7f5ef;
+      --panel: #ffffff;
+      --line: #d8d0c3;
+      --field: #fffdf8;
+      --teal: #0e6674;
+      --teal-dark: #073f47;
+      --brick: #a43b2e;
+      --gold: #efb43b;
+      --blue: #293e64;
+    }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(14, 102, 116, .07) 1px, transparent 1px),
+        linear-gradient(rgba(41, 62, 100, .05) 1px, transparent 1px),
+        var(--paper);
+      background-size: 34px 34px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    a { color: var(--teal); }
+    .top {
+      min-height: 36vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 42px 22px 24px;
+      color: #fff;
+      background:
+        linear-gradient(180deg, rgba(9, 30, 35, .18), rgba(9, 30, 35, .88)),
+        url("https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png") center / cover no-repeat;
+    }
+    .top-inner, .wrap {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: #b9e7f0;
+      font-size: 13px;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 860px;
+      margin: 0;
+      font-size: clamp(38px, 6vw, 74px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+    .lead {
+      max-width: 760px;
+      margin: 16px 0 0;
+      color: #f3f7f8;
+      font-size: 19px;
+    }
+    .wrap { padding: 24px 22px 58px; }
+    .chooser {
+      display: grid;
+      grid-template-columns: minmax(290px, 390px) minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .94);
+      box-shadow: 0 18px 42px rgba(23, 24, 24, .08);
+    }
+    .controls, .result, .catalog, .scope { padding: 18px; }
+    .field {
+      display: grid;
+      gap: 7px;
+      margin-bottom: 14px;
+    }
+    label {
+      color: #30343a;
+      font-size: 13px;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+    select, textarea {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid #cfc7bb;
+      border-radius: 6px;
+      color: var(--ink);
+      background: var(--field);
+      font: inherit;
+      padding: 10px 12px;
+    }
+    textarea {
+      min-height: 112px;
+      resize: vertical;
+    }
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .choice {
+      min-height: 44px;
+      border: 1px solid #cfc7bb;
+      border-radius: 6px;
+      color: var(--ink);
+      background: #fff;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 850;
+      padding: 8px 10px;
+      text-align: left;
+    }
+    .choice.active {
+      border-color: var(--teal);
+      color: #fff;
+      background: var(--teal);
+    }
+    .btn, button, .mini {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      border: 1px solid var(--teal);
+      border-radius: 6px;
+      color: #fff;
+      background: var(--teal);
+      cursor: pointer;
+      font: inherit;
+      font-weight: 850;
+      padding: 0 14px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .btn.secondary, button.secondary, .mini.secondary {
+      color: var(--teal);
+      background: transparent;
+    }
+    button.copy-ok {
+      border-color: var(--gold);
+      color: #111;
+      background: var(--gold);
+    }
+    .actions, .mini-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .result-card {
+      display: grid;
+      gap: 16px;
+      min-height: 348px;
+    }
+    .price {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      width: fit-content;
+      border: 1px solid rgba(14, 102, 116, .24);
+      border-radius: 999px;
+      color: var(--teal-dark);
+      background: #e9f5f5;
+      font-weight: 950;
+      padding: 0 13px;
+    }
+    h2, h3 { line-height: 1.08; letter-spacing: 0; }
+    h2 { margin: 0 0 12px; font-size: clamp(26px, 3.2vw, 42px); }
+    h3 { margin: 0 0 8px; font-size: 23px; }
+    p { margin: 0 0 12px; }
+    .note { color: var(--muted); }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .meta div {
+      min-height: 74px;
+      border: 1px solid #e0d8cc;
+      border-radius: 8px;
+      background: #fbfaf7;
+      padding: 10px;
+    }
+    .meta strong {
+      display: block;
+      color: var(--brick);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .catalog {
+      margin-top: 18px;
+    }
+    .offer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .offer {
+      border: 1px solid #e0d8cc;
+      border-radius: 8px;
+      background: #fffdf8;
+      padding: 14px;
+    }
+    .offer strong { display: block; }
+    .scope {
+      margin-top: 18px;
+      border-color: rgba(164, 59, 46, .35);
+      background: #fff9f4;
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      padding: 24px 22px;
+      text-align: center;
+    }
+    @media (max-width: 860px) {
+      .chooser, .offer-grid, .meta { grid-template-columns: 1fr; }
+      .choice-grid { grid-template-columns: 1fr; }
+      .btn, .mini { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <p class="eyebrow">Offer Chooser</p>
+      <h1>Pick The Right Checkout</h1>
+      <p class="lead">Choose one small product, review, service, or support option and keep the PayPal amount matched to the right delivery note.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="chooser">
+      <form class="panel controls" id="chooser-form">
+        <div class="field">
+          <label for="goal">Goal</label>
+          <select id="goal">
+            <option value="storefront-template">Launch a small storefront</option>
+            <option value="checkout-help">Fix checkout or buyer trust</option>
+            <option value="repo-setup">Turn a public repo into a paid offer</option>
+            <option value="content-shorts">Make shorts or content item ideas</option>
+            <option value="anki-learn">Study Japanese with Anki</option>
+            <option value="anki-build">Build or package an Anki deck</option>
+            <option value="support">Say thanks for a free tool</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Budget</label>
+          <div class="choice-grid" id="budget-buttons">
+            <button class="choice active" type="button" data-budget="low">$5-$19</button>
+            <button class="choice" type="button" data-budget="mid">$20-$49</button>
+            <button class="choice" type="button" data-budget="high">$50-$99</button>
+            <button class="choice" type="button" data-budget="free">Free first</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Mode</label>
+          <div class="choice-grid" id="mode-buttons">
+            <button class="choice active" type="button" data-mode="diy">DIY kit</button>
+            <button class="choice" type="button" data-mode="review">Review</button>
+            <button class="choice" type="button" data-mode="service">Done for you</button>
+            <button class="choice" type="button" data-mode="support">Support</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="asset">What already exists?</label>
+          <select id="asset">
+            <option value="none">Nothing public yet</option>
+            <option value="page">A public product page</option>
+            <option value="repo">A public repo</option>
+            <option value="deck">A deck, CSV, or lesson notes</option>
+            <option value="free-tool">A free tool already helped</option>
+          </select>
+        </div>
+      </form>
+
+      <section class="panel result" aria-live="polite">
+        <div class="result-card">
+          <div>
+            <span class="price" id="result-price">$19</span>
+            <h2 id="result-name">GitHub Pages Storefront Starter</h2>
+            <p class="note" id="result-best">A buyer-ready template and launch checklist for one small static storefront.</p>
+          </div>
+          <div class="meta">
+            <div>
+              <strong>Type</strong>
+              <span id="result-type">Digital product</span>
+            </div>
+            <div>
+              <strong>Delivery</strong>
+              <span id="result-delivery">ZIP or written report</span>
+            </div>
+            <div>
+              <strong>Next step</strong>
+              <span id="result-next">Pay, then send the email note.</span>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="btn" id="checkout-link" href="https://www.paypal.me/sks7178/19">Pay now</a>
+            <a class="btn secondary" id="email-link" href="mailto:sks7178@gmail.com">Email note</a>
+            <a class="btn secondary" id="details-link" href="https://duct-tape2.github.io/storefront-starter/">Details</a>
+            <a class="btn secondary" id="request-link" href="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml">Ask first</a>
+          </div>
+          <div class="field">
+            <label for="order-note">Order note</label>
+            <textarea id="order-note" readonly></textarea>
+          </div>
+          <div class="mini-actions">
+            <button type="button" id="copy-note">Copy note</button>
+            <a class="mini secondary" href="https://duct-tape2.github.io/buy/">All checkouts</a>
+            <a class="mini secondary" href="https://duct-tape2.github.io/offers.json">Offer catalog</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="panel catalog">
+      <h2>All Direct Options</h2>
+      <div class="offer-grid" id="offer-grid"></div>
+    </section>
+
+    <section class="panel scope">
+      <h2>Safe Scope</h2>
+      <p class="note">Small digital products, public-safe reviews, and fixed-price setup services only. Do not request security, vulnerability, exploit, bypass, jailbreak, spam, fake-review, credential, private analytics, or personal-data scraping work.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://duct-tape2.github.io/">duct-tape2 hub</a> - <a href="https://duct-tape2.github.io/buy/">Direct checkout</a> - <a href="mailto:sks7178@gmail.com">sks7178@gmail.com</a>
+  </footer>
+
+  <script>
+    const offers = [
+      {
+        id: "github-pages-storefront-starter",
+        name: "GitHub Pages Storefront Starter",
+        price: 19,
+        type: "Digital product",
+        delivery: "ZIP kit",
+        details: "https://duct-tape2.github.io/storefront-starter/",
+        checkout: "https://www.paypal.me/sks7178/19",
+        email: "mailto:sks7178@gmail.com?subject=Storefront%20Starter%20delivery&body=Offer:%20GitHub%20Pages%20Storefront%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
+        request: "https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=buy-kit.yml",
+        best: "A buyer-ready template and launch checklist for one small static storefront."
+      },
+      {
+        id: "repo-to-revenue-launch-bundle",
+        name: "Repo-to-Revenue Launch Bundle",
+        price: 39,
+        type: "Digital product",
+        delivery: "ZIP bundle",
+        details: "https://duct-tape2.github.io/repo-to-revenue-launch-bundle/",
+        checkout: "https://www.paypal.me/sks7178/39",
+        email: "mailto:sks7178@gmail.com?subject=Repo-to-Revenue%20Launch%20Bundle%20delivery&body=Offer:%20Repo-to-Revenue%20Launch%20Bundle%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
+        request: "https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml",
+        best: "AI Money Stack plus Storefront Starter for indie builders who want a larger launch kit."
+      },
+      {
+        id: "ai-money-stack",
+        name: "AI Money Stack For Indie Builders",
+        price: 25,
+        type: "Digital product",
+        delivery: "ZIP toolkit",
+        details: "https://duct-tape2.github.io/ai-money-stack/",
+        checkout: "https://www.paypal.me/sks7178/25",
+        email: "mailto:sks7178@gmail.com?subject=AI%20Money%20Stack%20delivery&body=Offer:%20AI%20Money%20Stack%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
+        request: "https://github.com/duct-tape2/ai-money-stack/issues/new?template=buy-bundle.yml",
+        best: "Local-first monetization tools for builders using Codex, Claude Code, Cursor, Obsidian, and GitHub."
+      },
+      {
+        id: "shorts-item-generator-starter",
+        name: "Shorts Item Generator Starter",
+        price: 9,
+        type: "Digital product",
+        delivery: "ZIP starter",
+        details: "https://duct-tape2.github.io/shorts-item-generator/",
+        checkout: "https://www.paypal.me/sks7178/9",
+        email: "mailto:sks7178@gmail.com?subject=Shorts%20Item%20Generator%20Starter%20delivery&body=Offer:%20Shorts%20Item%20Generator%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
+        request: "https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml",
+        best: "A small local workflow for shorts hooks, script outlines, thumbnail copy, prompts, and a 30-day calendar."
+      },
+      {
+        id: "easy-japanese-vocabulary-pack",
+        name: "Easy Japanese: Anime and J-Pop Vocabulary Pack",
+        price: 29,
+        type: "Digital product",
+        delivery: "APKG, PDF, CSV",
+        details: "https://duct-tape2.github.io/japanese-anki-pack/",
+        checkout: "https://www.paypal.me/sks7178/29",
+        email: "mailto:sks7178@gmail.com?subject=Japanese%20Anki%20Pack%20delivery&body=Offer:%20Easy%20Japanese%20Vocabulary%20Pack%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
+        request: "https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=buy-pack.yml",
+        best: "A Japanese Anki pack for JLPT N5/N4 learners who want vocabulary, printables, and study files."
+      },
+      {
+        id: "anki-deck-builder-kit",
+        name: "Anki Deck Builder Kit",
+        price: 19,
+        type: "Digital product",
+        delivery: "ZIP kit",
+        details: "https://duct-tape2.github.io/anki-deck-builder-kit/",
+        checkout: "https://www.paypal.me/sks7178/19",
+        email: "mailto:sks7178@gmail.com?subject=Anki%20Deck%20Builder%20Kit%20delivery&body=Offer:%20Anki%20Deck%20Builder%20Kit%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
+        request: "https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml",
+        best: "A creator kit for turning vocabulary rows, CSV exports, and lesson notes into an Anki deck workflow."
+      },
+      {
+        id: "storefront-review",
+        name: "Storefront Review",
+        price: 49,
+        type: "Fixed-price review",
+        delivery: "Written report",
+        details: "https://duct-tape2.github.io/storefront-review/",
+        checkout: "https://www.paypal.me/sks7178/49",
+        email: "mailto:sks7178@gmail.com?subject=Storefront%20Review%20booking&body=Offer:%20Storefront%20Review%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20page%20to%20review:%20",
+        request: "https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml",
+        best: "One public storefront URL that needs checkout clarity, samples, delivery, refund/support, and buyer trust fixes."
+      },
+      {
+        id: "anki-deck-review",
+        name: "Anki Deck Review",
+        price: 49,
+        type: "Fixed-price review",
+        delivery: "Written report",
+        details: "https://duct-tape2.github.io/anki-deck-review/",
+        checkout: "https://www.paypal.me/sks7178/49",
+        email: "mailto:sks7178@gmail.com?subject=Anki%20Deck%20Review%20booking&body=Offer:%20Anki%20Deck%20Review%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADeck%20or%20repo%20URL:%20",
+        request: "https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml",
+        best: "One public deck URL, CSV sample, repo, or learning package that needs a written packaging review."
+      },
+      {
+        id: "repo-to-revenue-setup",
+        name: "Repo-to-Revenue GitHub Pages Setup",
+        price: 99,
+        type: "Fixed-price service",
+        delivery: "Setup work",
+        details: "https://duct-tape2.github.io/ai-money-stack/repo-to-revenue/",
+        checkout: "https://www.paypal.me/sks7178/99",
+        email: "mailto:sks7178@gmail.com?subject=Repo-to-Revenue%20setup%20booking&body=Offer:%20Repo-to-Revenue%20Setup%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20repo%20or%20product%20URL:%20",
+        request: "https://github.com/duct-tape2/ai-money-stack/issues/new?template=repo-to-revenue-setup.yml",
+        best: "One public repo or small product that needs a buyer-ready page, README sales section, sample, and delivery flow."
+      },
+      {
+        id: "anki-deck-packaging-service",
+        name: "Anki Deck Packaging Service",
+        price: 99,
+        type: "Fixed-price service",
+        delivery: "Deck package",
+        details: "https://duct-tape2.github.io/japanese-anki-pack/anki-deck-packaging/",
+        checkout: "https://www.paypal.me/sks7178/99",
+        email: "mailto:sks7178@gmail.com?subject=Anki%20Deck%20Packaging%20booking&body=Offer:%20Anki%20Deck%20Packaging%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20deck,%20CSV,%20or%20repo%20URL:%20",
+        request: "https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=anki-deck-packaging-service.yml",
+        best: "One public-safe learning content package from CSV, Markdown, Notion, Obsidian, or rough Anki material."
+      },
+      {
+        id: "free-tools-thank-you-tip",
+        name: "Free Tools Thank-You Tip",
+        price: 5,
+        type: "Support",
+        delivery: "No delivery required",
+        details: "https://duct-tape2.github.io/buy/",
+        checkout: "https://www.paypal.me/sks7178/5",
+        email: "mailto:sks7178@gmail.com?subject=Free%20Tools%20Thank-You%20Tip&body=Offer:%20Free%20Tools%20Thank-You%20Tip%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0AOptional%20note:%20",
+        request: "https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml",
+        best: "A small thank-you when a free checker, guide, builder, sample, or template helped."
+      }
+    ];
+
+    const state = {
+      budget: "low",
+      mode: "diy"
+    };
+
+    const byId = (id) => offers.find((offer) => offer.id === id);
+    const money = (offer) => `$${offer.price}`;
+
+    function selectOffer() {
+      const goal = document.querySelector("#goal").value;
+      const asset = document.querySelector("#asset").value;
+      const { budget, mode } = state;
+
+      if (goal === "support" || mode === "support" || asset === "free-tool") return byId("free-tools-thank-you-tip");
+      if (goal === "content-shorts") return byId("shorts-item-generator-starter");
+      if (goal === "anki-learn") return byId("easy-japanese-vocabulary-pack");
+      if (goal === "repo-setup") {
+        if (mode === "service" || budget === "high") return byId("repo-to-revenue-setup");
+        if (budget === "mid") return byId("repo-to-revenue-launch-bundle");
+        return byId("github-pages-storefront-starter");
+      }
+      if (goal === "checkout-help") {
+        if (mode === "service" || budget === "high") return byId("repo-to-revenue-setup");
+        return byId("storefront-review");
+      }
+      if (goal === "anki-build") {
+        if (mode === "service" || budget === "high") return byId("anki-deck-packaging-service");
+        if (mode === "review" || asset === "deck") return byId("anki-deck-review");
+        return byId("anki-deck-builder-kit");
+      }
+      if (goal === "storefront-template") {
+        if (mode === "service" || budget === "high") return byId("repo-to-revenue-setup");
+        if (mode === "review" || asset === "page") return byId("storefront-review");
+        if (budget === "mid") return byId("repo-to-revenue-launch-bundle");
+        if (budget === "free") return byId("free-tools-thank-you-tip");
+        return byId("github-pages-storefront-starter");
+      }
+      return byId("github-pages-storefront-starter");
+    }
+
+    function renderResult() {
+      const offer = selectOffer();
+      document.querySelector("#result-price").textContent = money(offer);
+      document.querySelector("#result-name").textContent = offer.name;
+      document.querySelector("#result-best").textContent = offer.best;
+      document.querySelector("#result-type").textContent = offer.type;
+      document.querySelector("#result-delivery").textContent = offer.delivery;
+      document.querySelector("#result-next").textContent = offer.price === 5 ? "Pay, then send an optional note." : "Pay, then send the email note.";
+      document.querySelector("#checkout-link").href = offer.checkout;
+      document.querySelector("#checkout-link").textContent = `Pay ${money(offer)}`;
+      document.querySelector("#email-link").href = offer.email;
+      document.querySelector("#details-link").href = offer.details;
+      document.querySelector("#request-link").href = offer.request;
+      document.querySelector("#order-note").value = [
+        `Offer: ${offer.name}`,
+        "Payment method: PayPal",
+        "Payer name or email prefix:",
+        "Approx payment time:",
+        offer.price === 5 ? "Optional note:" : "Delivery email or public-safe URL:"
+      ].join("\n");
+    }
+
+    function renderCatalog() {
+      const grid = document.querySelector("#offer-grid");
+      grid.innerHTML = offers.map((offer) => `
+        <article class="offer">
+          <strong>${offer.name}</strong>
+          <p class="note">${money(offer)} - ${offer.type}</p>
+          <div class="mini-actions">
+            <a class="mini" href="${offer.checkout}">Pay</a>
+            <a class="mini secondary" href="${offer.details}">Details</a>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    document.querySelector("#goal").addEventListener("change", renderResult);
+    document.querySelector("#asset").addEventListener("change", renderResult);
+
+    document.querySelectorAll(".choice").forEach((button) => {
+      button.addEventListener("click", () => {
+        const group = button.dataset.budget ? "budget" : "mode";
+        state[group] = button.dataset[group];
+        button.parentElement.querySelectorAll(".choice").forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
+        renderResult();
+      });
+    });
+
+    document.querySelector("#copy-note").addEventListener("click", async (event) => {
+      const button = event.currentTarget;
+      try {
+        await navigator.clipboard.writeText(document.querySelector("#order-note").value);
+        button.classList.add("copy-ok");
+        button.textContent = "Copied";
+        setTimeout(() => {
+          button.classList.remove("copy-ok");
+          button.textContent = "Copy note";
+        }, 1200);
+      } catch (error) {
+        document.querySelector("#order-note").select();
+      }
+    });
+
+    renderCatalog();
+    renderResult();
+  </script>
+</body>
+</html>

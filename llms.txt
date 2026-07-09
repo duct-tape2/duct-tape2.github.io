@@ -75,6 +75,7 @@ Each offer has a direct PayPal checkout. After PayPal payment, use the matching 
 ## Free Entry Points
 
 - Storefront Checker: https://duct-tape2.github.io/storefront-checker/
+- Offer Chooser: https://duct-tape2.github.io/tools/offer-chooser/
 - Static Storefront Builder: https://duct-tape2.github.io/tools/static-storefront-builder/
 - PayPal Button Builder: https://duct-tape2.github.io/tools/paypal-button-builder/
 - Digital Product Storefront Audit Checklist: https://duct-tape2.github.io/guides/digital-product-storefront-audit/
