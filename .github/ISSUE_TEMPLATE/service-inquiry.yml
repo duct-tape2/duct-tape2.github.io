@@ -24,6 +24,8 @@ body:
     attributes:
       label: Service
       options:
+        - Storefront Review - $49
+        - Anki Deck Review - $49
         - Repo-to-Revenue GitHub Pages Setup - $99
         - Anki Deck Packaging Service - $99
         - Not sure yet

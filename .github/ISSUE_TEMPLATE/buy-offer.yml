@@ -19,9 +19,13 @@ body:
         - Repo-to-Revenue Launch Bundle - PayPal $39
         - AI Money Stack - PayPal $25
         - GitHub Pages Storefront Starter - PayPal $19
+        - Anki Deck Builder Kit - PayPal $19
         - Easy Japanese Pack - PayPal $29
+        - Storefront Review - PayPal $49
+        - Anki Deck Review - PayPal $49
         - Repo-to-Revenue Setup - PayPal $99
         - Anki Deck Packaging - PayPal $99
+        - Free tools thank-you tip - PayPal $5
         - Not sure yet
     validations:
       required: true
