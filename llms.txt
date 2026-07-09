@@ -14,17 +14,52 @@ Buyer help/request form: https://github.com/duct-tape2/duct-tape2.github.io/issu
 
 ## Paid Offers
 
-- Repo-to-Revenue Launch Bundle ($39): https://duct-tape2.github.io/repo-to-revenue-launch-bundle/
-- GitHub Pages Storefront Starter ($19): https://duct-tape2.github.io/storefront-starter/
-- AI Money Stack For Indie Builders ($25): https://duct-tape2.github.io/ai-money-stack/
-- Shorts Item Generator Starter ($9): https://duct-tape2.github.io/shorts-item-generator/
-- Easy Japanese: Anime and J-Pop Vocabulary Pack ($29): https://duct-tape2.github.io/japanese-anki-pack/
-- Anki Deck Builder Kit ($19): https://duct-tape2.github.io/anki-deck-builder-kit/
-- Storefront Review ($49): https://duct-tape2.github.io/storefront-review/
-- Anki Deck Review ($49): https://duct-tape2.github.io/anki-deck-review/
-- Repo-to-Revenue GitHub Pages Setup ($99): https://duct-tape2.github.io/ai-money-stack/repo-to-revenue/
-- Anki Deck Packaging Service ($99): https://duct-tape2.github.io/japanese-anki-pack/anki-deck-packaging/
-- Free Tools Thank-You Tip ($5): https://www.paypal.me/sks7178/5
+Each offer has a direct PayPal checkout. After PayPal payment, use the matching Email note button on the direct checkout page or the `email_note_url` in `offers.json` so the order can be matched to the right ZIP, review, or service.
+
+- Repo-to-Revenue Launch Bundle ($39)
+  Details: https://duct-tape2.github.io/repo-to-revenue-launch-bundle/
+  Checkout: https://www.paypal.me/sks7178/39
+  Request/help: https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml
+- GitHub Pages Storefront Starter ($19)
+  Details: https://duct-tape2.github.io/storefront-starter/
+  Checkout: https://www.paypal.me/sks7178/19
+  Request/help: https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=buy-kit.yml
+- AI Money Stack For Indie Builders ($25)
+  Details: https://duct-tape2.github.io/ai-money-stack/
+  Checkout: https://www.paypal.me/sks7178/25
+  Request/help: https://github.com/duct-tape2/ai-money-stack/issues/new?template=buy-bundle.yml
+- Shorts Item Generator Starter ($9)
+  Details: https://duct-tape2.github.io/shorts-item-generator/
+  Checkout: https://www.paypal.me/sks7178/9
+  Request/help: https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml
+- Easy Japanese: Anime and J-Pop Vocabulary Pack ($29)
+  Details: https://duct-tape2.github.io/japanese-anki-pack/
+  Checkout: https://www.paypal.me/sks7178/29
+  Request/help: https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=buy-pack.yml
+- Anki Deck Builder Kit ($19)
+  Details: https://duct-tape2.github.io/anki-deck-builder-kit/
+  Checkout: https://www.paypal.me/sks7178/19
+  Request/help: https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml
+- Storefront Review ($49)
+  Details: https://duct-tape2.github.io/storefront-review/
+  Checkout: https://www.paypal.me/sks7178/49
+  Request/help: https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml
+- Anki Deck Review ($49)
+  Details: https://duct-tape2.github.io/anki-deck-review/
+  Checkout: https://www.paypal.me/sks7178/49
+  Request/help: https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml
+- Repo-to-Revenue GitHub Pages Setup ($99)
+  Details: https://duct-tape2.github.io/ai-money-stack/repo-to-revenue/
+  Checkout: https://www.paypal.me/sks7178/99
+  Request/help: https://github.com/duct-tape2/ai-money-stack/issues/new?template=repo-to-revenue-setup.yml
+- Anki Deck Packaging Service ($99)
+  Details: https://duct-tape2.github.io/japanese-anki-pack/anki-deck-packaging/
+  Checkout: https://www.paypal.me/sks7178/99
+  Request/help: https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=anki-deck-packaging-service.yml
+- Free Tools Thank-You Tip ($5)
+  Details: https://duct-tape2.github.io/buy/
+  Checkout: https://www.paypal.me/sks7178/5
+  Request/help: https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml
 
 ## Free Entry Points
 
