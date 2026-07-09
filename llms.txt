@@ -77,6 +77,7 @@ Each offer has a direct PayPal checkout. After PayPal payment, use the matching 
 - Storefront Checker: https://duct-tape2.github.io/storefront-checker/
 - Static Storefront Builder: https://duct-tape2.github.io/tools/static-storefront-builder/
 - PayPal Button Builder: https://duct-tape2.github.io/tools/paypal-button-builder/
+- Digital Product Storefront Audit Checklist: https://duct-tape2.github.io/guides/digital-product-storefront-audit/
 - GitHub Pages Storefront Guide: https://duct-tape2.github.io/guides/github-pages-storefront/
 - Anki Deck Packaging Guide: https://duct-tape2.github.io/guides/anki-deck-packaging/
 - Storefront Review sample report: https://duct-tape2.github.io/examples/storefront-review-sample/

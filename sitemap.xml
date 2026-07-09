@@ -67,6 +67,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://duct-tape2.github.io/guides/digital-product-storefront-audit/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://duct-tape2.github.io/examples/storefront-starter-case-study/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
