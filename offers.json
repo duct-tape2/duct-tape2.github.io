@@ -1,0 +1,132 @@
+{
+  "site": "https://duct-tape2.github.io/",
+  "updated": "2026-07-09",
+  "contact_email": "sks7178@gmail.com",
+  "direct_checkout_url": "https://duct-tape2.github.io/buy/",
+  "safe_scope": "Small digital products, public-safe reviews, and fixed-price setup services only. No security, vulnerability, exploit, bypass, spam, fake-review, credential, private analytics, or personal-data scraping work.",
+  "privacy_note": "Use public GitHub issues only for public-safe questions. Send delivery email, payer name/email prefix, approximate payment time, and private project context by email.",
+  "offers": [
+    {
+      "id": "repo-to-revenue-launch-bundle",
+      "name": "Repo-to-Revenue Launch Bundle",
+      "type": "digital_product",
+      "price_usd": 39,
+      "details_url": "https://duct-tape2.github.io/repo-to-revenue-launch-bundle/",
+      "checkout_url": "https://www.paypal.me/sks7178/39",
+      "email_note_url": "mailto:sks7178@gmail.com?subject=Repo-to-Revenue%20Launch%20Bundle%20delivery&body=Offer:%20Repo-to-Revenue%20Launch%20Bundle%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
+      "best_for": "Indie builders who want AI Money Stack plus GitHub Pages Storefront Starter in one launch bundle.",
+      "refund_support": "14-day refund if the ZIP does not unzip, one of the included paid ZIPs is missing, or manifest hashes do not match. No revenue guarantees."
+    },
+    {
+      "id": "github-pages-storefront-starter",
+      "name": "GitHub Pages Storefront Starter",
+      "type": "digital_product",
+      "price_usd": 19,
+      "details_url": "https://duct-tape2.github.io/storefront-starter/",
+      "checkout_url": "https://www.paypal.me/sks7178/19",
+      "email_note_url": "mailto:sks7178@gmail.com?subject=Storefront%20Starter%20delivery&body=Offer:%20GitHub%20Pages%20Storefront%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
+      "sample_url": "https://duct-tape2.github.io/storefront-starter/free-checklist.md?sample=1",
+      "request_url": "https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=buy-kit.yml",
+      "best_for": "Small repo owners who need a buyer-ready GitHub Pages storefront template and launch checklist.",
+      "refund_support": "14-day refund if the ZIP cannot be opened or listed template/checklist files are missing. No traffic, conversion, or revenue guarantee."
+    },
+    {
+      "id": "ai-money-stack",
+      "name": "AI Money Stack For Indie Builders",
+      "type": "digital_product",
+      "price_usd": 25,
+      "details_url": "https://duct-tape2.github.io/ai-money-stack/",
+      "checkout_url": "https://www.paypal.me/sks7178/25",
+      "email_note_url": "mailto:sks7178@gmail.com?subject=AI%20Money%20Stack%20delivery&body=Offer:%20AI%20Money%20Stack%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
+      "sample_url": "https://duct-tape2.github.io/examples/ai-money-stack-sample-output/",
+      "request_url": "https://github.com/duct-tape2/ai-money-stack/issues/new?template=buy-bundle.yml",
+      "best_for": "Builders using Codex, Claude Code, Cursor, Obsidian, and GitHub who want local-first monetization tools.",
+      "refund_support": "14-day refund if the tools do not run on macOS 13+ with Python 3. No revenue guarantees."
+    },
+    {
+      "id": "easy-japanese-vocabulary-pack",
+      "name": "Easy Japanese: Anime and J-Pop Vocabulary Pack",
+      "type": "digital_product",
+      "price_usd": 29,
+      "details_url": "https://duct-tape2.github.io/japanese-anki-pack/",
+      "checkout_url": "https://www.paypal.me/sks7178/29",
+      "email_note_url": "mailto:sks7178@gmail.com?subject=Japanese%20Anki%20Pack%20delivery&body=Offer:%20Easy%20Japanese%20Vocabulary%20Pack%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
+      "sample_url": "https://duct-tape2.github.io/examples/japanese-anki-sample-deck/",
+      "request_url": "https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=buy-pack.yml",
+      "best_for": "JLPT N5/N4 learners who want 84 lessons, a 402-note Anki deck, printable PDF, and CSV study files.",
+      "refund_support": "14-day refund if the ZIP does not unzip, the Anki deck does not import into Anki 24.x, or there is a major factual issue in the cards."
+    },
+    {
+      "id": "anki-deck-builder-kit",
+      "name": "Anki Deck Builder Kit",
+      "type": "digital_product",
+      "price_usd": 19,
+      "details_url": "https://duct-tape2.github.io/anki-deck-builder-kit/",
+      "checkout_url": "https://www.paypal.me/sks7178/19",
+      "email_note_url": "mailto:sks7178@gmail.com?subject=Anki%20Deck%20Builder%20Kit%20delivery&body=Offer:%20Anki%20Deck%20Builder%20Kit%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
+      "sample_url": "https://duct-tape2.github.io/downloads/anki-deck-builder-kit-free-preview.md",
+      "best_for": "Creators turning vocabulary rows, CSV exports, lesson notes, or language-learning outlines into an Anki deck workflow.",
+      "refund_support": "14-day refund if the ZIP cannot be opened, the sample deck cannot be imported into Anki 24.x, or a listed file is missing."
+    },
+    {
+      "id": "storefront-review",
+      "name": "Storefront Review",
+      "type": "fixed_price_review",
+      "price_usd": 49,
+      "details_url": "https://duct-tape2.github.io/storefront-review/",
+      "checkout_url": "https://www.paypal.me/sks7178/49",
+      "email_note_url": "mailto:sks7178@gmail.com?subject=Storefront%20Review%20booking&body=Offer:%20Storefront%20Review%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20page%20to%20review:%20",
+      "sample_url": "https://duct-tape2.github.io/examples/storefront-review-sample/",
+      "request_url": "https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml",
+      "best_for": "One public storefront URL that needs payment clarity, samples, delivery, refund/support, and buyer trust checks.",
+      "refund_support": "Refund if the written review cannot be delivered. After delivery, one small clarification or correction pass is included within 7 days."
+    },
+    {
+      "id": "anki-deck-review",
+      "name": "Anki Deck Review",
+      "type": "fixed_price_review",
+      "price_usd": 49,
+      "details_url": "https://duct-tape2.github.io/anki-deck-review/",
+      "checkout_url": "https://www.paypal.me/sks7178/49",
+      "email_note_url": "mailto:sks7178@gmail.com?subject=Anki%20Deck%20Review%20booking&body=Offer:%20Anki%20Deck%20Review%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADeck%20or%20repo%20URL:%20",
+      "sample_url": "https://duct-tape2.github.io/examples/anki-deck-review-sample/",
+      "request_url": "https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml",
+      "best_for": "One public deck URL, CSV sample, GitHub repo, or public-safe content package that needs a written Anki packaging review.",
+      "refund_support": "Refund if the written review cannot be delivered. After delivery, one small clarification or correction pass is included within 7 days."
+    },
+    {
+      "id": "repo-to-revenue-setup",
+      "name": "Repo-to-Revenue GitHub Pages Setup",
+      "type": "fixed_price_service",
+      "price_usd": 99,
+      "details_url": "https://duct-tape2.github.io/ai-money-stack/repo-to-revenue/",
+      "checkout_url": "https://www.paypal.me/sks7178/99",
+      "email_note_url": "mailto:sks7178@gmail.com?subject=Repo-to-Revenue%20setup%20booking&body=Offer:%20Repo-to-Revenue%20Setup%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20repo%20or%20product%20URL:%20",
+      "request_url": "https://github.com/duct-tape2/ai-money-stack/issues/new?template=repo-to-revenue-setup.yml",
+      "best_for": "One existing public repo or small digital product that needs a buyer-ready page, README sales section, sample, and delivery flow.",
+      "refund_support": "Refund before work starts if the project is not a fit. After work starts, refund only if the agreed setup is not delivered."
+    },
+    {
+      "id": "anki-deck-packaging-service",
+      "name": "Anki Deck Packaging Service",
+      "type": "fixed_price_service",
+      "price_usd": 99,
+      "details_url": "https://duct-tape2.github.io/japanese-anki-pack/anki-deck-packaging/",
+      "checkout_url": "https://www.paypal.me/sks7178/99",
+      "email_note_url": "mailto:sks7178@gmail.com?subject=Anki%20Deck%20Packaging%20booking&body=Offer:%20Anki%20Deck%20Packaging%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20deck,%20CSV,%20or%20repo%20URL:%20",
+      "request_url": "https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=anki-deck-packaging-service.yml",
+      "best_for": "One public-safe learning content package from CSV, Markdown, Notion, Obsidian, or rough Anki material.",
+      "refund_support": "Refund before work starts if the project is not a fit. After work starts, refund only if the agreed package is not delivered."
+    },
+    {
+      "id": "free-tools-thank-you-tip",
+      "name": "Free Tools Thank-You Tip",
+      "type": "support_product",
+      "price_usd": 5,
+      "details_url": "https://duct-tape2.github.io/buy/",
+      "checkout_url": "https://www.paypal.me/sks7178/5",
+      "best_for": "People who used a free checker, template, sample deck, guide, or release asset and want to support maintenance.",
+      "refund_support": "Refund if the thank-you ZIP cannot be opened or the thank-you file is missing. No service or priority support is included."
+    }
+  ]
+}

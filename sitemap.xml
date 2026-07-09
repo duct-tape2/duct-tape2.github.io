@@ -13,6 +13,18 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://duct-tape2.github.io/offers.json</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://duct-tape2.github.io/llms.txt</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://duct-tape2.github.io/repo-to-revenue-launch-bundle/</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>

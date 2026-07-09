@@ -1,0 +1,40 @@
+# duct-tape2
+
+Small digital products, public-safe reviews, and fixed-price setup services for indie builders, GitHub Pages storefronts, and Anki deck packaging.
+
+Main site: https://duct-tape2.github.io/
+
+Direct checkout: https://duct-tape2.github.io/buy/
+
+Machine-readable offer catalog: https://duct-tape2.github.io/offers.json
+
+Contact: sks7178@gmail.com
+
+## Paid Offers
+
+- Repo-to-Revenue Launch Bundle ($39): https://duct-tape2.github.io/repo-to-revenue-launch-bundle/
+- GitHub Pages Storefront Starter ($19): https://duct-tape2.github.io/storefront-starter/
+- AI Money Stack For Indie Builders ($25): https://duct-tape2.github.io/ai-money-stack/
+- Easy Japanese: Anime and J-Pop Vocabulary Pack ($29): https://duct-tape2.github.io/japanese-anki-pack/
+- Anki Deck Builder Kit ($19): https://duct-tape2.github.io/anki-deck-builder-kit/
+- Storefront Review ($49): https://duct-tape2.github.io/storefront-review/
+- Anki Deck Review ($49): https://duct-tape2.github.io/anki-deck-review/
+- Repo-to-Revenue GitHub Pages Setup ($99): https://duct-tape2.github.io/ai-money-stack/repo-to-revenue/
+- Anki Deck Packaging Service ($99): https://duct-tape2.github.io/japanese-anki-pack/anki-deck-packaging/
+- Free Tools Thank-You Tip ($5): https://www.paypal.me/sks7178/5
+
+## Free Entry Points
+
+- Storefront Checker: https://duct-tape2.github.io/storefront-checker/
+- Static Storefront Builder: https://duct-tape2.github.io/tools/static-storefront-builder/
+- PayPal Button Builder: https://duct-tape2.github.io/tools/paypal-button-builder/
+- GitHub Pages Storefront Guide: https://duct-tape2.github.io/guides/github-pages-storefront/
+- Anki Deck Packaging Guide: https://duct-tape2.github.io/guides/anki-deck-packaging/
+- Storefront Review sample report: https://duct-tape2.github.io/examples/storefront-review-sample/
+- Anki Deck Review sample report: https://duct-tape2.github.io/examples/anki-deck-review-sample/
+
+## Safe Scope
+
+Public-safe small product work only. Do not request security, vulnerability, exploit, bypass, spam, fake-review, credential, private analytics, or personal-data scraping work.
+
+Use GitHub issues only for public-safe questions. Send delivery email, payer name/email prefix, approximate payment time, and private project context by email.
