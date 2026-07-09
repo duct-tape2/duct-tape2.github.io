@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shorts Item Generator Starter</title>
+  <meta name="description" content="A $9 local-first starter kit that turns one topic line into hooks, a short-form video script, thumbnail copy, a reusable prompt, and a 30-day Shorts calendar.">
+  <link rel="canonical" href="https://duct-tape2.github.io/shorts-item-generator/">
+  <link rel="alternate" type="application/json" href="https://duct-tape2.github.io/offers.json" title="duct-tape2 offer catalog">
+  <link rel="alternate" type="text/plain" href="https://duct-tape2.github.io/llms.txt" title="duct-tape2 LLM-readable offer summary">
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="duct-tape2">
+  <meta property="og:title" content="Shorts Item Generator Starter">
+  <meta property="og:description" content="One topic line to hooks, script outline, thumbnail copy, prompt, and calendar template. Local-first, no-key demo included.">
+  <meta property="og:url" content="https://duct-tape2.github.io/shorts-item-generator/">
+  <meta property="og:image" content="https://duct-tape2.github.io/ai-money-stack/assets/ai-money-stack-1600x900.png">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="900">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shorts Item Generator Starter">
+  <meta name="twitter:description" content="$9 local-first Shorts planning kit for creators and small product owners.">
+  <meta name="twitter:image" content="https://duct-tape2.github.io/ai-money-stack/assets/ai-money-stack-1600x900.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Shorts Item Generator Starter",
+    "description": "A local-first starter kit that turns one topic line into 10 hooks, a 45-60 second script outline, 5 thumbnail copy options, a reusable prompt, and a 30-day Shorts calendar template.",
+    "image": "https://duct-tape2.github.io/ai-money-stack/assets/ai-money-stack-1600x900.png",
+    "brand": {
+      "@type": "Brand",
+      "name": "duct-tape2"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "9",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.paypal.me/sks7178/9"
+    }
+  }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: #181818;
+      background: #f7f5ef;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    a { color: #165e6f; }
+    header {
+      color: #fff;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.06), rgba(0,0,0,.78)),
+        url("https://duct-tape2.github.io/ai-money-stack/assets/ai-money-stack-1600x900.png") center / cover no-repeat;
+    }
+    .wrap {
+      width: min(1040px, 100%);
+      margin: 0 auto;
+      padding: 34px 22px 56px;
+    }
+    header .wrap {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #bae6fd;
+      font-size: 13px;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 840px;
+      margin: 0;
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+    .lead {
+      max-width: 720px;
+      margin: 18px 0 0;
+      color: #eef2f7;
+      font-size: 20px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 26px 0 0;
+    }
+    .btn, .mini {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      font-weight: 850;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .btn {
+      min-height: 48px;
+      padding: 0 18px;
+      border: 1px solid #fff;
+      color: #111;
+      background: #fff;
+    }
+    .btn.secondary {
+      color: #fff;
+      background: rgba(255,255,255,.08);
+    }
+    section {
+      padding: 30px 0;
+      border-bottom: 1px solid #ded9ce;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 28px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .panel {
+      padding: 20px;
+      border: 1px solid #ded9ce;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .panel h3 {
+      margin: 0 0 8px;
+      font-size: 21px;
+    }
+    .panel p, .note { color: #555; }
+    .price {
+      margin: 0 0 12px;
+      font-size: 38px;
+      font-weight: 900;
+    }
+    .mini-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .mini {
+      min-height: 40px;
+      padding: 0 13px;
+      border: 1px solid #165e6f;
+      color: #fff;
+      background: #165e6f;
+      font-size: 14px;
+    }
+    .mini.secondary {
+      color: #165e6f;
+      background: transparent;
+    }
+    pre {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      margin: 14px 0 0;
+      padding: 16px;
+      border-radius: 8px;
+      color: #122029;
+      background: #eef3f1;
+      font-size: 14px;
+    }
+    ul { padding-left: 20px; }
+    li { margin: 7px 0; }
+    footer {
+      padding: 28px 22px 44px;
+      color: #555;
+      text-align: center;
+    }
+    @media (max-width: 760px) {
+      header .wrap { min-height: 76vh; }
+      .grid { grid-template-columns: 1fr; }
+      .btn, .mini { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">Shorts Item Generator Starter</p>
+      <h1>One Topic Line Into A Shorts Planning Pack</h1>
+      <p class="lead">A $9 local-first starter kit for creators and small product owners: hooks, script outline, thumbnail copy, reusable prompt, and a 30-day calendar template. No-key demo included.</p>
+      <div class="actions">
+        <a class="btn" href="https://www.paypal.me/sks7178/9">Buy $9</a>
+        <a class="btn secondary" href="mailto:sks7178@gmail.com?subject=Shorts%20Item%20Generator%20Starter%20delivery&amp;body=Offer:%20Shorts%20Item%20Generator%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20">Email note</a>
+        <a class="btn secondary" href="https://duct-tape2.github.io/buy/">All checkout links</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>What You Get</h2>
+      <div class="grid">
+        <article class="panel">
+          <h3>Local generator</h3>
+          <p>Run a Python CLI locally to generate 10 hooks, one 45-60 second script outline, and 5 thumbnail copy options from one topic line.</p>
+        </article>
+        <article class="panel">
+          <h3>Creator planning files</h3>
+          <p>Includes a reusable prompt, a 30-day Shorts calendar CSV, a creator intake sheet, and a delivery email template.</p>
+        </article>
+        <article class="panel">
+          <h3>No-key demo</h3>
+          <p>The default local mode runs without an API key. Claude API mode is optional if you bring your own key.</p>
+        </article>
+        <article class="panel">
+          <h3>Small safe scope</h3>
+          <p>Built for public-safe creator planning. No spam, fake reviews, private data, credential capture, security work, exploit work, bypass work, or jailbreak content.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Included Demo</h2>
+      <p class="note">The paid ZIP includes this kind of Markdown output. Replace the topic with your niche, product, lesson, or service.</p>
+      <pre># Shorts Item Pack
+
+- Topic: AI tools for solo founders
+- Provider: local-template
+
+## Hooks
+1. Most people learn AI tools for solo founders backwards
+2. Three mistakes beginners make with AI tools for solo founders
+3. Try this AI tools for solo founders trick today
+
+## Script
+0-3s Hook: "If solo creators and small business owners struggle with AI tools for solo founders, start here."
+3-12s Problem: Name the common mistake in one sentence.
+12-30s Fix: Show a simple three-step method viewers can repeat today.</pre>
+    </section>
+
+    <section>
+      <h2>Checkout</h2>
+      <div class="grid">
+        <article class="panel">
+          <p class="price">$9</p>
+          <p>Buy the starter ZIP, then email the delivery note so the PayPal payment can be matched to the right product.</p>
+          <div class="mini-actions">
+            <a class="mini" href="https://www.paypal.me/sks7178/9">Pay $9</a>
+            <a class="mini secondary" href="mailto:sks7178@gmail.com?subject=Shorts%20Item%20Generator%20Starter%20delivery&amp;body=Offer:%20Shorts%20Item%20Generator%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20">Email note</a>
+            <a class="mini secondary" href="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml">Delivery help</a>
+          </div>
+        </article>
+        <article class="panel">
+          <h3>Refund/support</h3>
+          <p>14-day refund if the ZIP does not unzip, <code>shorts_item_generator.py</code> is missing, or the local demo command cannot run with Python 3. No view, subscriber, traffic, revenue, ranking, or platform approval guarantee.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://duct-tape2.github.io/">Full hub</a> - <a href="https://duct-tape2.github.io/buy/">Buy direct</a> - <a href="mailto:sks7178@gmail.com">sks7178@gmail.com</a>
+  </footer>
+</body>
+</html>

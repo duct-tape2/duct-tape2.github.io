@@ -44,6 +44,18 @@
       "refund_support": "14-day refund if the tools do not run on macOS 13+ with Python 3. No revenue guarantees."
     },
     {
+      "id": "shorts-item-generator-starter",
+      "name": "Shorts Item Generator Starter",
+      "type": "digital_product",
+      "price_usd": 9,
+      "details_url": "https://duct-tape2.github.io/shorts-item-generator/",
+      "checkout_url": "https://www.paypal.me/sks7178/9",
+      "email_note_url": "mailto:sks7178@gmail.com?subject=Shorts%20Item%20Generator%20Starter%20delivery&body=Offer:%20Shorts%20Item%20Generator%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
+      "request_url": "https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml",
+      "best_for": "Creators, solo founders, and small product owners who want a local-first starter for YouTube Shorts hooks, script outlines, thumbnail copy, prompts, and a 30-day calendar.",
+      "refund_support": "14-day refund if the ZIP does not unzip, shorts_item_generator.py is missing, or the local demo command cannot run with Python 3. No view, subscriber, traffic, revenue, ranking, or platform approval guarantee."
+    },
+    {
       "id": "easy-japanese-vocabulary-pack",
       "name": "Easy Japanese: Anime and J-Pop Vocabulary Pack",
       "type": "digital_product",
