@@ -322,6 +322,15 @@
       gap: 14px;
       counter-reset: step;
     }
+    .notice {
+      padding: 18px;
+      border: 1px solid #1b6a7a;
+      border-radius: 8px;
+      background: #eef9f8;
+    }
+    .notice strong {
+      color: #124c59;
+    }
     .step {
       position: relative;
       min-height: 150px;
@@ -366,7 +375,7 @@
     <div class="wrap">
       <p class="eyebrow">duct-tape2 direct checkout</p>
       <h1>Buy The Kit, Review, Or Setup Service</h1>
-      <p class="lead">Direct PayPal checkout links plus public-safe delivery paths. Use this page when you already know what you want and need the shortest route from payment to delivery.</p>
+      <p class="lead">Direct PayPal checkout links plus public-safe delivery paths. PayPal payments are manually matched, so send the email note after payment to receive the right ZIP, report, or service intake.</p>
       <div class="actions">
         <a class="btn" href="#checkout">Go to checkout links</a>
         <a class="btn secondary" href="https://duct-tape2.github.io/">Full product hub</a>
@@ -375,6 +384,12 @@
   </header>
 
   <main class="wrap">
+    <section aria-label="Manual delivery notice">
+      <div class="notice">
+        <strong>Important:</strong> PayPal.Me shows the payment amount, not a reliable product selector. After paying, use the matching Email note button and include the offer name, payer name or email prefix, approximate payment time, and delivery email. This keeps private payment details out of GitHub and prevents $19/$49 orders from being matched to the wrong item.
+      </div>
+    </section>
+
     <section id="checkout">
       <h2>Checkout Links</h2>
       <div class="grid">
@@ -517,7 +532,7 @@
       <div class="steps">
         <article class="step">
           <h3>Email private delivery context</h3>
-          <p>Email the product or service name, delivery email, and public-safe payment confirmation. Do not post full transaction IDs in public GitHub issues.</p>
+          <p>Email the offer name, payer name or email prefix, approximate payment time, and delivery email. Do not post full transaction IDs in public GitHub issues.</p>
           <div class="mini-actions">
             <a class="mini" href="mailto:sks7178@gmail.com?subject=paid%20order%20delivery">Email delivery note</a>
           </div>
