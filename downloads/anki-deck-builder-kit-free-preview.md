@@ -57,6 +57,15 @@ Buy the $19 kit if you want the actual builder script, generated sample deck, an
 Book the $49 review if you already have a deck and want packaging feedback:
 https://duct-tape2.github.io/anki-deck-review/
 
+Preview the $49 Anki Deck Review sample report:
+https://duct-tape2.github.io/examples/anki-deck-review-sample/
+
+PayPal $49 review checkout:
+https://www.paypal.me/sks7178/49
+
+Public-safe deck review request:
+https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml
+
 Book the $99 packaging service if you want me to package your original learning notes into a clean sample/release workflow:
 https://duct-tape2.github.io/japanese-anki-pack/anki-deck-packaging/
 
