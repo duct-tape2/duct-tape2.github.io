@@ -25,6 +25,7 @@ Direct PayPal checkouts:
 - Setup Service ($99): https://www.paypal.me/sks7178/99
 - Japanese Anki Pack ($29): https://www.paypal.me/sks7178/29
 - AI Money Stack ($25): https://www.paypal.me/sks7178/25
+- Anki Deck Builder Kit ($19): https://www.paypal.me/sks7178/19
 - Storefront Starter ($19): https://www.paypal.me/sks7178/19
 - Free tools thank-you tip ($5): https://www.paypal.me/sks7178/5
 
@@ -38,6 +39,7 @@ Current DIY kit:
 - PayPal button builder: https://duct-tape2.github.io/tools/paypal-button-builder/
 - Live storefront example: https://duct-tape2.github.io/examples/storefront-starter-case-study/
 - Live AI Money sample output example: https://duct-tape2.github.io/examples/ai-money-stack-sample-output/
+- Anki Deck Builder Kit: https://duct-tape2.github.io/anki-deck-builder-kit/
 - Free Anki deck packaging guide: https://duct-tape2.github.io/guides/anki-deck-packaging/
 - Live Japanese Anki sample deck example: https://duct-tape2.github.io/examples/japanese-anki-sample-deck/
 - Storefront Starter delivery help: https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=buy-kit.yml
