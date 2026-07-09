@@ -17,6 +17,7 @@ Buyer help/request form: https://github.com/duct-tape2/duct-tape2.github.io/issu
 Each offer has a direct PayPal checkout. After PayPal payment, use the matching Email note button on the direct checkout page or the `email_note_url` in `offers.json` so the order can be matched to the right ZIP, review, or service.
 
 - Repo-to-Revenue Launch Bundle ($39)
+  Summary: AI Money Stack with the Safe Daily Revenue Routine plus GitHub Pages Storefront Starter in one launch bundle.
   Details: https://duct-tape2.github.io/repo-to-revenue-launch-bundle/
   Checkout: https://www.paypal.me/sks7178/39
   Email note: mailto:sks7178@gmail.com?subject=Repo-to-Revenue%20Launch%20Bundle%20delivery&body=Offer:%20Repo-to-Revenue%20Launch%20Bundle%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20
@@ -27,6 +28,7 @@ Each offer has a direct PayPal checkout. After PayPal payment, use the matching 
   Email note: mailto:sks7178@gmail.com?subject=Storefront%20Starter%20delivery&body=Offer:%20GitHub%20Pages%20Storefront%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20
   Request/help: https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=buy-kit.yml
 - AI Money Stack For Indie Builders ($25)
+  Summary: Five local-first tools plus the Safe Daily Revenue Routine for checking real money signals, account gates, product health, and safe prize/bounty scans.
   Details: https://duct-tape2.github.io/ai-money-stack/
   Checkout: https://www.paypal.me/sks7178/25
   Email note: mailto:sks7178@gmail.com?subject=AI%20Money%20Stack%20delivery&body=Offer:%20AI%20Money%20Stack%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20

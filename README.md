@@ -19,14 +19,14 @@ Public-safe inquiry paths:
 
 Direct PayPal checkouts:
 
-- Repo-to-Revenue Launch Bundle ($39): https://www.paypal.me/sks7178/39
+- Repo-to-Revenue Launch Bundle ($39, includes Safe Daily Revenue Routine): https://www.paypal.me/sks7178/39
 - Storefront Review ($49): https://www.paypal.me/sks7178/49
 - Storefront Review sample report: https://duct-tape2.github.io/examples/storefront-review-sample/
 - Anki Deck Review ($49): https://www.paypal.me/sks7178/49
 - Anki Deck Review sample report: https://duct-tape2.github.io/examples/anki-deck-review-sample/
 - Setup Service ($99): https://www.paypal.me/sks7178/99
 - Japanese Anki Pack ($29): https://www.paypal.me/sks7178/29
-- AI Money Stack ($25): https://www.paypal.me/sks7178/25
+- AI Money Stack ($25, includes Safe Daily Revenue Routine): https://www.paypal.me/sks7178/25
 - Shorts Item Generator Starter ($9): https://www.paypal.me/sks7178/9
 - Anki Deck Builder Kit ($19): https://www.paypal.me/sks7178/19
 - Storefront Starter ($19): https://www.paypal.me/sks7178/19
@@ -34,7 +34,7 @@ Direct PayPal checkouts:
 
 Current DIY kit:
 
-- Repo-to-Revenue Launch Bundle: https://duct-tape2.github.io/repo-to-revenue-launch-bundle/
+- Repo-to-Revenue Launch Bundle with Safe Daily Revenue Routine: https://duct-tape2.github.io/repo-to-revenue-launch-bundle/
 - GitHub Pages Storefront Starter: https://duct-tape2.github.io/storefront-starter/
 - Offer Chooser: https://duct-tape2.github.io/tools/offer-chooser/
 - Digital Product Storefront Audit Checklist: https://duct-tape2.github.io/guides/digital-product-storefront-audit/
