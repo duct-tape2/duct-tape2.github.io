@@ -21,7 +21,9 @@ Direct PayPal checkouts:
 
 - Repo-to-Revenue Launch Bundle ($39): https://www.paypal.me/sks7178/39
 - Storefront Review ($49): https://www.paypal.me/sks7178/49
+- Storefront Review sample report: https://duct-tape2.github.io/examples/storefront-review-sample/
 - Anki Deck Review ($49): https://www.paypal.me/sks7178/49
+- Anki Deck Review sample report: https://duct-tape2.github.io/examples/anki-deck-review-sample/
 - Setup Service ($99): https://www.paypal.me/sks7178/99
 - Japanese Anki Pack ($29): https://www.paypal.me/sks7178/29
 - AI Money Stack ($25): https://www.paypal.me/sks7178/25
