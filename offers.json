@@ -14,6 +14,7 @@
       "details_url": "https://duct-tape2.github.io/repo-to-revenue-launch-bundle/",
       "checkout_url": "https://www.paypal.me/sks7178/39",
       "email_note_url": "mailto:sks7178@gmail.com?subject=Repo-to-Revenue%20Launch%20Bundle%20delivery&body=Offer:%20Repo-to-Revenue%20Launch%20Bundle%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
+      "request_url": "https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml",
       "best_for": "Indie builders who want AI Money Stack plus GitHub Pages Storefront Starter in one launch bundle.",
       "refund_support": "14-day refund if the ZIP does not unzip, one of the included paid ZIPs is missing, or manifest hashes do not match. No revenue guarantees."
     },
@@ -77,6 +78,7 @@
       "checkout_url": "https://www.paypal.me/sks7178/19",
       "email_note_url": "mailto:sks7178@gmail.com?subject=Anki%20Deck%20Builder%20Kit%20delivery&body=Offer:%20Anki%20Deck%20Builder%20Kit%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
       "sample_url": "https://duct-tape2.github.io/downloads/anki-deck-builder-kit-free-preview.md",
+      "request_url": "https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml",
       "best_for": "Creators turning vocabulary rows, CSV exports, lesson notes, or language-learning outlines into an Anki deck workflow.",
       "refund_support": "14-day refund if the ZIP cannot be opened, the sample deck cannot be imported into Anki 24.x, or a listed file is missing."
     },
@@ -137,6 +139,8 @@
       "price_usd": 5,
       "details_url": "https://duct-tape2.github.io/buy/",
       "checkout_url": "https://www.paypal.me/sks7178/5",
+      "email_note_url": "mailto:sks7178@gmail.com?subject=Free%20Tools%20Thank-You%20Tip&body=Offer:%20Free%20Tools%20Thank-You%20Tip%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0AOptional%20note:%20",
+      "request_url": "https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml",
       "best_for": "People who used a free checker, template, sample deck, guide, or release asset and want to support maintenance.",
       "refund_support": "Refund if the thank-you ZIP cannot be opened or the thank-you file is missing. No service or priority support is included."
     }
