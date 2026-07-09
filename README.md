@@ -40,6 +40,7 @@ Current DIY kit:
 - Live storefront example: https://duct-tape2.github.io/examples/storefront-starter-case-study/
 - Live AI Money sample output example: https://duct-tape2.github.io/examples/ai-money-stack-sample-output/
 - Anki Deck Builder Kit: https://duct-tape2.github.io/anki-deck-builder-kit/
+- Anki Deck Builder Kit free preview: https://duct-tape2.github.io/downloads/anki-deck-builder-kit-free-preview.md
 - Free Anki deck packaging guide: https://duct-tape2.github.io/guides/anki-deck-packaging/
 - Live Japanese Anki sample deck example: https://duct-tape2.github.io/examples/japanese-anki-sample-deck/
 - Storefront Starter delivery help: https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=buy-kit.yml
