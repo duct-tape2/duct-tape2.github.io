@@ -8,25 +8,25 @@ body:
       value: |
         Use this form for delivery help after buying, or for public-safe pre-purchase questions.
 
-        Do not post full PayPal transaction IDs, payment screenshots, passwords, API keys, private customer data, or private files here.
+        Do not post payment records, screenshots, passwords, API keys, private customer data, or private files here.
 
-        After payment, email sks7178@gmail.com with your delivery email and a short public-safe confirmation. I may ask for a partial transaction reference by email only.
+        Payhip delivers digital products automatically. For services, follow the listing intake instructions. The $49 reviews start with a request before payment.
   - type: dropdown
     id: product
     attributes:
       label: Product or booking
       options:
-        - Repo-to-Revenue Launch Bundle - PayPal $39
-        - AI Money Stack - PayPal $25
-        - Shorts Item Generator Starter - PayPal $9
-        - GitHub Pages Storefront Starter - PayPal $19
-        - Anki Deck Builder Kit - PayPal $19
-        - Easy Japanese Pack - PayPal $29
-        - Storefront Review - PayPal $49
-        - Anki Deck Review - PayPal $49
-        - Repo-to-Revenue Setup - PayPal $99
-        - Anki Deck Packaging - PayPal $99
-        - Free tools thank-you tip - PayPal $5
+        - Repo-to-Revenue Launch Bundle - Payhip $39
+        - AI Money Stack - Payhip $25
+        - Shorts Item Generator Starter - Payhip $9
+        - GitHub Pages Storefront Starter - Payhip $19
+        - Anki Deck Builder Kit - Payhip $19
+        - Easy Japanese Pack - Payhip $29
+        - Storefront Review - request first ($49)
+        - Anki Deck Review - request first ($49)
+        - Repo-to-Revenue Setup - Payhip $99
+        - Anki Deck Packaging - Payhip $99
+        - Free tools thank-you tip - Payhip $5
         - Not sure yet
     validations:
       required: true
@@ -35,7 +35,9 @@ body:
     attributes:
       label: What do you need?
       options:
-        - Delivery after payment
+        - Payhip download or delivery problem
+        - Service intake question
+        - Review request before payment
         - Pre-purchase question
         - Download or link problem
         - Refund or support question
@@ -46,14 +48,14 @@ body:
     attributes:
       label: Public-safe note
       description: Do not include private payment details. A short description is enough.
-      placeholder: I paid for the $29 pack and emailed private confirmation, or I need help choosing the right offer.
+      placeholder: Payhip delivery failed for the $29 pack, or I need help choosing the right offer.
     validations:
       required: true
   - type: input
     id: email-sent
     attributes:
-      label: Did you email private delivery details?
-      description: Answer yes/no. Do not write the delivery email address if you prefer to keep it private.
+      label: Did you email private support or intake details?
+      description: Answer yes/no. Do not write a private email address or payment record here.
       placeholder: yes
     validations:
       required: false

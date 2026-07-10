@@ -35,27 +35,27 @@ Checkout availability varies by offer. The two $99 setup services use Payhip int
   Request/help: https://github.com/duct-tape2/ai-money-stack/issues/new?template=buy-bundle.yml
 - Shorts Item Generator Starter ($9)
   Details: https://duct-tape2.github.io/shorts-item-generator/
-  Checkout: https://www.paypal.me/sks7178/9
+  Checkout: https://payhip.com/b/aUOu1
   Email note: mailto:sks7178@gmail.com?subject=Shorts%20Item%20Generator%20Starter%20delivery&body=Offer:%20Shorts%20Item%20Generator%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20
   Request/help: https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml
 - Easy Japanese: Anime and J-Pop Vocabulary Pack ($29)
   Details: https://duct-tape2.github.io/japanese-anki-pack/
-  Checkout: https://www.paypal.me/sks7178/29
+  Checkout: https://payhip.com/b/D0mhb
   Email note: mailto:sks7178@gmail.com?subject=Japanese%20Anki%20Pack%20delivery&body=Offer:%20Easy%20Japanese%20Vocabulary%20Pack%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20
   Request/help: https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=buy-pack.yml
 - Anki Deck Builder Kit ($19)
   Details: https://duct-tape2.github.io/anki-deck-builder-kit/
-  Checkout: https://www.paypal.me/sks7178/19
+  Checkout: https://payhip.com/b/cSObV
   Email note: mailto:sks7178@gmail.com?subject=Anki%20Deck%20Builder%20Kit%20delivery&body=Offer:%20Anki%20Deck%20Builder%20Kit%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20
   Request/help: https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml
 - Storefront Review ($49)
   Details: https://duct-tape2.github.io/storefront-review/
-  Checkout: https://www.paypal.me/sks7178/49
+  Checkout: https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml
   Email note: mailto:sks7178@gmail.com?subject=Storefront%20Review%20booking&body=Offer:%20Storefront%20Review%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20page%20to%20review:%20
   Request/help: https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml
 - Anki Deck Review ($49)
   Details: https://duct-tape2.github.io/anki-deck-review/
-  Checkout: https://www.paypal.me/sks7178/49
+  Checkout: https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml
   Email note: mailto:sks7178@gmail.com?subject=Anki%20Deck%20Review%20booking&body=Offer:%20Anki%20Deck%20Review%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADeck%20or%20repo%20URL:%20
   Request/help: https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml
 - Repo-to-Revenue GitHub Pages Setup ($99)
@@ -70,7 +70,7 @@ Checkout availability varies by offer. The two $99 setup services use Payhip int
   Request/help: https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=anki-deck-packaging-service.yml
 - Free Tools Thank-You Tip ($5)
   Details: https://duct-tape2.github.io/buy/
-  Checkout: https://www.paypal.me/sks7178/5
+  Checkout: https://payhip.com/b/0LKEF
   Email note: mailto:sks7178@gmail.com?subject=Free%20Tools%20Thank-You%20Tip&body=Offer:%20Free%20Tools%20Thank-You%20Tip%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0AOptional%20note:%20
   Request/help: https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml
 

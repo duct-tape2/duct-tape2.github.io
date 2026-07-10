@@ -419,7 +419,7 @@
         type: "Digital product",
         delivery: "ZIP starter",
         details: "https://duct-tape2.github.io/shorts-item-generator/",
-        checkout: "https://www.paypal.me/sks7178/9",
+        checkout: "https://payhip.com/b/aUOu1",
         email: "mailto:sks7178@gmail.com?subject=Shorts%20Item%20Generator%20Starter%20delivery&body=Offer:%20Shorts%20Item%20Generator%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
         request: "https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml",
         best: "A small local workflow for shorts hooks, script outlines, thumbnail copy, prompts, and a 30-day calendar."
@@ -431,7 +431,7 @@
         type: "Digital product",
         delivery: "APKG, PDF, CSV",
         details: "https://duct-tape2.github.io/japanese-anki-pack/",
-        checkout: "https://www.paypal.me/sks7178/29",
+        checkout: "https://payhip.com/b/D0mhb",
         email: "mailto:sks7178@gmail.com?subject=Japanese%20Anki%20Pack%20delivery&body=Offer:%20Easy%20Japanese%20Vocabulary%20Pack%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
         request: "https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=buy-pack.yml",
         best: "A Japanese Anki pack for JLPT N5/N4 learners who want vocabulary, printables, and study files."
@@ -443,7 +443,7 @@
         type: "Digital product",
         delivery: "ZIP kit",
         details: "https://duct-tape2.github.io/anki-deck-builder-kit/",
-        checkout: "https://www.paypal.me/sks7178/19",
+        checkout: "https://payhip.com/b/cSObV",
         email: "mailto:sks7178@gmail.com?subject=Anki%20Deck%20Builder%20Kit%20delivery&body=Offer:%20Anki%20Deck%20Builder%20Kit%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20",
         request: "https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml",
         best: "A creator kit for turning vocabulary rows, CSV exports, and lesson notes into an Anki deck workflow."
@@ -455,7 +455,7 @@
         type: "Fixed-price review",
         delivery: "Written report",
         details: "https://duct-tape2.github.io/storefront-review/",
-        checkout: "https://www.paypal.me/sks7178/49",
+        checkout: "https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml",
         email: "mailto:sks7178@gmail.com?subject=Storefront%20Review%20booking&body=Offer:%20Storefront%20Review%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20page%20to%20review:%20",
         request: "https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml",
         best: "One public storefront URL that needs checkout clarity, samples, delivery, refund/support, and buyer trust fixes."
@@ -467,7 +467,7 @@
         type: "Fixed-price review",
         delivery: "Written report",
         details: "https://duct-tape2.github.io/anki-deck-review/",
-        checkout: "https://www.paypal.me/sks7178/49",
+        checkout: "https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml",
         email: "mailto:sks7178@gmail.com?subject=Anki%20Deck%20Review%20booking&body=Offer:%20Anki%20Deck%20Review%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADeck%20or%20repo%20URL:%20",
         request: "https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml",
         best: "One public deck URL, CSV sample, repo, or learning package that needs a written packaging review."
@@ -503,7 +503,7 @@
         type: "Support",
         delivery: "No delivery required",
         details: "https://duct-tape2.github.io/buy/",
-        checkout: "https://www.paypal.me/sks7178/5",
+        checkout: "https://payhip.com/b/0LKEF",
         email: "mailto:sks7178@gmail.com?subject=Free%20Tools%20Thank-You%20Tip&body=Offer:%20Free%20Tools%20Thank-You%20Tip%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0AOptional%20note:%20",
         request: "https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml",
         best: "A small thank-you when a free checker, guide, builder, sample, or template helped."
@@ -557,9 +557,14 @@
       document.querySelector("#result-best").textContent = offer.best;
       document.querySelector("#result-type").textContent = offer.type;
       document.querySelector("#result-delivery").textContent = offer.delivery;
-      document.querySelector("#result-next").textContent = offer.price === 5 ? "Pay, then send an optional note." : "Pay, then send the email note.";
+      const requestFirst = offer.type === "Fixed-price review";
+      document.querySelector("#result-next").textContent = requestFirst
+        ? "Submit the public-safe request first; payment follows scope confirmation."
+        : offer.price === 5
+          ? "Pay, then send an optional note."
+          : "Pay, then send the email note.";
       document.querySelector("#checkout-link").href = offer.checkout;
-      document.querySelector("#checkout-link").textContent = `Pay ${money(offer)}`;
+      document.querySelector("#checkout-link").textContent = requestFirst ? `Request ${money(offer)} review` : `Pay ${money(offer)}`;
       document.querySelector("#email-link").href = offer.email;
       document.querySelector("#details-link").href = offer.details;
       document.querySelector("#request-link").href = offer.request;
@@ -579,7 +584,7 @@
           <strong>${offer.name}</strong>
           <p class="note">${money(offer)} - ${offer.type}</p>
           <div class="mini-actions">
-            <a class="mini" href="${offer.checkout}">Pay</a>
+            <a class="mini" href="${offer.checkout}">${offer.type === "Fixed-price review" ? "Request" : "Pay"}</a>
             <a class="mini secondary" href="${offer.details}">Details</a>
           </div>
         </article>

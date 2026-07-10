@@ -6,7 +6,7 @@ Paid kit:
 https://duct-tape2.github.io/anki-deck-builder-kit/
 
 PayPal checkout:
-https://www.paypal.me/sks7178/19
+https://payhip.com/b/cSObV
 
 All checkout links:
 https://duct-tape2.github.io/buy/
@@ -21,7 +21,7 @@ Sample deck preview:
 https://duct-tape2.github.io/examples/japanese-anki-sample-deck/
 
 Thank-you tip:
-https://www.paypal.me/sks7178/5
+https://payhip.com/b/0LKEF
 
 ## What The Paid Kit Adds
 
@@ -60,8 +60,8 @@ https://duct-tape2.github.io/anki-deck-review/
 Preview the $49 Anki Deck Review sample report:
 https://duct-tape2.github.io/examples/anki-deck-review-sample/
 
-PayPal $49 review checkout:
-https://www.paypal.me/sks7178/49
+Request the $49 review first:
+https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml
 
 Public-safe deck review request:
 https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml
