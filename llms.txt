@@ -14,7 +14,7 @@ Buyer help/request form: https://github.com/duct-tape2/duct-tape2.github.io/issu
 
 ## Paid Offers
 
-Each offer has a direct PayPal checkout. After PayPal payment, use the matching Email note button on the direct checkout page or the `email_note_url` in `offers.json` so the order can be matched to the right ZIP, review, or service.
+Checkout availability varies by offer. The Repo-to-Revenue service uses Payhip intake and checkout. For a PayPal checkout, use the matching Email note button or the `email_note_url` in `offers.json` so the order can be matched to the right ZIP, review, or service.
 
 - Repo-to-Revenue Launch Bundle ($39)
   Summary: AI Money Stack with the Safe Daily Revenue Routine plus GitHub Pages Storefront Starter in one launch bundle.
@@ -60,7 +60,7 @@ Each offer has a direct PayPal checkout. After PayPal payment, use the matching 
   Request/help: https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml
 - Repo-to-Revenue GitHub Pages Setup ($99)
   Details: https://duct-tape2.github.io/ai-money-stack/repo-to-revenue/
-  Checkout: https://www.paypal.me/sks7178/99
+  Checkout: https://payhip.com/b/ZOl1I
   Email note: mailto:sks7178@gmail.com?subject=Repo-to-Revenue%20setup%20booking&body=Offer:%20Repo-to-Revenue%20Setup%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20repo%20or%20product%20URL:%20
   Request/help: https://github.com/duct-tape2/ai-money-stack/issues/new?template=repo-to-revenue-setup.yml
 - Anki Deck Packaging Service ($99)

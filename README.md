@@ -17,14 +17,14 @@ Public-safe inquiry paths:
 - Product delivery email: mailto:sks7178@gmail.com?subject=paid%20digital%20product%20delivery
 - Service booking email: mailto:sks7178@gmail.com?subject=paid%20service%20booking
 
-Direct PayPal checkouts:
+Direct checkout links:
 
 - Repo-to-Revenue Launch Bundle ($39, includes Safe Daily Revenue Routine): https://www.paypal.me/sks7178/39
 - Storefront Review ($49): https://www.paypal.me/sks7178/49
 - Storefront Review sample report: https://duct-tape2.github.io/examples/storefront-review-sample/
 - Anki Deck Review ($49): https://www.paypal.me/sks7178/49
 - Anki Deck Review sample report: https://duct-tape2.github.io/examples/anki-deck-review-sample/
-- Setup Service ($99): https://www.paypal.me/sks7178/99
+- Repo-to-Revenue Setup Service ($99): https://payhip.com/b/ZOl1I
 - Japanese Anki Pack ($29): https://www.paypal.me/sks7178/29
 - AI Money Stack ($25, includes Safe Daily Revenue Routine): https://www.paypal.me/sks7178/25
 - Shorts Item Generator Starter ($9): https://www.paypal.me/sks7178/9
