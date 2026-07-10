@@ -25,6 +25,7 @@ Direct checkout links:
 - Anki Deck Review ($49): https://www.paypal.me/sks7178/49
 - Anki Deck Review sample report: https://duct-tape2.github.io/examples/anki-deck-review-sample/
 - Repo-to-Revenue Setup Service ($99): https://payhip.com/b/ZOl1I
+- Anki Deck Packaging Service ($99): https://payhip.com/b/lytaz
 - Japanese Anki Pack ($29): https://www.paypal.me/sks7178/29
 - AI Money Stack ($25, includes Safe Daily Revenue Routine): https://www.paypal.me/sks7178/25
 - Shorts Item Generator Starter ($9): https://www.paypal.me/sks7178/9
