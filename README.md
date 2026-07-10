@@ -19,7 +19,7 @@ Public-safe inquiry paths:
 
 Direct checkout links:
 
-- Repo-to-Revenue Launch Bundle ($39, includes Safe Daily Revenue Routine): https://www.paypal.me/sks7178/39
+- Repo-to-Revenue Launch Bundle ($39, includes Safe Daily Revenue Routine): https://payhip.com/b/qHsNi
 - Storefront Review ($49): https://www.paypal.me/sks7178/49
 - Storefront Review sample report: https://duct-tape2.github.io/examples/storefront-review-sample/
 - Anki Deck Review ($49): https://www.paypal.me/sks7178/49
@@ -27,10 +27,10 @@ Direct checkout links:
 - Repo-to-Revenue Setup Service ($99): https://payhip.com/b/ZOl1I
 - Anki Deck Packaging Service ($99): https://payhip.com/b/lytaz
 - Japanese Anki Pack ($29): https://www.paypal.me/sks7178/29
-- AI Money Stack ($25, includes Safe Daily Revenue Routine): https://www.paypal.me/sks7178/25
+- AI Money Stack ($25, includes Safe Daily Revenue Routine): https://payhip.com/b/RJ63W
 - Shorts Item Generator Starter ($9): https://www.paypal.me/sks7178/9
 - Anki Deck Builder Kit ($19): https://www.paypal.me/sks7178/19
-- Storefront Starter ($19): https://www.paypal.me/sks7178/19
+- Storefront Starter ($19): https://payhip.com/b/KN6XS
 - Free tools thank-you tip ($5): https://www.paypal.me/sks7178/5
 
 Current DIY kit:
