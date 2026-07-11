@@ -10,6 +10,10 @@ Direct checkout page:
 
 https://duct-tape2.github.io/buy/
 
+Design portfolio:
+
+https://duct-tape2.github.io/design/
+
 Public-safe inquiry paths:
 
 - Service inquiry: https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=service-inquiry.yml

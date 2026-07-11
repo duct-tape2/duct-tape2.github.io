@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>duct-tape2 Product Identity and Interface Work</title>
+  <meta name="description" content="Selected product identity, small-format artwork, and interface work by duct-tape2.">
+  <link rel="canonical" href="https://duct-tape2.github.io/design/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="duct-tape2 Product Identity and Interface Work">
+  <meta property="og:description" content="Selected identity, launch artwork, and interface work for live public products.">
+  <meta property="og:url" content="https://duct-tape2.github.io/design/">
+  <meta property="og:image" content="https://duct-tape2.github.io/design/assets/storefront-starter.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="duct-tape2 Product Identity and Interface Work">
+  <meta name="twitter:image" content="https://duct-tape2.github.io/design/assets/storefront-starter.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "duct-tape2 Product Identity and Interface Work",
+    "url": "https://duct-tape2.github.io/design/",
+    "author": {
+      "@type": "Organization",
+      "name": "duct-tape2",
+      "url": "https://duct-tape2.github.io/"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --ink: #111315;
+      --paper: #f4f1e9;
+      --white: #fffdf7;
+      --red: #d94335;
+      --mint: #45cf91;
+      --blue: #34aee7;
+      --yellow: #f3c516;
+      --line: rgba(17, 19, 21, 0.22);
+      --serif: "Fraunces", Georgia, serif;
+      --sans: "Manrope", sans-serif;
+      --mono: "DM Mono", monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--paper);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: var(--sans);
+      letter-spacing: 0;
+    }
+
+    a { color: inherit; }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--yellow);
+      outline-offset: 4px;
+    }
+
+    .site-nav {
+      position: absolute;
+      z-index: 5;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px clamp(20px, 5vw, 72px);
+      color: var(--white);
+      font-family: var(--mono);
+      font-size: 13px;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+
+    .brand {
+      font-weight: 500;
+      border-bottom: 0 !important;
+    }
+
+    .hero {
+      position: relative;
+      min-height: min(820px, 82svh);
+      overflow: hidden;
+      color: var(--white);
+      background: var(--ink);
+      display: grid;
+      align-items: end;
+    }
+
+    .hero-media {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      min-width: 0;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 12, 14, 0.74);
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 2;
+      width: min(1080px, 100%);
+      padding: 120px clamp(20px, 7vw, 104px) clamp(64px, 8vw, 112px);
+    }
+
+    .kicker {
+      margin: 0 0 20px;
+      font-family: var(--mono);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p { overflow-wrap: anywhere; }
+
+    h1 {
+      max-width: 850px;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(54px, 8vw, 112px);
+      line-height: 0.92;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .hero-copy > p:last-of-type {
+      max-width: 670px;
+      margin: 28px 0 0;
+      font-size: clamp(17px, 2vw, 23px);
+      line-height: 1.55;
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 17px;
+      border: 1px solid var(--white);
+      border-radius: 4px;
+      text-decoration: none;
+      font-family: var(--mono);
+      font-size: 13px;
+      transition: background 160ms ease, color 160ms ease, transform 160ms ease;
+    }
+
+    .button:hover {
+      color: var(--ink);
+      background: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(28px, 7vw, 100px);
+      padding: clamp(58px, 9vw, 126px) clamp(20px, 7vw, 104px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .intro h2,
+    .commission h2 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(38px, 5vw, 70px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .intro-copy {
+      max-width: 720px;
+      font-size: clamp(17px, 2vw, 22px);
+      line-height: 1.7;
+    }
+
+    .intro-copy p:first-child { margin-top: 0; }
+
+    .capability-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .capability-line span {
+      padding: 8px 10px;
+      border: 1px solid var(--ink);
+      border-radius: 3px;
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+
+    .work-label {
+      padding: 24px clamp(20px, 7vw, 104px);
+      border-bottom: 1px solid var(--line);
+      font-family: var(--mono);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .project {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+      min-height: 520px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .project:nth-of-type(even) .project-visual { order: 2; }
+
+    .project-visual {
+      min-width: 0;
+      background: var(--ink);
+      display: grid;
+      place-items: center;
+      padding: clamp(20px, 4vw, 64px);
+    }
+
+    .project-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 620px;
+      object-fit: contain;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 18px 22px 0 rgba(255, 255, 255, 0.08);
+    }
+
+    .project-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 34px;
+      padding: clamp(38px, 6vw, 90px);
+    }
+
+    .project-red .project-copy { background: #f2d7d2; }
+    .project-mint .project-copy { background: #cfeeda; }
+    .project-yellow .project-copy { background: #f4e3a2; }
+
+    .project-index {
+      font-family: var(--mono);
+      font-size: 13px;
+    }
+
+    .project h3 {
+      max-width: 560px;
+      margin: 18px 0 20px;
+      font-family: var(--serif);
+      font-size: clamp(38px, 5vw, 66px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .project-copy p {
+      max-width: 620px;
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    .scope {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid var(--ink);
+    }
+
+    .scope div {
+      min-width: 0;
+    }
+
+    .scope strong,
+    .scope span {
+      display: block;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .scope strong {
+      margin-bottom: 5px;
+      font-family: var(--mono);
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .project-link {
+      width: fit-content;
+      border-bottom: 2px solid var(--ink);
+      text-decoration: none;
+      font-family: var(--mono);
+      font-size: 13px;
+    }
+
+    .commission {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: clamp(36px, 8vw, 120px);
+      padding: clamp(68px, 10vw, 140px) clamp(20px, 7vw, 104px);
+      color: var(--white);
+      background: var(--ink);
+    }
+
+    .commission p {
+      max-width: 700px;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .deliverables {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.34);
+    }
+
+    .deliverables li {
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.34);
+      font-family: var(--mono);
+      font-size: 13px;
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 26px clamp(20px, 7vw, 104px) 38px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--white);
+      background: var(--ink);
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+
+    @media (max-width: 860px) {
+      .hero { min-height: 78svh; }
+
+      .hero-media {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-media img:last-child { display: none; }
+
+      .intro,
+      .project,
+      .commission {
+        grid-template-columns: 1fr;
+      }
+
+      .project:nth-of-type(even) .project-visual { order: 0; }
+
+      .project-visual { min-height: 320px; }
+    }
+
+    @media (max-width: 560px) {
+      .site-nav { align-items: flex-start; }
+      .site-nav span { display: none; }
+      .hero-media { grid-template-columns: 1fr; }
+      .hero-media img:nth-child(n + 2) { display: none; }
+      .hero-copy { padding-top: 104px; }
+      .button { width: 100%; }
+      .scope { grid-template-columns: 1fr; }
+      .project-visual img { box-shadow: 9px 12px 0 rgba(255, 255, 255, 0.08); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .button { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Portfolio navigation">
+    <a class="brand" href="https://duct-tape2.github.io/">duct-tape2</a>
+    <span>Product identity and interface work</span>
+    <a href="mailto:sks7178@gmail.com?subject=Design%20commission">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="assets/easy-japanese.png" alt="">
+      <img src="assets/ai-money-stack.png" alt="">
+      <img src="assets/storefront-starter.png" alt="">
+    </div>
+    <div class="hero-copy">
+      <p class="kicker">Selected work / 2026</p>
+      <h1>duct-tape2</h1>
+      <p>Product identity, launch artwork, and clear interfaces built to stay legible from a full landing page down to a tiny social avatar.</p>
+      <div class="hero-links">
+        <a class="button" href="#selected-work">View selected work</a>
+        <a class="button" href="mailto:sks7178@gmail.com?subject=Design%20commission">Discuss a commission</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="intro-title">
+      <h2 id="intro-title">Identity should survive the icon test.</h2>
+      <div class="intro-copy">
+        <p>I work from the smallest real surface outward: favicon, avatar, thumbnail, product cover, and finally the complete page. The result is a visual system with enough character to be remembered and enough restraint to remain useful.</p>
+        <p>The projects below are live, public releases. Each combines visual direction with practical delivery across web, social, repository, and product surfaces.</p>
+        <div class="capability-line" aria-label="Capabilities">
+          <span>Logo and icon systems</span>
+          <span>Small-format testing</span>
+          <span>Launch artwork</span>
+          <span>Landing interfaces</span>
+          <span>SVG / PNG / favicon delivery</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="work-label" id="selected-work">Selected public work</div>
+
+    <article class="project project-red">
+      <div class="project-visual">
+        <img src="assets/easy-japanese.png" alt="Launch artwork for the Easy Japanese Anime and J-Pop Vocabulary Pack">
+      </div>
+      <div class="project-copy">
+        <div>
+          <span class="project-index">01 / Learning product</span>
+          <h3>Easy Japanese</h3>
+          <p>A learning-product identity balancing the energy of entertainment media with the clarity expected from study material. The system uses a compact red signal color, high-contrast typography, and repeatable lesson-card motifs.</p>
+          <div class="scope">
+            <div><strong>Scope</strong><span>Product cover, launch page, sample-deck presentation</span></div>
+            <div><strong>Small format</strong><span>Thumbnail-first hierarchy and reduced-detail variants</span></div>
+          </div>
+        </div>
+        <a class="project-link" href="https://duct-tape2.github.io/japanese-anki-pack/">View live project</a>
+      </div>
+    </article>
+
+    <article class="project project-mint">
+      <div class="project-visual">
+        <img src="assets/ai-money-stack.png" alt="Launch artwork for AI Money Stack for Indie Builders">
+      </div>
+      <div class="project-copy">
+        <div>
+          <span class="project-index">02 / Developer toolkit</span>
+          <h3>AI Money Stack</h3>
+          <p>A technical product system that turns terminal language into a recognizable visual device. Mint signals, monospaced copy, and a framed command surface make the identity useful across covers, screenshots, documentation, and sales pages.</p>
+          <div class="scope">
+            <div><strong>Scope</strong><span>Visual direction, product cover, web interface, launch assets</span></div>
+            <div><strong>System</strong><span>Terminal motif, status colors, reusable content blocks</span></div>
+          </div>
+        </div>
+        <a class="project-link" href="https://duct-tape2.github.io/ai-money-stack/">View live project</a>
+      </div>
+    </article>
+
+    <article class="project project-yellow">
+      <div class="project-visual">
+        <img src="assets/storefront-starter.png" alt="Launch artwork for GitHub Pages Storefront Starter">
+      </div>
+      <div class="project-copy">
+        <div>
+          <span class="project-index">03 / Productized service</span>
+          <h3>Storefront Starter</h3>
+          <p>A practical identity for a static storefront toolkit. The visual language mirrors the five-step buyer journey, using bold yellow wayfinding and stable modular rows that remain readable in social previews and repository cards.</p>
+          <div class="scope">
+            <div><strong>Scope</strong><span>Product cover, web page, UI kit, public examples</span></div>
+            <div><strong>Constraint</strong><span>Static hosting, no-framework delivery, responsive layout</span></div>
+          </div>
+        </div>
+        <a class="project-link" href="https://duct-tape2.github.io/storefront-starter/">View live project</a>
+      </div>
+    </article>
+
+    <section class="commission" aria-labelledby="commission-title">
+      <div>
+        <p class="kicker">Available for selected commissions</p>
+        <h2 id="commission-title">A compact identity system, not just one file.</h2>
+        <p>Commission delivery can include concept directions, refinement rounds, optical testing at 16 to 128 pixels, and a clean source package. Exact scope, usage rights, schedule, and payment terms are agreed before kickoff.</p>
+        <div class="hero-links">
+          <a class="button" href="mailto:sks7178@gmail.com?subject=Design%20commission">Start a conversation</a>
+          <a class="button" href="https://github.com/duct-tape2">GitHub profile</a>
+        </div>
+      </div>
+      <ul class="deliverables" aria-label="Available deliverables">
+        <li>Editable vector master</li>
+        <li>Production SVG exports</li>
+        <li>Transparent PNG sizes</li>
+        <li>Avatar and circular-crop tests</li>
+        <li>Favicon package</li>
+        <li>Color, monochrome, and inverted variants</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <span>duct-tape2 / Product identity and interface work</span>
+    <span><a href="mailto:sks7178@gmail.com">sks7178@gmail.com</a> / <a href="https://github.com/duct-tape2">GitHub</a></span>
+  </footer>
+</body>
+</html>

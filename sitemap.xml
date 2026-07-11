@@ -13,6 +13,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://duct-tape2.github.io/design/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://duct-tape2.github.io/offers.json</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
