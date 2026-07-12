@@ -1,5 +1,9 @@
 # duct-tape2.github.io
 
+Public engineering profile: https://duct-tape2.github.io/work/
+
+Markdown profile source: [PUBLIC_ENGINEERING_PROFILE.md](PUBLIC_ENGINEERING_PROFILE.md)
+
 Central public hub for duct-tape2 products, free tools, and fixed-price services.
 
 Live site:
