@@ -6,9 +6,14 @@ Live site:
 
 https://duct-tape2.github.io/
 
-Direct checkout page:
+Offer details and checkout-status page:
 
 https://duct-tape2.github.io/buy/
+
+Payment acceptance is temporarily paused while payout settings are restored.
+Confirm a working checkout before paying:
+
+https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
 
 Design portfolio:
 
@@ -21,21 +26,21 @@ Public-safe inquiry paths:
 - Product delivery email: mailto:sks7178@gmail.com?subject=paid%20digital%20product%20delivery
 - Service booking email: mailto:sks7178@gmail.com?subject=paid%20service%20booking
 
-Direct checkout links:
+Offer detail links:
 
-- Repo-to-Revenue Launch Bundle ($39, includes Safe Daily Revenue Routine): https://payhip.com/b/qHsNi
+- Repo-to-Revenue Launch Bundle ($39, includes Safe Daily Revenue Routine): https://duct-tape2.github.io/repo-to-revenue-launch-bundle/
 - Storefront Review ($49, request first): https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml
 - Storefront Review sample report: https://duct-tape2.github.io/examples/storefront-review-sample/
 - Anki Deck Review ($49, request first): https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml
 - Anki Deck Review sample report: https://duct-tape2.github.io/examples/anki-deck-review-sample/
-- Repo-to-Revenue Setup Service ($99): https://payhip.com/b/ZOl1I
-- Anki Deck Packaging Service ($99): https://payhip.com/b/lytaz
-- Japanese Anki Pack ($29): https://payhip.com/b/D0mhb
-- AI Money Stack ($25, includes Safe Daily Revenue Routine): https://payhip.com/b/RJ63W
-- Shorts Item Generator Starter ($9): https://payhip.com/b/aUOu1
-- Anki Deck Builder Kit ($19): https://payhip.com/b/cSObV
-- Storefront Starter ($19): https://payhip.com/b/KN6XS
-- Free tools thank-you tip ($5): https://payhip.com/b/0LKEF
+- Repo-to-Revenue Setup Service ($99): https://duct-tape2.github.io/ai-money-stack/repo-to-revenue/
+- Anki Deck Packaging Service ($99): https://duct-tape2.github.io/japanese-anki-pack/anki-deck-packaging/
+- Japanese Anki Pack ($29): https://duct-tape2.github.io/japanese-anki-pack/
+- AI Money Stack ($25, includes Safe Daily Revenue Routine): https://duct-tape2.github.io/ai-money-stack/
+- Shorts Item Generator Starter ($9): https://duct-tape2.github.io/shorts-item-generator/
+- Anki Deck Builder Kit ($19): https://duct-tape2.github.io/anki-deck-builder-kit/
+- Storefront Starter ($19): https://duct-tape2.github.io/storefront-starter/
+- Free tools thank-you tip ($5): https://duct-tape2.github.io/buy/
 
 Current DIY kit:
 

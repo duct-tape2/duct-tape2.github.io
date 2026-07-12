@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Buy duct-tape2 Products and Services</title>
-  <meta name="description" content="Direct checkout page for duct-tape2 digital products, bundles, reviews, and fixed-price setup services.">
+  <title>duct-tape2 Offers and Checkout Status</title>
+  <meta name="description" content="Offer details and checkout-confirmation requests for duct-tape2 digital products, reviews, and fixed-price setup services.">
   <link rel="canonical" href="https://duct-tape2.github.io/buy/">
   <link rel="alternate" type="application/json" href="https://duct-tape2.github.io/offers.json" title="duct-tape2 offer catalog">
   <link rel="alternate" type="text/plain" href="https://duct-tape2.github.io/llms.txt" title="duct-tape2 LLM-readable offer summary">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="duct-tape2">
   <meta property="og:title" content="Buy duct-tape2 Products and Services">
-  <meta property="og:description" content="Direct checkout links and public-safe delivery paths for duct-tape2 products and services.">
+  <meta property="og:description" content="Offer details, checkout status, and public-safe request paths for duct-tape2 products and services.">
   <meta property="og:url" content="https://duct-tape2.github.io/buy/">
   <meta property="og:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
   <meta property="og:image:width" content="1600">
   <meta property="og:image:height" content="900">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Buy duct-tape2 Products and Services">
-  <meta name="twitter:description" content="Direct checkout links for small digital products and fixed-price setup services.">
+  <meta name="twitter:description" content="Offer details and checkout-confirmation requests for small products and fixed-price services.">
   <meta name="twitter:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
   <script type="application/ld+json">
   {
@@ -40,7 +40,7 @@
             "price": "19",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
-            "url": "https://payhip.com/b/KN6XS"
+            "url": "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml"
           }
         }
       },
@@ -56,7 +56,7 @@
             "price": "25",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
-            "url": "https://payhip.com/b/RJ63W"
+            "url": "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml"
           }
         }
       },
@@ -72,7 +72,7 @@
             "price": "29",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
-            "url": "https://payhip.com/b/D0mhb"
+            "url": "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml"
           }
         }
       },
@@ -88,7 +88,7 @@
             "price": "19",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
-            "url": "https://payhip.com/b/cSObV"
+            "url": "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml"
           }
         }
       },
@@ -136,7 +136,7 @@
             "price": "99",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
-            "url": "https://payhip.com/b/ZOl1I"
+            "url": "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml"
           }
         }
       },
@@ -152,7 +152,7 @@
             "price": "99",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
-            "url": "https://payhip.com/b/lytaz"
+            "url": "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml"
           }
         }
       },
@@ -168,7 +168,7 @@
             "price": "39",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
-            "url": "https://payhip.com/b/qHsNi"
+            "url": "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml"
           }
         }
       },
@@ -184,7 +184,7 @@
             "price": "9",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
-            "url": "https://payhip.com/b/aUOu1"
+            "url": "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml"
           }
         }
       },
@@ -194,7 +194,7 @@
         "item": {
           "@type": "DonateAction",
           "name": "Free tools thank-you tip",
-          "url": "https://payhip.com/b/0LKEF",
+          "url": "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml",
           "priceSpecification": {
             "@type": "PriceSpecification",
             "price": "5",
@@ -277,6 +277,15 @@
     .btn.secondary {
       color: #fff;
       background: rgba(255,255,255,.08);
+    }
+    main .btn {
+      border-color: #165e6f;
+      color: #fff;
+      background: #165e6f;
+    }
+    main .btn.secondary {
+      color: #165e6f;
+      background: transparent;
     }
     section {
       padding: 30px 0;
@@ -384,18 +393,27 @@
     @media (max-width: 860px) {
       .grid, .steps { grid-template-columns: 1fr; }
       .btn, .mini { width: 100%; }
-      header .wrap { min-height: 64vh; }
+      header { background: #1d1a27; }
+      header .wrap {
+        min-height: auto;
+        padding-top: 56px;
+        padding-bottom: 56px;
+      }
+      h1 {
+        font-size: 40px;
+        line-height: 1.02;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <p class="eyebrow">duct-tape2 direct checkout</p>
-      <h1>Buy The Kit, Review, Or Setup Service</h1>
-      <p class="lead">Nine live Payhip listings with automatic ZIP delivery or structured service intake. The two $49 reviews start with a public-safe request before payment.</p>
+      <p class="eyebrow">duct-tape2 offer status</p>
+      <h1>Choose An Offer And Confirm Checkout</h1>
+      <p class="lead">Payment acceptance is temporarily paused while payout settings are restored. Use a request button to confirm a working checkout before paying for any product or service.</p>
           <div class="actions">
-        <a class="btn" href="#checkout">Go to checkout links</a>
+        <a class="btn" href="#checkout">Go to offers</a>
         <a class="btn secondary" href="https://duct-tape2.github.io/">Full product hub</a>
         <a class="btn secondary" href="https://duct-tape2.github.io/tools/paypal-button-builder/">PayPal button builder</a>
       </div>
@@ -405,12 +423,12 @@
   <main class="wrap">
     <section aria-label="Manual delivery notice">
       <div class="notice">
-        <strong>Important:</strong> Payhip delivers digital ZIPs automatically after checkout. The two $99 services use Payhip for booking and then collect the public project URL needed for intake. The $49 reviews currently start with a public-safe request form; no review payment is requested before scope confirmation.
+        <strong>Important:</strong> Do not pay through an old or unconfirmed link. Digital delivery and service intake begin only after a working checkout and payment are confirmed. The $49 reviews still start with a public-safe request before payment.
       </div>
     </section>
 
     <section id="checkout">
-      <h2>Checkout Links</h2>
+      <h2>Offers And Checkout Requests</h2>
       <div class="grid">
         <article class="card">
           <span class="tag">Bundle</span>
@@ -418,7 +436,7 @@
           <p class="price">$39</p>
           <p>AI Money Stack with the Safe Daily Revenue Routine plus GitHub Pages Storefront Starter in one delivery ZIP for small product launches.</p>
           <div class="mini-actions">
-            <a class="mini" href="https://payhip.com/b/qHsNi">Pay $39 - Instant Download</a>
+            <a class="mini" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Pay $39 - Instant Download</a>
             <a class="mini secondary" href="https://duct-tape2.github.io/repo-to-revenue-launch-bundle/">Details</a>
             <a class="mini secondary" href="mailto:sks7178@gmail.com?subject=Repo-to-Revenue%20Launch%20Bundle%20delivery&amp;body=Offer:%20Repo-to-Revenue%20Launch%20Bundle%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20">Email note</a>
             <a class="mini secondary" href="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml">Delivery help</a>
@@ -431,7 +449,7 @@
           <p class="price">$19</p>
           <p>Paid ZIP with storefront template, launch checklist, delivery workflow, and sample copy.</p>
           <div class="mini-actions">
-            <a class="mini" href="https://payhip.com/b/KN6XS">Pay $19 - Instant Download</a>
+            <a class="mini" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Pay $19 - Instant Download</a>
             <a class="mini secondary" href="https://duct-tape2.github.io/storefront-starter/">Details</a>
             <a class="mini secondary" href="mailto:sks7178@gmail.com?subject=Storefront%20Starter%20delivery&amp;body=Offer:%20GitHub%20Pages%20Storefront%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20">Email note</a>
             <a class="mini secondary" href="https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=buy-kit.yml">Delivery help</a>
@@ -444,7 +462,7 @@
           <p class="price">$25</p>
           <p>Local-first tools, checklists, and the Safe Daily Revenue Routine for revenue scanning, launch pages, and keeping AI-agent work focused on safe cash signals.</p>
           <div class="mini-actions">
-            <a class="mini" href="https://payhip.com/b/RJ63W">Pay $25 - Instant Download</a>
+            <a class="mini" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Pay $25 - Instant Download</a>
             <a class="mini secondary" href="https://duct-tape2.github.io/ai-money-stack/">Details</a>
             <a class="mini secondary" href="https://github.com/duct-tape2/ai-money-stack/releases/tag/v1.0-free-preview">Free preview</a>
             <a class="mini secondary" href="mailto:sks7178@gmail.com?subject=AI%20Money%20Stack%20delivery&amp;body=Offer:%20AI%20Money%20Stack%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20">Email note</a>
@@ -458,7 +476,7 @@
           <p class="price">$9</p>
           <p>Local-first starter kit for hooks, a short-form script outline, thumbnail copy, a reusable prompt, and a 30-day Shorts calendar.</p>
           <div class="mini-actions">
-            <a class="mini" href="https://payhip.com/b/aUOu1">Pay $9</a>
+            <a class="mini" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Pay $9</a>
             <a class="mini secondary" href="https://duct-tape2.github.io/shorts-item-generator/">Details</a>
             <a class="mini secondary" href="mailto:sks7178@gmail.com?subject=Shorts%20Item%20Generator%20Starter%20delivery&amp;body=Offer:%20Shorts%20Item%20Generator%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20">Email note</a>
             <a class="mini secondary" href="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml">Delivery help</a>
@@ -471,7 +489,7 @@
           <p class="price">$29</p>
           <p>84 lessons, 402-note Anki deck, JLPT CSVs, and printable study PDF.</p>
           <div class="mini-actions">
-            <a class="mini" href="https://payhip.com/b/D0mhb">Pay $29 - Instant Download</a>
+            <a class="mini" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Pay $29 - Instant Download</a>
             <a class="mini secondary" href="https://duct-tape2.github.io/japanese-anki-pack/">Details</a>
             <a class="mini secondary" href="mailto:sks7178@gmail.com?subject=Japanese%20Anki%20Pack%20delivery&amp;body=Offer:%20Easy%20Japanese%20Vocabulary%20Pack%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20">Email note</a>
             <a class="mini secondary" href="https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=buy-pack.yml">Delivery help</a>
@@ -484,7 +502,7 @@
           <p class="price">$19</p>
           <p>CSV template, Python builder, generated sample deck, launch checklist, and listing copy for packaging a small Anki deck.</p>
           <div class="mini-actions">
-            <a class="mini" href="https://payhip.com/b/cSObV">Pay $19</a>
+            <a class="mini" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Pay $19</a>
             <a class="mini secondary" href="https://duct-tape2.github.io/anki-deck-builder-kit/">Details</a>
             <a class="mini secondary" href="https://duct-tape2.github.io/downloads/anki-deck-builder-kit-free-preview.md">Free preview</a>
             <a class="mini secondary" href="mailto:sks7178@gmail.com?subject=Anki%20Deck%20Builder%20Kit%20delivery&amp;body=Offer:%20Anki%20Deck%20Builder%20Kit%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20">Email note</a>
@@ -526,7 +544,7 @@
           <p class="price">$99</p>
           <p>One repo or digital product turned into a buyer-ready GitHub Pages sales surface.</p>
           <div class="mini-actions">
-            <a class="mini" href="https://payhip.com/b/ZOl1I">Start $99 setup</a>
+            <a class="mini" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Start $99 setup</a>
             <a class="mini secondary" href="https://duct-tape2.github.io/ai-money-stack/repo-to-revenue/">Details</a>
             <a class="mini secondary" href="mailto:sks7178@gmail.com?subject=Repo-to-Revenue%20setup%20booking&amp;body=Offer:%20Repo-to-Revenue%20Setup%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20repo%20or%20product%20URL:%20">Email note</a>
             <a class="mini secondary" href="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=service-inquiry.yml">Ask first</a>
@@ -539,7 +557,7 @@
           <p class="price">$99</p>
           <p>Turn raw learning content into a clean Anki deck, sample, page, and delivery checklist.</p>
           <div class="mini-actions">
-            <a class="mini" href="https://payhip.com/b/lytaz">Start $99 packaging</a>
+            <a class="mini" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Start $99 packaging</a>
             <a class="mini secondary" href="https://duct-tape2.github.io/japanese-anki-pack/anki-deck-packaging/">Details</a>
             <a class="mini secondary" href="mailto:sks7178@gmail.com?subject=Anki%20Deck%20Packaging%20booking&amp;body=Offer:%20Anki%20Deck%20Packaging%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20deck,%20CSV,%20or%20repo%20URL:%20">Email note</a>
             <a class="mini secondary" href="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=service-inquiry.yml">Ask first</a>
@@ -552,7 +570,7 @@
           <p class="price">$5</p>
           <p>Small support payment if a free checker, template, sample deck, guide, or release asset helped and you do not need a paid kit yet.</p>
           <div class="mini-actions">
-            <a class="mini" href="https://payhip.com/b/0LKEF">Pay $5</a>
+            <a class="mini" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Pay $5</a>
             <a class="mini secondary" href="mailto:sks7178@gmail.com?subject=Free%20Tools%20Thank-You%20Tip&amp;body=Offer:%20Free%20Tools%20Thank-You%20Tip%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0AOptional%20note:%20">Email note</a>
             <a class="mini secondary" href="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml">Buyer help</a>
             <a class="mini secondary" href="https://duct-tape2.github.io/storefront-checker/">Free checker</a>
@@ -567,7 +585,7 @@
       <div class="steps">
         <article class="step">
           <h3>Download or send intake context</h3>
-          <p>Digital products arrive through Payhip automatically. For services, send the public repo, page, deck, or content URL requested by the listing. Keep payment records and private files out of public GitHub issues.</p>
+          <p>After a working checkout and payment are confirmed, digital products use automatic delivery and services collect the public project URL needed for intake. Keep payment records and private files out of public GitHub issues.</p>
           <div class="mini-actions">
             <a class="mini" href="mailto:sks7178@gmail.com?subject=paid%20order%20support">Email support</a>
           </div>
@@ -593,7 +611,7 @@
       <div class="actions">
         <a class="btn" href="https://duct-tape2.github.io/tools/offer-chooser/">Choose the right offer</a>
         <a class="btn" href="https://duct-tape2.github.io/storefront-checker/">Run free checker</a>
-        <a class="btn secondary" href="https://payhip.com/b/0LKEF">Tip $5</a>
+        <a class="btn secondary" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Tip $5</a>
         <a class="btn secondary" href="https://duct-tape2.github.io/shorts-item-generator/">Shorts starter $9</a>
         <a class="btn secondary" href="https://duct-tape2.github.io/storefront-starter/">Storefront kit $19</a>
         <a class="btn secondary" href="https://duct-tape2.github.io/tools/static-storefront-builder/">Build storefront page</a>
@@ -616,5 +634,6 @@
   <footer>
     <a href="https://duct-tape2.github.io/">Full hub</a> - <a href="mailto:sks7178@gmail.com">sks7178@gmail.com</a> - <a href="https://github.com/duct-tape2">@duct-tape2</a>
   </footer>
+  <script src="/assets/checkout-status.js" defer></script>
 </body>
 </html>

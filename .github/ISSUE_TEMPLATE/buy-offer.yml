@@ -10,23 +10,23 @@ body:
 
         Do not post payment records, screenshots, passwords, API keys, private customer data, or private files here.
 
-        Payhip delivers digital products automatically. For services, follow the listing intake instructions. The $49 reviews start with a request before payment.
+        Payment acceptance is temporarily paused while payout settings are restored. Confirm a working checkout before paying. Digital delivery or service intake starts only after payment is confirmed.
   - type: dropdown
     id: product
     attributes:
       label: Product or booking
       options:
-        - Repo-to-Revenue Launch Bundle - Payhip $39
-        - AI Money Stack - Payhip $25
-        - Shorts Item Generator Starter - Payhip $9
-        - GitHub Pages Storefront Starter - Payhip $19
-        - Anki Deck Builder Kit - Payhip $19
-        - Easy Japanese Pack - Payhip $29
+        - Repo-to-Revenue Launch Bundle - $39
+        - AI Money Stack - $25
+        - Shorts Item Generator Starter - $9
+        - GitHub Pages Storefront Starter - $19
+        - Anki Deck Builder Kit - $19
+        - Easy Japanese Pack - $29
         - Storefront Review - request first ($49)
         - Anki Deck Review - request first ($49)
-        - Repo-to-Revenue Setup - Payhip $99
-        - Anki Deck Packaging - Payhip $99
-        - Free tools thank-you tip - Payhip $5
+        - Repo-to-Revenue Setup - $99
+        - Anki Deck Packaging - $99
+        - Free tools thank-you tip - $5
         - Not sure yet
     validations:
       required: true
@@ -35,7 +35,8 @@ body:
     attributes:
       label: What do you need?
       options:
-        - Payhip download or delivery problem
+        - Confirm a working checkout before payment
+        - Existing paid download or delivery problem
         - Service intake question
         - Review request before payment
         - Pre-purchase question
@@ -48,7 +49,7 @@ body:
     attributes:
       label: Public-safe note
       description: Do not include private payment details. A short description is enough.
-      placeholder: Payhip delivery failed for the $29 pack, or I need help choosing the right offer.
+      placeholder: I need a confirmed checkout for the $29 pack, or help choosing the right offer.
     validations:
       required: true
   - type: input
