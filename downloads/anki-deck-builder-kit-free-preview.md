@@ -5,10 +5,10 @@ This free preview shows the workflow and CSV shape for the paid Anki Deck Builde
 Paid kit:
 https://duct-tape2.github.io/anki-deck-builder-kit/
 
-PayPal checkout:
-https://payhip.com/b/cSObV
+Checkout confirmation request:
+https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
 
-All checkout links:
+Offer details and checkout status:
 https://duct-tape2.github.io/buy/
 
 Delivery email note:
@@ -20,8 +20,8 @@ https://duct-tape2.github.io/guides/anki-deck-packaging/
 Sample deck preview:
 https://duct-tape2.github.io/examples/japanese-anki-sample-deck/
 
-Thank-you tip:
-https://payhip.com/b/0LKEF
+Thank-you tip checkout request:
+https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
 
 ## What The Paid Kit Adds
 
@@ -47,7 +47,7 @@ Keep the columns stable unless you also edit the builder script.
 - Use original learning material or content you have permission to package.
 - Build a small sample deck before selling a larger deck.
 - Import-test the generated `.apkg` in a clean Anki profile.
-- Add a product page, PayPal link, delivery email note, and public-safe support path.
+- Add a product page, confirmed payment link, delivery email note, and public-safe support path.
 - Keep private payment details, learner data, and customer files out of public issues.
 
 ## When To Buy

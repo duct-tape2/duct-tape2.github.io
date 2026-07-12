@@ -8,7 +8,7 @@ body:
       value: |
         Thanks for checking the service first.
 
-        Direct checkout: https://duct-tape2.github.io/buy/
+        Checkout confirmation: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
         Repo-to-Revenue setup: https://duct-tape2.github.io/ai-money-stack/repo-to-revenue/
         Anki Deck Packaging: https://duct-tape2.github.io/japanese-anki-pack/anki-deck-packaging/
         Free storefront guide: https://duct-tape2.github.io/guides/github-pages-storefront/
@@ -53,8 +53,8 @@ body:
       label: Payment status
       options:
         - Asking before payment
-        - Paid with PayPal and emailed private confirmation
-        - Need a different checkout link
+        - Need a confirmed working checkout
+        - Already paid through a previously confirmed checkout
     validations:
       required: true
   - type: textarea
