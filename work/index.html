@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>duct-tape2 | Public Engineering Profile</title>
+  <meta name="description" content="Public engineering profile for duct-tape2: Python, TypeScript, Expo, FastAPI, static web tools, release workflows, and verified open-source work.">
+  <link rel="canonical" href="https://duct-tape2.github.io/work/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="duct-tape2 | Public Engineering Profile">
+  <meta property="og:description" content="Selected public product work, a merged upstream feature, and scoped paid-trial availability.">
+  <meta property="og:url" content="https://duct-tape2.github.io/work/">
+  <meta property="og:image" content="https://duct-tape2.github.io/work/assets/ai-language-partner-demo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="duct-tape2 | Public Engineering Profile">
+  <meta name="twitter:image" content="https://duct-tape2.github.io/work/assets/ai-language-partner-demo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "name": "duct-tape2 Public Engineering Profile",
+    "url": "https://duct-tape2.github.io/work/",
+    "dateModified": "2026-07-12",
+    "mainEntity": {
+      "@type": "Person",
+      "alternateName": "duct-tape2",
+      "homeLocation": {
+        "@type": "Country",
+        "name": "South Korea"
+      },
+      "sameAs": [
+        "https://github.com/duct-tape2",
+        "https://duct-tape2.github.io/ai-language-partner/"
+      ]
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --ink: #111315;
+      --paper: #f4f1e9;
+      --white: #fffdf7;
+      --red: #c9362b;
+      --mint: #45cf91;
+      --blue: #34aee7;
+      --yellow: #f3c516;
+      --line: rgba(17, 19, 21, 0.23);
+      --serif: "Fraunces", Georgia, serif;
+      --sans: "Manrope", sans-serif;
+      --mono: "DM Mono", monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--paper);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: var(--sans);
+      letter-spacing: 0;
+    }
+
+    a { color: inherit; }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--yellow);
+      outline-offset: 4px;
+    }
+
+    .site-nav {
+      position: absolute;
+      z-index: 5;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px max(20px, calc((100vw - 1280px) / 2));
+      color: var(--white);
+      font-family: var(--mono);
+      font-size: 13px;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+
+    .site-nav .brand {
+      font-weight: 500;
+      border-bottom: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 18px;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 72svh;
+      overflow: hidden;
+      color: var(--white);
+      background: var(--ink);
+      display: grid;
+      align-items: end;
+    }
+
+    .hero-media {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      min-width: 0;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(9, 11, 13, 0.78);
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 2;
+      width: min(1120px, 100%);
+      padding: 118px max(20px, calc((100vw - 1280px) / 2)) 62px;
+    }
+
+    .kicker,
+    .section-label,
+    .project-number,
+    .proof-label {
+      font-family: var(--mono);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .kicker { margin: 0 0 18px; }
+
+    h1,
+    h2,
+    h3,
+    p,
+    li { overflow-wrap: anywhere; }
+
+    h1 {
+      max-width: 920px;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 96px;
+      line-height: 0.94;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .hero-summary {
+      max-width: 720px;
+      margin: 26px 0 0;
+      font-size: 21px;
+      line-height: 1.6;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 17px;
+      border: 1px solid currentColor;
+      border-radius: 3px;
+      background: transparent;
+      color: inherit;
+      text-decoration: none;
+      font: 500 13px var(--mono);
+      cursor: pointer;
+      transition: background 160ms ease, color 160ms ease, transform 160ms ease;
+    }
+
+    .button:hover {
+      color: var(--ink);
+      background: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .proof-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border-bottom: 1px solid var(--line);
+      background: var(--yellow);
+    }
+
+    .proof {
+      min-width: 0;
+      min-height: 146px;
+      padding: 30px max(20px, calc((100vw - 1280px) / 6));
+      border-right: 1px solid rgba(17, 19, 21, 0.35);
+    }
+
+    .proof:last-child { border-right: 0; }
+
+    .proof strong {
+      display: block;
+      margin-top: 10px;
+      font-family: var(--serif);
+      font-size: 32px;
+      line-height: 1.05;
+    }
+
+    .statement {
+      display: grid;
+      grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+      gap: 64px;
+      padding: 94px max(20px, calc((100vw - 1280px) / 2));
+      border-bottom: 1px solid var(--line);
+    }
+
+    .statement h2,
+    .capabilities h2,
+    .engagement h2 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 58px;
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .statement-copy {
+      max-width: 760px;
+      font-size: 20px;
+      line-height: 1.75;
+    }
+
+    .statement-copy p:first-child { margin-top: 0; }
+    .statement-copy p:last-child { margin-bottom: 0; }
+
+    .section-label {
+      padding: 22px max(20px, calc((100vw - 1280px) / 2));
+      border-bottom: 1px solid var(--line);
+    }
+
+    .project {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+      min-height: 520px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .project:nth-of-type(even) .project-visual { order: 2; }
+
+    .project-visual {
+      min-width: 0;
+      display: grid;
+      place-items: center;
+      padding: 48px;
+      background: var(--ink);
+    }
+
+    .project:nth-of-type(2) .project-visual { background: var(--blue); }
+    .project:nth-of-type(3) .project-visual { background: var(--red); }
+
+    .project-visual img {
+      display: block;
+      width: min(100%, 760px);
+      height: auto;
+      max-height: 420px;
+      object-fit: contain;
+      border: 1px solid rgba(255, 255, 255, 0.38);
+    }
+
+    .project-copy {
+      align-self: center;
+      padding: 64px max(28px, calc((100vw - 1280px) / 4));
+    }
+
+    .project-copy h3 {
+      margin: 15px 0 18px;
+      font-family: var(--serif);
+      font-size: 46px;
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .project-copy p {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 24px 0;
+    }
+
+    .tags span {
+      padding: 7px 9px;
+      border: 1px solid var(--ink);
+      border-radius: 2px;
+      font: 12px var(--mono);
+    }
+
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 24px;
+      font: 13px var(--mono);
+    }
+
+    .project-links a { text-underline-offset: 4px; }
+
+    .upstream {
+      display: grid;
+      grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+      gap: 56px;
+      padding: 88px max(20px, calc((100vw - 1280px) / 2));
+      color: var(--white);
+      background: var(--ink);
+      border-bottom: 8px solid var(--mint);
+    }
+
+    .upstream-mark {
+      font: 500 88px/0.9 var(--mono);
+      color: var(--mint);
+    }
+
+    .upstream h2 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 54px;
+      line-height: 1.03;
+      letter-spacing: 0;
+    }
+
+    .upstream p {
+      max-width: 760px;
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    .upstream a { text-underline-offset: 5px; }
+
+    .capabilities {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: 70px;
+      padding: 94px max(20px, calc((100vw - 1280px) / 2));
+      border-bottom: 1px solid var(--line);
+    }
+
+    .capability-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--ink);
+    }
+
+    .capability-list li {
+      display: grid;
+      grid-template-columns: 140px minmax(0, 1fr);
+      gap: 22px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .capability-list strong {
+      font-family: var(--mono);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .engagement {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      gap: 70px;
+      padding: 94px max(20px, calc((100vw - 1280px) / 2));
+      color: var(--white);
+      background: var(--red);
+    }
+
+    .engagement-copy {
+      max-width: 700px;
+      font-size: 19px;
+      line-height: 1.72;
+    }
+
+    .engagement .button:hover {
+      color: var(--red);
+      background: var(--white);
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 24px max(20px, calc((100vw - 1280px) / 2));
+      color: var(--white);
+      background: var(--ink);
+      font: 12px/1.5 var(--mono);
+    }
+
+    @media (max-width: 900px) {
+      h1 { font-size: 68px; }
+      .hero-summary { font-size: 19px; }
+      .statement,
+      .upstream,
+      .capabilities,
+      .engagement { grid-template-columns: 1fr; gap: 32px; }
+      .project { grid-template-columns: 1fr; min-height: 0; }
+      .project:nth-of-type(even) .project-visual { order: 0; }
+      .project-visual { min-height: 360px; }
+      .project-copy { padding: 52px 28px; }
+      .statement h2,
+      .capabilities h2,
+      .engagement h2 { font-size: 48px; }
+      .upstream h2 { font-size: 46px; }
+    }
+
+    @media (max-height: 650px) and (min-width: 901px) {
+      .hero { min-height: 66svh; }
+      .hero-copy { padding-top: 82px; padding-bottom: 30px; }
+      h1 { font-size: 76px; }
+      .hero-summary { margin-top: 18px; font-size: 18px; }
+      .hero-actions { margin-top: 20px; }
+    }
+
+    @media (max-width: 620px) {
+      .site-nav { align-items: flex-start; }
+      .nav-links { gap: 10px 14px; font-size: 11px; }
+      .nav-links a:last-child { display: none; }
+      .hero { min-height: 74svh; }
+      .hero-media { grid-template-columns: 1fr 1fr; }
+      .hero-media img:last-child { display: none; }
+      .hero-copy { padding-top: 112px; padding-bottom: 42px; }
+      h1 { font-size: 49px; }
+      .hero-summary { font-size: 17px; line-height: 1.55; }
+      .proof-strip { grid-template-columns: 1fr; }
+      .proof { min-height: 0; border-right: 0; border-bottom: 1px solid rgba(17, 19, 21, 0.35); }
+      .proof:last-child { border-bottom: 0; }
+      .statement,
+      .upstream,
+      .capabilities,
+      .engagement { padding-top: 64px; padding-bottom: 64px; }
+      .statement h2,
+      .capabilities h2,
+      .engagement h2 { font-size: 40px; }
+      .statement-copy { font-size: 18px; }
+      .project-visual { min-height: 280px; padding: 24px; }
+      .project-copy h3 { font-size: 38px; }
+      .upstream-mark { font-size: 62px; }
+      .upstream h2 { font-size: 40px; }
+      .capability-list li { grid-template-columns: 1fr; gap: 7px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .button { transition: none; }
+    }
+
+    @media print {
+      @page { margin: 14mm; }
+      .site-nav,
+      .hero-media,
+      .hero-actions,
+      .project-visual,
+      .section-label,
+      footer { display: none; }
+      .hero {
+        min-height: 0;
+        color: var(--ink);
+        background: var(--white);
+        border-bottom: 2px solid var(--ink);
+      }
+      .hero::after { display: none; }
+      .hero-copy { padding: 0 0 18px; }
+      h1 { font-size: 44px; }
+      .hero-summary { font-size: 14px; }
+      .proof-strip { grid-template-columns: repeat(3, 1fr); }
+      .proof { min-height: 0; padding: 12px; }
+      .proof strong { font-size: 18px; }
+      .statement,
+      .project,
+      .upstream,
+      .capabilities,
+      .engagement {
+        display: block;
+        padding: 22px 0;
+        color: var(--ink);
+        background: var(--white);
+        break-inside: avoid;
+      }
+      .statement h2,
+      .project-copy h3,
+      .upstream h2,
+      .capabilities h2,
+      .engagement h2 { font-size: 26px; }
+      .project-copy { padding: 0; }
+      .upstream-mark { font-size: 30px; color: var(--ink); }
+      .project-copy p,
+      .upstream p,
+      .engagement-copy,
+      .statement-copy { font-size: 12px; line-height: 1.5; }
+      .button { border: 0; padding: 0; min-height: 0; text-decoration: underline; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Profile navigation">
+    <a class="brand" href="/">duct-tape2</a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="https://github.com/duct-tape2">GitHub</a>
+      <a href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Paid inquiry</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="assets/ai-language-partner-demo.png" alt="">
+      <img src="../design/assets/storefront-starter.png" alt="">
+      <img src="../design/assets/ai-money-stack.png" alt="">
+    </div>
+    <div class="hero-copy">
+      <p class="kicker">Public engineering profile | South Korea | Remote</p>
+      <h1>duct-tape2</h1>
+      <p class="hero-summary">I build and maintain public Python and TypeScript products: local-first applications, API-backed tools, release workflows, and clear contributor paths.</p>
+      <div class="hero-actions">
+        <a class="button" href="#work">View selected work</a>
+        <a class="button" href="https://github.com/duct-tape2">Open GitHub</a>
+        <button class="button" type="button" onclick="window.print()">Print profile</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="proof-strip" aria-label="Public evidence summary">
+    <div class="proof">
+      <span class="proof-label">Primary stack</span>
+      <strong>Python + TypeScript</strong>
+    </div>
+    <div class="proof">
+      <span class="proof-label">Upstream evidence</span>
+      <strong>Merged Cycle.js feature</strong>
+    </div>
+    <div class="proof">
+      <span class="proof-label">Working mode</span>
+      <strong>Public proof, scoped delivery</strong>
+    </div>
+  </section>
+
+  <section class="statement">
+    <div>
+      <p class="kicker">Evidence over adjectives</p>
+      <h2>Work you can inspect before we talk.</h2>
+    </div>
+    <div class="statement-copy">
+      <p>This profile is intentionally built from public repositories, live demos, merged pull requests, tests, and release artifacts. It does not invent an employer timeline, degree, location history, or years of experience.</p>
+      <p>Legal identity and private hiring details belong in a legitimate hiring process. The links below show the engineering work first.</p>
+    </div>
+  </section>
+
+  <div class="section-label" id="work">Selected public work</div>
+
+  <main>
+    <article class="project">
+      <div class="project-visual">
+        <img src="assets/ai-language-partner-demo.png" alt="AI Language Partner hosted demo onboarding screen">
+      </div>
+      <div class="project-copy">
+        <span class="project-number">01 / Product system</span>
+        <h3>AI Language Partner</h3>
+        <p>A local-first Japanese speaking practice product for Korean learners. The public source combines an Expo/TypeScript client, FastAPI/Python backend, contract-shaped APIs, SQLite persistence, tests, CI, and a hosted fixture-backed demo.</p>
+        <div class="tags" aria-label="AI Language Partner technologies">
+          <span>TypeScript</span><span>Expo</span><span>FastAPI</span><span>Python</span><span>SQL</span><span>GitHub Actions</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/duct-tape2/ai-language-partner">Source</a>
+          <a href="https://duct-tape2.github.io/ai-language-partner/demo/">Live demo</a>
+          <a href="https://duct-tape2.github.io/ai-language-partner/">Project site</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-visual">
+        <img src="../design/assets/storefront-starter.png" alt="GitHub Pages Storefront Starter interface artwork">
+      </div>
+      <div class="project-copy">
+        <span class="project-number">02 / Browser tooling</span>
+        <h3>Static storefront workflow</h3>
+        <p>A dependency-free GitHub Pages storefront starter plus public browser tools for offer selection, structured data, inquiry routing, responsive checks, and release-ready examples.</p>
+        <div class="tags" aria-label="Static storefront technologies">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>JSON-LD</span><span>Responsive UI</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/duct-tape2/github-pages-storefront-starter">Source</a>
+          <a href="https://duct-tape2.github.io/storefront-starter/">Live example</a>
+          <a href="https://duct-tape2.github.io/storefront-checker/">Storefront checker</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-visual">
+        <img src="../design/assets/ai-money-stack.png" alt="Release workflow and validation product artwork">
+      </div>
+      <div class="project-copy">
+        <span class="project-number">03 / Packaging and release</span>
+        <h3>Repeatable delivery artifacts</h3>
+        <p>Python-based packaging and validation workflows for original learning assets, downloadable bundles, manifests, release notes, and buyer-facing samples. The emphasis is repeatability, inspectable output, and clean handoff.</p>
+        <div class="tags" aria-label="Packaging workflow technologies">
+          <span>Python</span><span>CLI</span><span>Validation</span><span>Release assets</span><span>Documentation</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/duct-tape2/japanese-anki-pack">Japanese Anki source</a>
+          <a href="https://duct-tape2.github.io/japanese-anki-pack/">Live sample</a>
+          <a href="https://github.com/duct-tape2/ai-money-stack">Automation source</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <section class="upstream">
+    <div class="upstream-mark">#1006</div>
+    <div>
+      <p class="kicker">Merged upstream contribution</p>
+      <h2>Promise-based mock time support for Cycle.js</h2>
+      <p>Added a promise-based <code>MockTimeSource</code> runner while preserving the callback API, plus TypeScript entrypoint typings, tests, and documentation across six files. The maintainers merged the pull request on 2026-06-09.</p>
+      <a href="https://github.com/cyclejs/cyclejs/pull/1006">Inspect the merged pull request</a>
+    </div>
+  </section>
+
+  <section class="capabilities">
+    <div>
+      <p class="kicker">Useful working range</p>
+      <h2>From product surface to verified release.</h2>
+    </div>
+    <ul class="capability-list">
+      <li><strong>Backend</strong><span>FastAPI endpoints, API contracts, SQL-backed state, fixtures, tests, and command-line tooling.</span></li>
+      <li><strong>Frontend</strong><span>React Native and Expo flows, static browser tools, responsive layouts, accessibility basics, and structured data.</span></li>
+      <li><strong>Delivery</strong><span>GitHub Actions, release packaging, artifact validation, documentation, and reproducible handoff steps.</span></li>
+      <li><strong>Collaboration</strong><span>Small reviewable changes, public issue context, explicit verification, and honest scope boundaries.</span></li>
+    </ul>
+  </section>
+
+  <section class="engagement">
+    <div>
+      <p class="kicker">Available for scoped work</p>
+      <h2>Start with a small paid trial.</h2>
+    </div>
+    <div class="engagement-copy">
+      <p>Good first scopes include product tooling, API integration, documentation, tests, packaging automation, or focused UI work. Scope, acceptance criteria, price, payout route, and delivery terms are agreed before implementation.</p>
+      <p>I do not accept credential handling, private data, unauthorized copyrighted material, security exploitation, or payment-account workarounds.</p>
+      <div class="hero-actions">
+        <a class="button" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Open paid inquiry</a>
+        <a class="button" href="../PUBLIC_ENGINEERING_PROFILE.md">Read Markdown profile</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>duct-tape2 / public engineering profile</span>
+    <span>Evidence reviewed 2026-07-12</span>
+  </footer>
+</body>
+</html>
