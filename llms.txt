@@ -59,7 +59,7 @@ Payment acceptance is temporarily paused while payout settings are restored. Use
   Email note: mailto:sks7178@gmail.com?subject=Anki%20Deck%20Review%20booking&body=Offer:%20Anki%20Deck%20Review%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADeck%20or%20repo%20URL:%20
   Request/help: https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml
 - Repo-to-Revenue GitHub Pages Setup ($99)
-  Details: https://duct-tape2.github.io/ai-money-stack/repo-to-revenue/
+  Details: https://duct-tape2.github.io/repo-launch/
   Checkout confirmation: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
   Email note: mailto:sks7178@gmail.com?subject=Repo-to-Revenue%20setup%20booking&body=Offer:%20Repo-to-Revenue%20Setup%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20repo%20or%20product%20URL:%20
   Request/help: https://github.com/duct-tape2/ai-money-stack/issues/new?template=repo-to-revenue-setup.yml
