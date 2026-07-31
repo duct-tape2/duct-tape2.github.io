@@ -1,93 +1,42 @@
-# duct-tape2
+# duct-tape2 Repo Launch
 
-Small digital products, public-safe reviews, and fixed-price setup services for indie builders, GitHub Pages storefronts, and Anki deck packaging.
+Turn one existing GitHub repository into a buyer-ready product page for a fixed $99 USD.
 
-Main site: https://duct-tape2.github.io/
+Service page: https://duct-tape2.github.io/repo-launch/
 
-Paid inquiry and checkout confirmation: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
+Paid inquiry: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
 
-Machine-readable offer catalog: https://duct-tape2.github.io/offers.json
+Email: sks7178@gmail.com
 
-Contact: sks7178@gmail.com
+## Deliverables
 
-Buyer help/request form: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
+- One focused product page for an existing public GitHub repository
+- Clear offer copy, scope, and buyer call to action
+- README offer cleanup
+- One public sample or proof section using buyer-provided public material
+- Tested inquiry path
+- Delivery notes for future edits
 
-## Paid Offers
+Fixed price: $99 USD
 
-Payment acceptance is temporarily paused while payout settings are restored. Use the paid inquiry form to confirm a working checkout before paying. Do not use an `email_note_url` until payment has been confirmed.
+Delivery target: four calendar days after scope and payment are confirmed
 
-- Repo-to-Revenue Launch Bundle ($39)
-  Summary: AI Money Stack with the Safe Daily Revenue Routine plus GitHub Pages Storefront Starter in one launch bundle.
-  Details: https://duct-tape2.github.io/repo-to-revenue-launch-bundle/
-  Checkout confirmation: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
-  Email note: mailto:sks7178@gmail.com?subject=Repo-to-Revenue%20Launch%20Bundle%20delivery&body=Offer:%20Repo-to-Revenue%20Launch%20Bundle%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20
-  Request/help: https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml
-- GitHub Pages Storefront Starter ($19)
-  Details: https://duct-tape2.github.io/storefront-starter/
-  Checkout confirmation: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
-  Email note: mailto:sks7178@gmail.com?subject=Storefront%20Starter%20delivery&body=Offer:%20GitHub%20Pages%20Storefront%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20
-  Request/help: https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=buy-kit.yml
-- AI Money Stack For Indie Builders ($25)
-  Summary: Five local-first tools plus the Safe Daily Revenue Routine for checking real money signals, account gates, product health, and safe prize/bounty scans.
-  Details: https://duct-tape2.github.io/ai-money-stack/
-  Checkout confirmation: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
-  Email note: mailto:sks7178@gmail.com?subject=AI%20Money%20Stack%20delivery&body=Offer:%20AI%20Money%20Stack%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20
-  Request/help: https://github.com/duct-tape2/ai-money-stack/issues/new?template=buy-bundle.yml
-- Shorts Item Generator Starter ($9)
-  Details: https://duct-tape2.github.io/shorts-item-generator/
-  Checkout confirmation: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
-  Email note: mailto:sks7178@gmail.com?subject=Shorts%20Item%20Generator%20Starter%20delivery&body=Offer:%20Shorts%20Item%20Generator%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20
-  Request/help: https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml
-- Easy Japanese: Anime and J-Pop Vocabulary Pack ($29)
-  Details: https://duct-tape2.github.io/japanese-anki-pack/
-  Checkout confirmation: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
-  Email note: mailto:sks7178@gmail.com?subject=Japanese%20Anki%20Pack%20delivery&body=Offer:%20Easy%20Japanese%20Vocabulary%20Pack%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20
-  Request/help: https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=buy-pack.yml
-- Anki Deck Builder Kit ($19)
-  Details: https://duct-tape2.github.io/anki-deck-builder-kit/
-  Checkout confirmation: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
-  Email note: mailto:sks7178@gmail.com?subject=Anki%20Deck%20Builder%20Kit%20delivery&body=Offer:%20Anki%20Deck%20Builder%20Kit%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20
-  Request/help: https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml
-- Storefront Review ($49)
-  Details: https://duct-tape2.github.io/storefront-review/
-  Request before payment: https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml
-  Email note: mailto:sks7178@gmail.com?subject=Storefront%20Review%20booking&body=Offer:%20Storefront%20Review%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20page%20to%20review:%20
-  Request/help: https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml
-- Anki Deck Review ($49)
-  Details: https://duct-tape2.github.io/anki-deck-review/
-  Request before payment: https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml
-  Email note: mailto:sks7178@gmail.com?subject=Anki%20Deck%20Review%20booking&body=Offer:%20Anki%20Deck%20Review%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADeck%20or%20repo%20URL:%20
-  Request/help: https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=paid-deck-review.yml
-- Repo-to-Revenue GitHub Pages Setup ($99)
-  Details: https://duct-tape2.github.io/repo-launch/
-  Checkout confirmation: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
-  Email note: mailto:sks7178@gmail.com?subject=Repo-to-Revenue%20setup%20booking&body=Offer:%20Repo-to-Revenue%20Setup%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20repo%20or%20product%20URL:%20
-  Request/help: https://github.com/duct-tape2/ai-money-stack/issues/new?template=repo-to-revenue-setup.yml
-- Anki Deck Packaging Service ($99)
-  Details: https://duct-tape2.github.io/japanese-anki-pack/anki-deck-packaging/
-  Checkout confirmation: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
-  Email note: mailto:sks7178@gmail.com?subject=Anki%20Deck%20Packaging%20booking&body=Offer:%20Anki%20Deck%20Packaging%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0APublic%20deck,%20CSV,%20or%20repo%20URL:%20
-  Request/help: https://github.com/duct-tape2/japanese-anki-pack/issues/new?template=anki-deck-packaging-service.yml
-- Free Tools Thank-You Tip ($5)
-  Details: https://duct-tape2.github.io/buy/
-  Checkout confirmation: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
-  Email note: mailto:sks7178@gmail.com?subject=Free%20Tools%20Thank-You%20Tip&body=Offer:%20Free%20Tools%20Thank-You%20Tip%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0AOptional%20note:%20
-  Request/help: https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml
+## Public Evidence
 
-## Free Entry Points
+Work profile: https://duct-tape2.github.io/work/
 
-- Storefront Checker: https://duct-tape2.github.io/storefront-checker/
-- Offer Chooser: https://duct-tape2.github.io/tools/offer-chooser/
-- Static Storefront Builder: https://duct-tape2.github.io/tools/static-storefront-builder/
-- PayPal Button Builder: https://duct-tape2.github.io/tools/paypal-button-builder/
-- Digital Product Storefront Audit Checklist: https://duct-tape2.github.io/guides/digital-product-storefront-audit/
-- GitHub Pages Storefront Guide: https://duct-tape2.github.io/guides/github-pages-storefront/
-- Anki Deck Packaging Guide: https://duct-tape2.github.io/guides/anki-deck-packaging/
-- Storefront Review sample report: https://duct-tape2.github.io/examples/storefront-review-sample/
-- Anki Deck Review sample report: https://duct-tape2.github.io/examples/anki-deck-review-sample/
+Storefront case study: https://duct-tape2.github.io/examples/storefront-starter-case-study/
 
-## Safe Scope
+GitHub profile: https://github.com/duct-tape2
 
-Public-safe small product work only. Do not request security, vulnerability, exploit, bypass, spam, fake-review, credential, private analytics, or personal-data scraping work.
+## Fit
 
-Use GitHub issues only for public-safe questions. Send delivery email, payer name/email prefix, approximate payment time, and private project context by email.
+Good fit: an existing public GitHub repository with a working project that needs clearer positioning, proof, and a buyer inquiry path.
+
+Not included: product development, private repository access, analytics access, sales guarantees, paid advertising, security work, credential handling, or payment-account setup.
+
+## Buyer Path
+
+Before paying, open the paid inquiry form or email the public repository URL. Payment acceptance is confirmed individually because the public checkout is temporarily unavailable.
+
+Do not send private credentials, private analytics, or confidential source code.
