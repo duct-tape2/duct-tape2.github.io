@@ -2,7 +2,9 @@
 
 Turn one existing GitHub repository into a buyer-ready product page for a fixed $99 USD.
 
-Service page: https://duct-tape2.github.io/repo-launch/
+Canonical service: https://duct-tape2.github.io/repo-launch/
+
+Audience: English-speaking open-source maintainers and indie software makers worldwide
 
 Paid inquiry: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
 
@@ -28,6 +30,14 @@ Work profile: https://duct-tape2.github.io/work/
 Storefront case study: https://duct-tape2.github.io/examples/storefront-starter-case-study/
 
 GitHub profile: https://github.com/duct-tape2
+
+## Free Evaluation Tools
+
+Storefront Checker: https://duct-tape2.github.io/storefront-checker/
+
+Static Product Page Builder: https://duct-tape2.github.io/tools/static-storefront-builder/
+
+Product Page Audit Checklist: https://duct-tape2.github.io/guides/digital-product-storefront-audit/
 
 ## Fit
 
