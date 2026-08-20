@@ -264,7 +264,7 @@
     .sales {
       grid-column: 1 / -1;
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 12px;
       margin-top: 4px;
     }
@@ -319,7 +319,7 @@
         <p class="lead">Turn one product idea into a static sales page, PayPal checkout link, delivery email, Product schema, and GitHub README block without a backend.</p>
       </div>
       <div class="top-actions">
-        <a class="btn" href="https://duct-tape2.github.io/buy/">Open paid options</a>
+        <a class="btn" href="https://duct-tape2.github.io/repo-launch/">Get a buyer-ready repo page</a>
         <a class="btn secondary" href="https://duct-tape2.github.io/storefront-checker/">Run checker</a>
       </div>
     </header>
@@ -369,7 +369,7 @@
 
         <div class="field">
           <label for="buyer-help">Buyer help URL</label>
-          <input id="buyer-help" value="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml" inputmode="url">
+          <input id="buyer-help" value="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml" inputmode="url">
         </div>
 
         <div class="field">
@@ -405,7 +405,7 @@ Launch checklist and delivery email workflow</textarea>
             <a class="btn" id="preview-buy" href="https://www.paypal.me/sks7178/19">Buy now</a>
             <div class="mini-actions" style="margin-top:10px">
               <a class="mini secondary" id="preview-sample" href="https://duct-tape2.github.io/storefront-starter/free-checklist.md">Sample</a>
-              <a class="mini secondary" id="preview-help" href="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml">Help</a>
+              <a class="mini secondary" id="preview-help" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Help</a>
             </div>
           </div>
         </div>
@@ -454,38 +454,23 @@ Launch checklist and delivery email workflow</textarea>
         </div>
       </section>
 
-      <section class="sales" aria-label="Paid next steps">
-        <article class="offer">
-          <strong>DIY Kit</strong>
-          <p class="offer-price">$19</p>
-          <p>Template files, buyer forms, and delivery checklist.</p>
-          <a class="mini" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Buy $19</a>
-        </article>
-        <article class="offer">
-          <strong>Launch Bundle</strong>
-          <p class="offer-price">$39</p>
-          <p>Storefront Starter plus AI Money Stack in one ZIP.</p>
-          <a class="mini" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Buy $39</a>
-        </article>
-        <article class="offer">
-          <strong>Storefront Review</strong>
-          <p class="offer-price">$49</p>
-          <p>A written buyer-readiness report for one page.</p>
-          <a class="mini" href="https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml">Request $49 review</a>
-          <a class="mini secondary" href="https://duct-tape2.github.io/examples/storefront-review-sample/">Sample report</a>
-          <a class="mini secondary" href="https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml">Request review</a>
-        </article>
+      <section class="sales" aria-label="Repo page service">
         <article class="offer">
           <strong>Done For You</strong>
           <p class="offer-price">$99</p>
-          <p>One repo or small product turned into a buyer-ready page.</p>
-          <a class="mini" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Start $99 setup</a>
+          <p>Turn one existing GitHub repo into a buyer-ready product page.</p>
+          <a class="mini" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Start the $99 service</a>
         </article>
         <article class="offer">
-          <strong>Thank You Tip</strong>
-          <p class="offer-price">$5</p>
-          <p>Use this if the builder helped and you do not need a paid kit yet.</p>
-          <a class="mini" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Tip $5</a>
+          <strong>Public Evidence</strong>
+          <p>See shipped pages and the storefront starter case study before you inquire.</p>
+          <a class="mini" href="https://duct-tape2.github.io/work/">View shipped work</a>
+          <a class="mini secondary" href="https://duct-tape2.github.io/examples/storefront-starter-case-study/">Read case study</a>
+        </article>
+        <article class="offer">
+          <strong>Email</strong>
+          <p>Prefer email? Send the public repo URL and the page outcome you want.</p>
+          <a class="mini" href="mailto:sks7178@gmail.com?subject=Buyer-ready%20repo%20page%20inquiry">Email an inquiry</a>
         </article>
       </section>
     </main>
@@ -726,7 +711,7 @@ Launch checklist and delivery email workflow</textarea>
       fields.paypal.value = "sks7178";
       fields.email.value = "sks7178@gmail.com";
       fields.sample.value = "https://duct-tape2.github.io/storefront-starter/free-checklist.md";
-      fields.help.value = "https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=buy-offer.yml";
+      fields.help.value = "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml";
       fields.included.value = "Editable HTML storefront template\nBuyer and service inquiry issue forms\nLaunch checklist and delivery email workflow";
       fields.refund.value = "14-day refund if the ZIP cannot be opened or listed files are missing. No revenue guarantees.";
       render();
