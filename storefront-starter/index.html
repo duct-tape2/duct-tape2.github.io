@@ -3,256 +3,59 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GitHub Pages Storefront Starter</title>
-  <meta name="description" content="A $19 DIY starter kit for turning a small repo or digital product into a buyer-ready GitHub Pages storefront, with a free PayPal button builder path.">
-  <link rel="canonical" href="https://duct-tape2.github.io/storefront-starter/">
-  <meta property="og:type" content="product">
-  <meta property="og:site_name" content="duct-tape2">
-  <meta property="og:title" content="GitHub Pages Storefront Starter">
-  <meta property="og:description" content="DIY templates, inquiry forms, launch checklist, PayPal checkout help, and buyer delivery copy for a small digital product storefront.">
-  <meta property="og:url" content="https://duct-tape2.github.io/storefront-starter/">
-  <meta property="og:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
-  <meta property="og:image:width" content="1600">
-  <meta property="og:image:height" content="900">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="GitHub Pages Storefront Starter">
-  <meta name="twitter:description" content="A $19 DIY kit for small product pages, payment CTAs, PayPal button setup, issue forms, and delivery checklists.">
-  <meta name="twitter:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "GitHub Pages Storefront Starter",
-    "description": "A DIY starter kit for turning a small repo or digital product into a buyer-ready GitHub Pages storefront.",
-    "brand": {"@type": "Brand", "name": "duct-tape2"},
-    "offers": {
-      "@type": "Offer",
-      "price": "19",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "url": "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml"
-    }
-  }
-  </script>
+  <title>GitHub Repo Product Page Service - $99</title>
+  <meta name="description" content="Turn one existing public GitHub repo into a buyer-ready product page for $99.">
+  <meta http-equiv="refresh" content="0; url=https://duct-tape2.github.io/repo-launch/">
+  <link rel="canonical" href="https://duct-tape2.github.io/repo-launch/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GitHub Repo Product Page Service - $99">
+  <meta property="og:description" content="Turn one existing public GitHub repo into a buyer-ready product page for $99.">
+  <meta property="og:url" content="https://duct-tape2.github.io/repo-launch/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="GitHub Repo Product Page Service - $99">
+  <meta name="twitter:description" content="Turn one existing public GitHub repo into a buyer-ready product page for $99.">
+  <script>window.location.replace("https://duct-tape2.github.io/repo-launch/");</script>
   <style>
-    * { box-sizing: border-box; }
+    :root {
+      color-scheme: light;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f7f8fa;
+      color: #172033;
+    }
     body {
+      min-height: 100vh;
       margin: 0;
-      color: #151515;
-      background: #f6f4ee;
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.55;
+      display: grid;
+      place-items: center;
     }
-    a { color: #17616f; }
-    .hero {
-      min-height: 76vh;
-      display: flex;
-      align-items: flex-end;
-      color: #fff;
-      background:
-        linear-gradient(180deg, rgba(0,0,0,.04), rgba(0,0,0,.8)),
-        url("https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png") center / cover no-repeat;
-      padding: 42px 22px;
-    }
-    .inner, main {
-      width: min(1040px, 100%);
-      margin: 0 auto;
-    }
-    .eyebrow {
-      margin: 0 0 12px;
-      color: #bff4d7;
-      font-size: 13px;
-      font-weight: 850;
-      text-transform: uppercase;
+    main {
+      width: min(34rem, calc(100% - 3rem));
+      padding: 2rem;
+      background: #fff;
+      border: 1px solid #d9dee8;
+      border-radius: 8px;
+      box-shadow: 0 12px 36px rgb(23 32 51 / 8%);
     }
     h1 {
-      max-width: 840px;
-      margin: 0;
-      font-size: clamp(42px, 7vw, 78px);
-      line-height: .96;
+      margin: 0 0 0.75rem;
+      font-size: 1.5rem;
+      line-height: 1.25;
       letter-spacing: 0;
     }
-    .lead {
-      max-width: 740px;
-      margin: 22px 0 0;
-      color: #eef2f7;
-      font-size: 20px;
-    }
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 28px;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      padding: 0 18px;
-      border: 1px solid #fff;
-      border-radius: 6px;
-      color: #111;
-      background: #fff;
-      font-weight: 850;
-      text-decoration: none;
-      white-space: nowrap;
-    }
-    .btn.secondary {
-      color: #fff;
-      background: rgba(255,255,255,.08);
-    }
-    main { padding: 36px 22px 58px; }
-    section {
-      padding: 28px 0;
-      border-bottom: 1px solid #ded8cb;
-    }
-    h2 {
-      margin: 0 0 14px;
-      font-size: 28px;
-      line-height: 1.15;
-      letter-spacing: 0;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-    }
-    .panel {
-      min-height: 180px;
-      padding: 20px;
-      border: 1px solid #ded8cb;
-      border-radius: 8px;
-      background: #fff;
-    }
-    .price {
+    p {
       margin: 0;
-      font-size: 40px;
-      font-weight: 900;
+      line-height: 1.6;
     }
-    .muted { color: #555; }
-    ul { padding-left: 20px; }
-    li { margin: 7px 0; }
-    footer {
-      padding: 28px 22px 44px;
-      color: #555;
-      text-align: center;
-    }
-    @media (max-width: 760px) {
-      .hero { min-height: 82vh; }
-      .grid { grid-template-columns: 1fr; }
-      .btn { width: 100%; }
+    a {
+      color: #075fcc;
+      font-weight: 700;
     }
   </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="inner">
-      <p class="eyebrow">DIY product page kit</p>
-      <h1>GitHub Pages Storefront Starter</h1>
-      <p class="lead">A $19 template pack for turning a small repo, checklist, deck, or digital download into a buyer-ready GitHub Pages storefront.</p>
-      <div class="actions">
-        <a class="btn" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Buy $19 - Instant Download</a>
-        <a class="btn secondary" href="https://duct-tape2.github.io/repo-to-revenue-launch-bundle/">Bundle with AI Money Stack - $39</a>
-        <a class="btn secondary" href="https://duct-tape2.github.io/buy/">All offers checkout</a>
-        <a class="btn secondary" href="mailto:sks7178@gmail.com?subject=Storefront%20Starter%20delivery&amp;body=Offer:%20GitHub%20Pages%20Storefront%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20">Email delivery note</a>
-        <a class="btn secondary" href="https://duct-tape2.github.io/storefront-checker/">Run free checker</a>
-        <a class="btn secondary" href="https://duct-tape2.github.io/tools/paypal-button-builder/">Build PayPal button</a>
-        <a class="btn secondary" href="https://github.com/new?template_name=github-pages-storefront-starter&amp;template_owner=duct-tape2">Use free template</a>
-        <a class="btn secondary" href="https://duct-tape2.github.io/storefront-starter/free-checklist.md?sample=1">Free sample checklist</a>
-        <a class="btn secondary" href="https://github.com/duct-tape2/github-pages-storefront-starter">Sample repo</a>
-        <a class="btn secondary" href="https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=buy-kit.yml">Delivery help</a>
-      </div>
-    </div>
-  </header>
-
   <main>
-    <section>
-      <h2>What You Get</h2>
-      <div class="grid">
-        <div class="panel">
-          <p class="price">$19</p>
-          <p class="muted">Request and confirm a working checkout before paying. After payment is confirmed, the ZIP uses automatic delivery.</p>
-        </div>
-        <div class="panel">
-          <ul>
-            <li>single-page storefront HTML template</li>
-            <li>buyer help and service inquiry issue templates</li>
-            <li>launch checklist for payment, sample, support, and refund signals</li>
-            <li>store listing copy and buyer delivery email template</li>
-            <li>small shell checker for page/payment/support basics</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Free Sample Repo</h2>
-      <p class="muted">Try the checklist and a tiny HTML storefront sample before buying the full kit.</p>
-      <div class="actions">
-        <a class="btn" href="https://github.com/duct-tape2/github-pages-storefront-starter">Open sample repo</a>
-        <a class="btn secondary" href="https://github.com/new?template_name=github-pages-storefront-starter&amp;template_owner=duct-tape2">Start from template</a>
-        <a class="btn secondary" href="https://raw.githubusercontent.com/duct-tape2/github-pages-storefront-starter/main/CHECKLIST.md">Read checklist</a>
-        <a class="btn secondary" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Tip $5 if the sample helped</a>
-      </div>
-    </section>
-
-    <section>
-      <h2>Check Your Storefront First</h2>
-      <p class="muted">Use the no-install browser checker on your public product page before buying the kit. If you want a written fix list instead of a DIY pass, book the $49 public storefront review.</p>
-      <div class="actions">
-        <a class="btn" href="https://duct-tape2.github.io/storefront-checker/">Run free checker</a>
-        <a class="btn secondary" href="https://duct-tape2.github.io/tools/paypal-button-builder/">Build PayPal button</a>
-        <a class="btn secondary" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Tip $5 if this helped</a>
-        <a class="btn secondary" href="https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=storefront-feedback.yml">Request free feedback</a>
-        <a class="btn secondary" href="https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml">Request $49 review</a>
-        <a class="btn secondary" href="https://duct-tape2.github.io/examples/storefront-review-sample/">View sample report</a>
-        <a class="btn secondary" href="https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=paid-storefront-review.yml">Open review request</a>
-      </div>
-    </section>
-
-    <section>
-      <h2>Best For</h2>
-      <ul>
-        <li>solo builders with a GitHub repo but no buyer-ready page</li>
-        <li>small digital products that need a simple payment CTA and delivery flow</li>
-        <li>Notion, Obsidian, Anki, CSV, PDF, or code-template packs</li>
-        <li>people who want to DIY before booking the $99 setup service</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Delivery And Support</h2>
-      <p class="muted">After a working checkout and payment are confirmed, the ZIP uses automatic delivery. If delivery fails, email sks7178@gmail.com with the subject <strong>storefront starter</strong>, or open the public-safe delivery help form without sharing payment records. Use the free sample checklist before buying.</p>
-      <p class="muted">Refund support: 14-day refund if the ZIP cannot be opened or the included template files are missing. This kit does not guarantee sales.</p>
-      <div class="actions">
-        <a class="btn" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Buy $19 - Instant Download</a>
-        <a class="btn secondary" href="https://duct-tape2.github.io/repo-to-revenue-launch-bundle/">Bundle with AI Money Stack - $39</a>
-        <a class="btn secondary" href="https://duct-tape2.github.io/buy/">All offers checkout</a>
-        <a class="btn secondary" href="mailto:sks7178@gmail.com?subject=Storefront%20Starter%20delivery&amp;body=Offer:%20GitHub%20Pages%20Storefront%20Starter%0APayment%20method:%20PayPal%0APayer%20name%20or%20email%20prefix:%20%0AApprox%20payment%20time:%20%0ADelivery%20email:%20">Email delivery note</a>
-        <a class="btn secondary" href="https://github.com/duct-tape2/github-pages-storefront-starter/issues/new?template=buy-kit.yml">Delivery help</a>
-      </div>
-    </section>
-
-    <section>
-      <h2>Want It Done For You?</h2>
-      <p class="muted">The DIY kit is for builders who want templates. If you want me to set up the page, payment CTA, public-safe issue forms, and README polish, use the $99 Repo-to-Revenue service.</p>
-      <div class="actions">
-        <a class="btn" href="https://duct-tape2.github.io/ai-money-stack/repo-to-revenue/">View $99 service</a>
-        <a class="btn secondary" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Start $99 setup</a>
-        <a class="btn secondary" href="https://github.com/duct-tape2/duct-tape2.github.io/issues/new?template=service-inquiry.yml">Ask first</a>
-      </div>
-    </section>
-
-    <section>
-      <h2>Scope</h2>
-      <p class="muted">No security, vulnerability, exploit, bypass, jailbreak, spam, credential, fake-review, or personal-data scraping work. No private payment details in public issues.</p>
-    </section>
+    <h1>This offer page has moved</h1>
+    <p>Continue to the <a href="https://duct-tape2.github.io/repo-launch/">$99 GitHub Repo Product Page Service</a>.</p>
   </main>
-
-  <footer>
-    <a href="https://duct-tape2.github.io/">All offers</a> - Email: <a href="mailto:sks7178@gmail.com">sks7178@gmail.com</a>
-  </footer>
-  <script src="/assets/checkout-status.js" defer></script>
 </body>
 </html>
