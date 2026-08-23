@@ -1,6 +1,6 @@
 # duct-tape2 Repo Launch
 
-Turn one existing GitHub repository into a buyer-ready product page for a fixed $99 USD.
+Turn one existing GitHub repository into a buyer-ready product website and focused landing page for a fixed $99 USD.
 
 Canonical service: https://duct-tape2.github.io/repo-launch/
 
@@ -12,7 +12,7 @@ Email: sks7178@gmail.com
 
 ## Deliverables
 
-- One focused product page for an existing public GitHub repository
+- One focused product website and landing page for an existing public GitHub repository
 - Clear offer copy, scope, and buyer call to action
 - README offer cleanup
 - One public sample or proof section using buyer-provided public material
