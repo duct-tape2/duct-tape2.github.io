@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Static Storefront Page Builder</title>
-  <meta name="description" content="Generate a copy-ready static product page, PayPal.Me checkout link, delivery email note, product schema, and README block for a small digital product.">
+  <meta name="description" content="Generate a copy-ready static product page, buyer inquiry path, product schema, and README block for a small digital product.">
   <link rel="canonical" href="https://duct-tape2.github.io/tools/static-storefront-builder/">
   <link rel="alternate" type="application/json" href="https://duct-tape2.github.io/offers.json" title="duct-tape2 offer catalog">
   <link rel="alternate" type="text/plain" href="https://duct-tape2.github.io/llms.txt" title="duct-tape2 LLM-readable offer summary">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="duct-tape2">
   <meta property="og:title" content="Static Storefront Page Builder">
-  <meta property="og:description" content="Build a static product page with PayPal checkout, delivery email, schema, and README copy from one form.">
+  <meta property="og:description" content="Build a static product page with a buyer inquiry path, schema, and README copy from one form.">
   <meta property="og:url" content="https://duct-tape2.github.io/tools/static-storefront-builder/">
   <meta property="og:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Static Storefront Page Builder">
-  <meta name="twitter:description" content="Generate a buyer-ready static product page and checkout block from one form.">
+  <meta name="twitter:description" content="Generate a buyer-ready static product page and inquiry block from one form.">
   <meta name="twitter:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
   <script type="application/ld+json">
   {
@@ -26,7 +26,7 @@
     "url": "https://duct-tape2.github.io/tools/static-storefront-builder/",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Any",
-    "description": "A browser-only generator for static product pages, PayPal.Me checkout links, delivery email notes, Product schema, and GitHub README storefront copy.",
+    "description": "A browser-only generator for static product pages, buyer inquiry paths, Product schema, and GitHub README storefront copy.",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -318,7 +318,7 @@
       <div>
         <p class="eyebrow">Free Static Storefront Tool</p>
         <h1>Static Storefront Page Builder</h1>
-        <p class="lead">Turn one product idea into a static sales page, PayPal checkout link, delivery email, Product schema, and GitHub README block without a backend.</p>
+        <p class="lead">Turn one product idea into a static sales page, buyer inquiry path, Product schema, and GitHub README block without a backend.</p>
       </div>
       <div class="top-actions">
         <a class="btn" href="https://duct-tape2.github.io/repo-launch/">Get a buyer-ready repo page</a>
@@ -330,18 +330,18 @@
       <form class="panel" id="builder-form">
         <div class="field">
           <label for="product-name">Product name</label>
-          <input id="product-name" value="GitHub Pages Storefront Starter" autocomplete="off">
+          <input id="product-name" value="GitHub Repo Product Page" autocomplete="off">
         </div>
 
         <div class="field">
           <label for="subtitle">Short promise</label>
-          <input id="subtitle" value="A DIY template kit for turning a small repo or digital download into a buyer-ready GitHub Pages storefront.">
+          <input id="subtitle" value="Turn one existing public GitHub repo into a buyer-ready product page with clear scope, proof, and inquiry paths.">
         </div>
 
         <div class="split">
           <div class="field">
             <label for="price">Price</label>
-            <input id="price" value="19" inputmode="decimal">
+            <input id="price" value="99" inputmode="decimal">
           </div>
           <div class="field">
             <label for="currency">Currency</label>
@@ -355,18 +355,18 @@
         </div>
 
         <div class="field">
-          <label for="paypal-name">PayPal.Me name</label>
-          <input id="paypal-name" value="sks7178" autocomplete="off" inputmode="url">
+          <label for="inquiry-url">Buyer inquiry URL</label>
+          <input id="inquiry-url" value="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml" inputmode="url">
         </div>
 
         <div class="field">
-          <label for="delivery-email">Delivery email</label>
-          <input id="delivery-email" value="sks7178@gmail.com" type="email">
+          <label for="contact-email">Contact email</label>
+          <input id="contact-email" value="sks7178@gmail.com" type="email">
         </div>
 
         <div class="field">
           <label for="sample-url">Free sample or preview URL</label>
-          <input id="sample-url" value="https://duct-tape2.github.io/storefront-starter/free-checklist.md" inputmode="url">
+          <input id="sample-url" value="https://duct-tape2.github.io/examples/storefront-starter-case-study/" inputmode="url">
         </div>
 
         <div class="field">
@@ -376,21 +376,20 @@
 
         <div class="field">
           <label for="included">What buyers get</label>
-          <textarea id="included">Editable HTML storefront template
-Buyer and service inquiry issue forms
-Launch checklist and delivery email workflow</textarea>
+          <textarea id="included">Buyer-ready GitHub Pages product page
+Clear offer, scope, proof, and inquiry paths
+Mobile-ready page plus launch notes</textarea>
         </div>
 
         <div class="field">
           <label for="refund">Refund or support note</label>
-          <input id="refund" value="14-day refund if the ZIP cannot be opened or listed files are missing. No revenue guarantees.">
+          <input id="refund" value="Fixed scope. No revenue guarantees. Confirm the public repo and requested outcome before work starts.">
         </div>
 
         <div class="status" id="status" role="status" aria-live="polite"></div>
         <div class="actions">
           <button type="button" id="reset-button" class="secondary">Reset example</button>
-          <a class="btn secondary" href="https://duct-tape2.github.io/tools/paypal-button-builder/">Button only</a>
-          <a class="btn secondary" href="https://duct-tape2.github.io/guides/paypal-static-storefront/">Checklist</a>
+          <a class="btn secondary" href="https://duct-tape2.github.io/storefront-checker/">Check the page</a>
         </div>
       </form>
 
@@ -398,15 +397,15 @@ Launch checklist and delivery email workflow</textarea>
         <h2>Generated Storefront</h2>
         <div class="preview-card">
           <div>
-            <p class="product-name" id="preview-title">GitHub Pages Storefront Starter</p>
-            <p class="product-sub" id="preview-subtitle">A DIY template kit for turning a small repo or digital download into a buyer-ready GitHub Pages storefront.</p>
+            <p class="product-name" id="preview-title">GitHub Repo Product Page</p>
+            <p class="product-sub" id="preview-subtitle">Turn one existing public GitHub repo into a buyer-ready product page with clear scope, proof, and inquiry paths.</p>
             <ul class="sample-list" id="preview-list"></ul>
           </div>
           <div class="price-box">
-            <p class="price" id="preview-price">$19</p>
-            <a class="btn" id="preview-buy" href="https://www.paypal.me/sks7178/19">Buy now</a>
+            <p class="price" id="preview-price">$99</p>
+            <a class="btn" id="preview-inquiry" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Request this offer</a>
             <div class="mini-actions" style="margin-top:10px">
-              <a class="mini secondary" id="preview-sample" href="https://duct-tape2.github.io/storefront-starter/free-checklist.md">Sample</a>
+              <a class="mini secondary" id="preview-sample" href="https://duct-tape2.github.io/examples/storefront-starter-case-study/">Sample</a>
               <a class="mini secondary" id="preview-help" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Help</a>
             </div>
           </div>
@@ -414,18 +413,18 @@ Launch checklist and delivery email workflow</textarea>
 
         <div class="result-grid">
           <article class="result">
-            <h3>Payment URL</h3>
-            <code id="payment-url"></code>
+            <h3>Inquiry URL</h3>
+            <code id="inquiry-output"></code>
             <div class="mini-actions">
-              <button type="button" class="copy" data-copy="payment-url">Copy URL</button>
-              <a class="mini secondary" id="open-payment" href="https://www.paypal.me/sks7178/19">Open</a>
+              <button type="button" class="copy" data-copy="inquiry-output">Copy URL</button>
+              <a class="mini secondary" id="open-inquiry" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Open</a>
             </div>
           </article>
           <article class="result">
-            <h3>Delivery Mailto</h3>
-            <code id="delivery-mailto"></code>
+            <h3>Inquiry Mailto</h3>
+            <code id="inquiry-mailto"></code>
             <div class="mini-actions">
-              <button type="button" class="copy" data-copy="delivery-mailto">Copy mailto</button>
+              <button type="button" class="copy" data-copy="inquiry-mailto">Copy mailto</button>
               <a class="mini secondary" id="open-mailto" href="mailto:sks7178@gmail.com">Open</a>
             </div>
           </article>
@@ -488,8 +487,8 @@ Launch checklist and delivery email workflow</textarea>
       subtitle: document.getElementById("subtitle"),
       price: document.getElementById("price"),
       currency: document.getElementById("currency"),
-      paypal: document.getElementById("paypal-name"),
-      email: document.getElementById("delivery-email"),
+      inquiry: document.getElementById("inquiry-url"),
+      email: document.getElementById("contact-email"),
       sample: document.getElementById("sample-url"),
       help: document.getElementById("buyer-help"),
       included: document.getElementById("included"),
@@ -502,21 +501,17 @@ Launch checklist and delivery email workflow</textarea>
       subtitle: document.getElementById("preview-subtitle"),
       price: document.getElementById("preview-price"),
       list: document.getElementById("preview-list"),
-      buy: document.getElementById("preview-buy"),
+      inquiry: document.getElementById("preview-inquiry"),
       sample: document.getElementById("preview-sample"),
       help: document.getElementById("preview-help"),
-      paymentUrl: document.getElementById("payment-url"),
-      mailto: document.getElementById("delivery-mailto"),
-      openPayment: document.getElementById("open-payment"),
+      inquiryOutput: document.getElementById("inquiry-output"),
+      mailto: document.getElementById("inquiry-mailto"),
+      openInquiry: document.getElementById("open-inquiry"),
       openMailto: document.getElementById("open-mailto"),
       html: document.getElementById("page-html"),
       schema: document.getElementById("schema-json"),
       readme: document.getElementById("readme-block")
     };
-
-    function cleanPaypalName(value) {
-      return value.replace(/^https?:\/\/(www\.)?paypal\.me\//i, "").replace(/[^a-zA-Z0-9._-]/g, "").slice(0, 60);
-    }
 
     function cleanPrice(value) {
       const parsed = Number.parseFloat(String(value).replace(/,/g, "").replace(/[^\d.]/g, ""));
@@ -546,15 +541,14 @@ Launch checklist and delivery email workflow</textarea>
       return String(value).split("\n").map((item) => item.trim()).filter(Boolean).slice(0, 8);
     }
 
-    function buildMailto(email, product, paymentUrl) {
-      const subject = encodeURIComponent(product + " delivery");
+    function buildMailto(email, product, money, inquiryUrl) {
+      const subject = encodeURIComponent(product + " inquiry");
       const body = encodeURIComponent([
         "Offer: " + product,
-        "Payment method: PayPal",
-        "Payment URL: " + paymentUrl,
-        "Payer name or email prefix:",
-        "Approx payment time:",
-        "Delivery email:",
+        "Listed price: " + money,
+        "Inquiry URL: " + inquiryUrl,
+        "Public project or product URL:",
+        "Outcome requested:",
         "Public-safe note:"
       ].join("\n"));
       return "mailto:" + encodeURIComponent(email) + "?subject=" + subject + "&body=" + body;
@@ -562,10 +556,10 @@ Launch checklist and delivery email workflow</textarea>
 
     function render() {
       const product = (fields.product.value || "Digital product").trim().slice(0, 90);
-      const subtitle = (fields.subtitle.value || "A small digital product with a clear checkout and delivery flow.").trim().slice(0, 180);
-      const price = cleanPrice(fields.price.value || "19");
+      const subtitle = (fields.subtitle.value || "A small digital product with a clear inquiry and delivery flow.").trim().slice(0, 180);
+      const price = cleanPrice(fields.price.value || "99");
       const currency = fields.currency.value || "USD";
-      const paypal = cleanPaypalName(fields.paypal.value || "sks7178");
+      const inquiryUrl = (fields.inquiry.value || "").trim().slice(0, 400);
       const email = (fields.email.value || "sks7178@gmail.com").trim().slice(0, 120);
       const sample = (fields.sample.value || "").trim().slice(0, 260);
       const help = (fields.help.value || "").trim().slice(0, 260);
@@ -574,24 +568,23 @@ Launch checklist and delivery email workflow</textarea>
       const problems = [];
 
       if (!price) problems.push("Valid price required.");
-      if (!paypal) problems.push("PayPal.Me name required.");
-      if (!email.includes("@")) problems.push("Delivery email required.");
+      if (!/^https?:\/\//i.test(inquiryUrl)) problems.push("Valid inquiry URL required.");
+      if (!email.includes("@")) problems.push("Contact email required.");
 
-      const paymentUrl = price && paypal ? "https://www.paypal.me/" + paypal + "/" + price : "";
-      const mailto = paymentUrl ? buildMailto(email, product, paymentUrl) : "";
-      const money = formatMoney(price || "19", currency);
+      const money = formatMoney(price || "99", currency);
+      const mailto = email.includes("@") ? buildMailto(email, product, money, inquiryUrl) : "";
 
       outputs.status.textContent = problems.join(" ");
       outputs.title.textContent = product;
       outputs.subtitle.textContent = subtitle;
       outputs.price.textContent = money;
-      outputs.buy.href = paymentUrl || "#";
-      outputs.buy.textContent = "Buy now - " + money;
+      outputs.inquiry.href = inquiryUrl || "#";
+      outputs.inquiry.textContent = "Request this offer - " + money;
       outputs.sample.href = sample || "#";
       outputs.help.href = help || "#";
-      outputs.paymentUrl.textContent = paymentUrl;
+      outputs.inquiryOutput.textContent = inquiryUrl;
       outputs.mailto.textContent = mailto;
-      outputs.openPayment.href = paymentUrl || "#";
+      outputs.openInquiry.href = inquiryUrl || "#";
       outputs.openMailto.href = mailto || "#";
       outputs.list.innerHTML = "";
       included.forEach((item) => {
@@ -607,10 +600,10 @@ Launch checklist and delivery email workflow</textarea>
         "description": subtitle,
         "offers": {
           "@type": "Offer",
-          "price": price || "19",
+          "price": price || "99",
           "priceCurrency": currency,
           "availability": "https://schema.org/InStock",
-          "url": paymentUrl
+          "url": inquiryUrl
         }
       };
       outputs.schema.value = JSON.stringify(schema, null, 2);
@@ -618,7 +611,7 @@ Launch checklist and delivery email workflow</textarea>
       const safeProduct = escapeHtml(product);
       const safeSubtitle = escapeHtml(subtitle);
       const safeMoney = escapeHtml(money);
-      const safePayment = escapeHtml(paymentUrl);
+      const safeInquiry = escapeHtml(inquiryUrl);
       const safeMailto = escapeHtml(mailto);
       const safeEmail = escapeHtml(email);
       const safeSample = escapeHtml(sample);
@@ -644,18 +637,17 @@ Launch checklist and delivery email workflow</textarea>
         "      <h1>" + safeProduct + "</h1>",
         "      <p>" + safeSubtitle + "</p>",
         "      <p class=\"price\">" + safeMoney + "</p>",
-        "      <a class=\"btn\" href=\"" + safePayment + "\">Buy now - " + safeMoney + "</a>",
+        "      <a class=\"btn\" href=\"" + safeInquiry + "\">Request this offer - " + safeMoney + "</a>",
         sample ? "      <p><a href=\"" + safeSample + "\">View free sample</a></p>" : "",
         "      <h2>What you get</h2>",
         "      <ul>",
         li,
         "      </ul>",
-        "      <p>After payment, email <a href=\"" + safeMailto + "\">" + safeEmail + "</a> with payer name/email prefix, approximate payment time, and delivery email.</p>",
+        "      <p>Questions? Email <a href=\"" + safeMailto + "\">" + safeEmail + "</a> with the public project URL and the outcome you want.</p>",
         refund ? "      <p>" + safeRefund + "</p>" : "",
         help ? "      <p><a href=\"" + safeHelp + "\">Buyer help</a></p>" : "",
         "    </section>",
         "  </main>",
-        "  <script src=\"/assets/checkout-status.js\" defer><\/script>",
         "</body>",
         "</html>"
       ].filter(Boolean).join("\n");
@@ -666,9 +658,9 @@ Launch checklist and delivery email workflow</textarea>
         subtitle,
         "",
         "- Price: " + money,
-        "- Checkout: " + paymentUrl,
+        "- Buyer inquiry: " + inquiryUrl,
         sample ? "- Free sample: " + sample : "",
-        "- Delivery email: " + email,
+        "- Contact email: " + email,
         help ? "- Buyer help: " + help : "",
         "",
         "What buyers get:",
@@ -706,20 +698,19 @@ Launch checklist and delivery email workflow</textarea>
       button.addEventListener("click", () => copyValue(button.dataset.copy, button));
     });
     document.getElementById("reset-button").addEventListener("click", () => {
-      fields.product.value = "GitHub Pages Storefront Starter";
-      fields.subtitle.value = "A DIY template kit for turning a small repo or digital download into a buyer-ready GitHub Pages storefront.";
-      fields.price.value = "19";
+      fields.product.value = "GitHub Repo Product Page";
+      fields.subtitle.value = "Turn one existing public GitHub repo into a buyer-ready product page with clear scope, proof, and inquiry paths.";
+      fields.price.value = "99";
       fields.currency.value = "USD";
-      fields.paypal.value = "sks7178";
+      fields.inquiry.value = "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml";
       fields.email.value = "sks7178@gmail.com";
-      fields.sample.value = "https://duct-tape2.github.io/storefront-starter/free-checklist.md";
+      fields.sample.value = "https://duct-tape2.github.io/examples/storefront-starter-case-study/";
       fields.help.value = "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml";
-      fields.included.value = "Editable HTML storefront template\nBuyer and service inquiry issue forms\nLaunch checklist and delivery email workflow";
-      fields.refund.value = "14-day refund if the ZIP cannot be opened or listed files are missing. No revenue guarantees.";
+      fields.included.value = "Buyer-ready GitHub Pages product page\nClear offer, scope, proof, and inquiry paths\nMobile-ready page plus launch notes";
+      fields.refund.value = "Fixed scope. No revenue guarantees. Confirm the public repo and requested outcome before work starts.";
       render();
     });
     render();
   </script>
-  <script src="/assets/checkout-status.js" defer></script>
 </body>
 </html>
