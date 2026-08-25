@@ -306,11 +306,11 @@
         </fieldset>
 
         <fieldset>
-          <legend>Buying Path</legend>
+          <legend>Inquiry Path</legend>
           <div class="check-grid">
             <label class="item"><input type="checkbox" data-check="Clear price"><span><strong>Clear price</strong><span>The price is visible before a buyer clicks away.</span></span></label>
-            <label class="item"><input type="checkbox" data-check="Payment link"><span><strong>Payment link</strong><span>Payment CTA goes to a real checkout or payment page.</span></span></label>
-            <label class="item"><input type="checkbox" data-check="Delivery instructions"><span><strong>Delivery instructions</strong><span>The buyer knows what to send after payment.</span></span></label>
+            <label class="item"><input type="checkbox" data-check="Buyer inquiry path"><span><strong>Buyer inquiry path</strong><span>A scoped issue form or listed email gives the buyer one clear next step.</span></span></label>
+            <label class="item"><input type="checkbox" data-check="Scope confirmation"><span><strong>Scope confirmation</strong><span>The buyer knows which public URL and outcome to include.</span></span></label>
             <label class="item"><input type="checkbox" data-check="Buyer help path"><span><strong>Buyer help path</strong><span>There is a public-safe way to ask for help.</span></span></label>
           </div>
         </fieldset>
@@ -320,7 +320,7 @@
           <div class="check-grid">
             <label class="item"><input type="checkbox" data-check="Free sample or preview"><span><strong>Free sample or preview</strong><span>A buyer can inspect something before paying.</span></span></label>
             <label class="item"><input type="checkbox" data-check="Support email"><span><strong>Support email</strong><span>There is a non-public path for delivery context.</span></span></label>
-            <label class="item"><input type="checkbox" data-check="Refund or support terms"><span><strong>Refund or support terms</strong><span>Support boundaries are stated before payment.</span></span></label>
+            <label class="item"><input type="checkbox" data-check="Scope or support terms"><span><strong>Scope or support terms</strong><span>Support boundaries are stated before work starts.</span></span></label>
             <label class="item"><input type="checkbox" data-check="Paid next step"><span><strong>Paid next step</strong><span>One current service and a public-safe inquiry path are visible.</span></span></label>
           </div>
         </fieldset>
@@ -343,7 +343,7 @@
           <a class="btn review" href="https://duct-tape2.github.io/repo-launch/">See the $99 service</a>
           <a class="btn money" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Start $99 setup</a>
         </div>
-        <p class="fineprint">Public-safe only. Do not post payment IDs, credentials, private files, or customer data in GitHub issues.</p>
+        <p class="fineprint">Public-safe only. Do not post private payment details, credentials, private files, or customer data in GitHub issues.</p>
       </aside>
     </main>
   </div>
@@ -359,7 +359,7 @@
     function scoreText(score) {
       if (score >= 12) return ['Buyer-ready', 'This page has the core buyer signals. Send targeted traffic and watch paid replies.'];
       if (score >= 9) return ['Ready enough to share', 'Patch the missing signals, then inspect the case study or publish to one relevant channel.'];
-      if (score >= 6) return ['Patch before sharing', 'The page has a base, but buyers may still miss payment, support, or trust details.'];
+      if (score >= 6) return ['Patch before sharing', 'The page has a base, but buyers may still miss scope, support, or trust details.'];
       return ['Not ready for traffic', 'Fix the visible buyer path before spending more effort on traffic.'];
     }
 
@@ -409,8 +409,7 @@
   <footer>
     Support email: <a href="mailto:sks7178@gmail.com">sks7178@gmail.com</a>.
     Public evidence: <a href="https://duct-tape2.github.io/examples/storefront-starter-case-study/">storefront case study</a>.
-    Scope and support terms are listed on the <a href="https://duct-tape2.github.io/repo-launch/">fixed $99 service page</a> before payment.
+    Scope and support terms are listed on the <a href="https://duct-tape2.github.io/repo-launch/">fixed $99 service page</a> before work starts.
   </footer>
-  <script src="/assets/checkout-status.js" defer></script>
 </body>
 </html>
