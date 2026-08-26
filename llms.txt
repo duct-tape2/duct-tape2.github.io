@@ -39,6 +39,8 @@ Storefront Checker: https://duct-tape2.github.io/storefront-checker/
 
 Static Product Page Builder: https://duct-tape2.github.io/tools/static-storefront-builder/
 
+GitHub Pages Product Page Guide: https://duct-tape2.github.io/guides/github-pages-storefront/
+
 Product Page Audit Checklist: https://duct-tape2.github.io/guides/digital-product-storefront-audit/
 
 ## Fit
