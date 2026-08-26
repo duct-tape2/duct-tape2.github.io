@@ -1,7 +1,7 @@
 {
   "site": "https://duct-tape2.github.io/",
   "catalog_version": 1,
-  "updated": "2026-08-24",
+  "updated": "2026-08-26",
   "primary_offer": "github-repo-product-page-service",
   "currency": "USD",
   "area_served": "Worldwide",
@@ -30,6 +30,12 @@
       "public_evidence": [
         "https://duct-tape2.github.io/work/",
         "https://duct-tape2.github.io/examples/storefront-starter-case-study/"
+      ],
+      "free_evaluation_urls": [
+        "https://duct-tape2.github.io/storefront-checker/",
+        "https://duct-tape2.github.io/tools/static-storefront-builder/",
+        "https://duct-tape2.github.io/guides/github-pages-storefront/",
+        "https://duct-tape2.github.io/guides/digital-product-storefront-audit/"
       ],
       "deliverables": [
         "One responsive GitHub Pages product website and landing page",
