@@ -51,6 +51,6 @@ Not included: product development, private repository access, analytics access, 
 
 ## Buyer Path
 
-Before paying, open the paid inquiry form or email the public repository URL. Payment acceptance is confirmed individually because the public checkout is temporarily unavailable.
+Open the paid inquiry form or email the public repository URL. Fit and scope are confirmed first; private payment instructions follow only after scope is accepted.
 
 Do not send private credentials, private analytics, or confidential source code.

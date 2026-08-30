@@ -1,16 +1,16 @@
 {
   "site": "https://duct-tape2.github.io/",
   "catalog_version": 1,
-  "updated": "2026-08-26",
+  "updated": "2026-08-30",
   "primary_offer": "github-repo-product-page-service",
   "currency": "USD",
   "area_served": "Worldwide",
   "available_language": "English",
   "contact_email": "sks7178@gmail.com",
-  "checkout_request_url": "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml",
+  "inquiry_url": "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml",
   "email_url": "mailto:sks7178@gmail.com?subject=GitHub%20repo%20product%20page%20question&body=Public%20repo%20URL:%20%0AQuestion:%20",
-  "checkout_status": "request_first_payment_acceptance_confirmed_individually",
-  "payment_note": "Do not pay until a working checkout is confirmed. Work begins only after scope and payment are confirmed.",
+  "payment_status": "private_instructions_after_scope_acceptance",
+  "payment_note": "Fit and scope are confirmed first. Private payment instructions follow after scope is accepted, and work begins after payment is confirmed.",
   "privacy_note": "Share only a public repository URL in a public issue. Do not send credentials, private analytics, confidential source code, or private files.",
   "safe_scope": "One existing public GitHub repository or small digital product. No security, vulnerability, exploit, bypass, jailbreak, credential, crypto, spam, fake-engagement, personal-data scraping, academic-cheating, or payment-account workaround work.",
   "offers": [
@@ -46,8 +46,8 @@
       ],
       "delivery_target": "Four calendar days after the public repo, scope, assets, and payment are confirmed.",
       "best_for": "An existing CLI, template, browser tool, local-first utility, documentation pack, course asset, or small digital product with a specific buyer.",
-      "checkout_status": "request_first_payment_acceptance_confirmed_individually",
-      "payment_note": "Do not pay until a working checkout is confirmed."
+      "payment_status": "private_instructions_after_scope_acceptance",
+      "payment_note": "Fit and scope are confirmed first; private payment instructions follow after scope is accepted."
     }
   ]
 }
