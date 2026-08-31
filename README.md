@@ -7,6 +7,7 @@ Public site for one fixed-price service: turn one existing GitHub repository int
 - Case study: https://duct-tape2.github.io/examples/storefront-starter-case-study/
 - Machine-readable offer: https://duct-tape2.github.io/offers.json
 - LLM-readable summary: https://duct-tape2.github.io/llms.txt
+- Offer updates feed: https://duct-tape2.github.io/feed.xml
 
 ## Request The Service
 
