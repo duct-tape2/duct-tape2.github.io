@@ -27,7 +27,7 @@ Payment acceptance is confirmed individually after scope fit. Do not pay until a
 - Delivery notes and one copy-correction pass
 - Four-calendar-day target after the public repo, scope, assets, and payment are confirmed
 
-Best fit: an existing CLI, template, browser tool, local-first utility, documentation pack, course asset, or small digital product with a specific buyer.
+Best fit: an existing public GitHub repo for a CLI, template, browser tool, local-first utility, documentation pack, course asset, or other small software product with a specific buyer.
 
 Not included: new product development, sales guarantees, paid advertising, private credential handling, security or vulnerability work, crypto, spam, fake engagement, personal-data scraping, academic cheating, or payment-account setup.
 

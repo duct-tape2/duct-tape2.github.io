@@ -13,7 +13,7 @@
   "payment_status": "private_instructions_after_scope_acceptance",
   "payment_note": "Fit and scope are confirmed first. Private payment instructions follow after scope is accepted, and work begins after payment is confirmed.",
   "privacy_note": "Share only a public repository URL in a public issue. Do not send credentials, private analytics, confidential source code, or private files.",
-  "safe_scope": "One existing public GitHub repository or small digital product. No security, vulnerability, exploit, bypass, jailbreak, credential, crypto, spam, fake-engagement, personal-data scraping, academic-cheating, or payment-account workaround work.",
+  "safe_scope": "One existing public GitHub repository. No security, vulnerability, exploit, bypass, jailbreak, credential, crypto, spam, fake-engagement, personal-data scraping, academic-cheating, or payment-account workaround work.",
   "offers": [
     {
       "id": "github-repo-product-page-service",
@@ -46,7 +46,7 @@
         "Delivery notes and one copy-correction pass"
       ],
       "delivery_target": "Four calendar days after the public repo, scope, assets, and payment are confirmed.",
-      "best_for": "An existing CLI, template, browser tool, local-first utility, documentation pack, course asset, or small digital product with a specific buyer.",
+      "best_for": "An existing public GitHub repo for a CLI, template, browser tool, local-first utility, documentation pack, course asset, or other small software product with a specific buyer.",
       "payment_status": "private_instructions_after_scope_acceptance",
       "payment_note": "Fit and scope are confirmed first; private payment instructions follow after scope is accepted."
     }
