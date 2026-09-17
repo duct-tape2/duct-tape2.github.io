@@ -1,6 +1,6 @@
 # duct-tape2.github.io
 
-Public site for one fixed-price service: turn one existing GitHub repository into a buyer-ready product and landing page for **$99 USD**.
+Public site for one fixed-price service: turn one existing GitHub repository into a buyer-ready product and landing page for **$99 USD**. Worldwide inquiries are welcome in English.
 
 - Service: https://duct-tape2.github.io/repo-launch/
 - Public work: https://duct-tape2.github.io/work/
@@ -14,7 +14,7 @@ Public site for one fixed-price service: turn one existing GitHub repository int
 Start with one public repository URL and the intended buyer or outcome:
 
 - Paid inquiry: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
-- Email: mailto:sks7178@gmail.com?subject=GitHub%20repo%20product%20page%20question&body=Public%20repo%20URL:%20%0AQuestion:%20
+- [Email](mailto:sks7178@gmail.com?subject=Repo%20Launch%20%2499%20inquiry&body=Public%20repo%20URL:%20%0AIntended%20buyer%20or%20outcome:%20)
 
 Payment acceptance is confirmed individually after scope fit. Do not pay until a working private payment path is confirmed, and do not send credentials, private analytics, confidential source code, private files, or payment details in a public issue.
 
