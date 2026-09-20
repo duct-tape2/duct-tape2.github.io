@@ -14,7 +14,7 @@ Audience: English-speaking open-source maintainers and indie software makers wor
 
 Paid inquiry: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
 
-Email: sks7178@gmail.com
+Email inquiry: mailto:sks7178@gmail.com?subject=Repo%20Launch%20%2499%20inquiry&body=Public%20repo%20URL:%20%0AIntended%20buyer%20or%20outcome:%20%0APreferred%20deadline:%20
 
 ## Deliverables
 
@@ -34,6 +34,8 @@ Delivery target: four calendar days after scope and payment are confirmed
 Work profile: https://duct-tape2.github.io/work/
 
 Storefront case study: https://duct-tape2.github.io/examples/storefront-starter-case-study/
+
+Design portfolio: https://duct-tape2.github.io/design/
 
 GitHub profile: https://github.com/duct-tape2
 
