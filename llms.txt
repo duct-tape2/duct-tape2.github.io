@@ -39,6 +39,8 @@ Design portfolio: https://duct-tape2.github.io/design/
 
 GitHub profile: https://github.com/duct-tape2
 
+Engineering profile: https://duct-tape2.github.io/PUBLIC_ENGINEERING_PROFILE.md
+
 ## Free Evaluation Tools
 
 Storefront Checker: https://duct-tape2.github.io/storefront-checker/
