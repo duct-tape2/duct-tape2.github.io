@@ -1,7 +1,7 @@
 {
   "site": "https://duct-tape2.github.io/",
   "catalog_version": 1,
-  "updated": "2026-09-07",
+  "updated": "2026-09-26",
   "feed_url": "https://duct-tape2.github.io/feed.xml",
   "primary_offer": "github-repo-product-page-service",
   "currency": "USD",
@@ -31,6 +31,7 @@
       "email_url": "mailto:sks7178@gmail.com?subject=Repo%20Launch%20%2499%20inquiry&body=Public%20repo%20URL:%20%0AIntended%20buyer%20or%20outcome:%20%0APreferred%20deadline:%20",
       "public_evidence": [
         "https://duct-tape2.github.io/work/",
+        "https://duct-tape2.github.io/PUBLIC_ENGINEERING_PROFILE.md",
         "https://duct-tape2.github.io/examples/storefront-starter-case-study/"
       ],
       "free_evaluation_urls": [
