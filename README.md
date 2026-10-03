@@ -4,6 +4,7 @@ This repository publishes the duct-tape2 fixed-price service: turn one existing 
 
 - Service: https://duct-tape2.github.io/repo-launch/
 - Public work: https://duct-tape2.github.io/work/
+- Engineering profile: https://github.com/duct-tape2
 - Case study: https://duct-tape2.github.io/examples/storefront-starter-case-study/
 - Machine-readable offer: https://duct-tape2.github.io/offers.json
 - LLM-readable summary: https://duct-tape2.github.io/llms.txt
