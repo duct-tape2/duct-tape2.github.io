@@ -72,7 +72,7 @@ are welcome in English.
 
 - Service: https://duct-tape2.github.io/repo-launch/
 - Paid inquiry: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
-- Email: [sks7178@gmail.com](mailto:sks7178@gmail.com?subject=Repo%20Launch%20%2499%20inquiry&body=Public%20repo%20URL:%20%0AIntended%20buyer%20or%20outcome:%20%0APreferred%20deadline:%20)
+- Email: [sks7178@gmail.com](mailto:sks7178@gmail.com?subject=Repo%20Launch%20%2499%20inquiry&body=Public%20repo%20URL:%20%0AIntended%20buyer%20or%20outcome:%20%0ACurrent%20public%20page%20or%20demo%20URL%20(optional):%20%0APreferred%20deadline:%20)
 
 Scope, acceptance criteria, payout route, and delivery terms are agreed before
 implementation. I do not accept credential handling, private data, unauthorized

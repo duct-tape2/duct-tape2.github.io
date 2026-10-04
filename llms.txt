@@ -14,7 +14,7 @@ Audience: English-speaking open-source maintainers and indie software makers wor
 
 Paid inquiry: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
 
-Email inquiry: mailto:sks7178@gmail.com?subject=Repo%20Launch%20%2499%20inquiry&body=Public%20repo%20URL:%20%0AIntended%20buyer%20or%20outcome:%20%0APreferred%20deadline:%20
+Email inquiry: mailto:sks7178@gmail.com?subject=Repo%20Launch%20%2499%20inquiry&body=Public%20repo%20URL:%20%0AIntended%20buyer%20or%20outcome:%20%0ACurrent%20public%20page%20or%20demo%20URL%20(optional):%20%0APreferred%20deadline:%20
 
 ## Deliverables
 

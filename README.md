@@ -16,7 +16,7 @@ This repository publishes the duct-tape2 fixed-price service: turn one existing 
 Start with one public repository URL and the intended buyer or outcome:
 
 - Paid inquiry: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
-- [Email](mailto:sks7178@gmail.com?subject=Repo%20Launch%20%2499%20inquiry&body=Public%20repo%20URL:%20%0AIntended%20buyer%20or%20outcome:%20%0APreferred%20deadline:%20)
+- [Email](mailto:sks7178@gmail.com?subject=Repo%20Launch%20%2499%20inquiry&body=Public%20repo%20URL:%20%0AIntended%20buyer%20or%20outcome:%20%0ACurrent%20public%20page%20or%20demo%20URL%20(optional):%20%0APreferred%20deadline:%20)
 
 Payment acceptance is confirmed individually after scope fit. Do not pay until a working private payment path is confirmed, and do not send credentials, private analytics, confidential source code, private files, or payment details in a public issue.
 
