@@ -3,6 +3,7 @@
 This repository publishes the duct-tape2 fixed-price service: turn one existing GitHub repository into a buyer-ready product and landing page for **$99 USD**. Worldwide inquiries are welcome in English.
 
 - Service: https://duct-tape2.github.io/repo-launch/
+- Versioned service brief: https://github.com/duct-tape2/duct-tape2.github.io/releases/tag/v1.0-repo-product-page-service
 - Public work: https://duct-tape2.github.io/work/
 - Engineering profile: https://github.com/duct-tape2
 - Case study: https://duct-tape2.github.io/examples/storefront-starter-case-study/
