@@ -13,7 +13,8 @@ This repository publishes the duct-tape2 fixed-price service: turn one existing 
 
 ## Request The Service
 
-Start with one public repository URL and the intended buyer or outcome:
+Start with one public repository URL, the intended buyer or outcome, the
+preferred deadline, and, when one exists, the current public page or demo URL:
 
 - Paid inquiry: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
 - [Email](mailto:sks7178@gmail.com?subject=Repo%20Launch%20%2499%20inquiry&body=Public%20repo%20URL:%20%0AIntended%20buyer%20or%20outcome:%20%0ACurrent%20public%20page%20or%20demo%20URL%20(optional):%20%0APreferred%20deadline:%20)
