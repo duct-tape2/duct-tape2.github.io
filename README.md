@@ -35,6 +35,20 @@ Best fit: an existing public GitHub repo for a CLI, template, browser tool, loca
 
 Not included: new product development, sales guarantees, paid advertising, private credential handling, security or vulnerability work, crypto, spam, fake engagement, personal-data scraping, academic cheating, or payment-account setup.
 
+## GitHub Repo Landing Page Service FAQ
+
+**Is the price fixed?** Yes. The listed scope is **$99 USD** for one existing
+public GitHub repository. I confirm fit before sharing private payment
+instructions.
+
+**What should I send first?** A public repository URL, the intended buyer or
+outcome, a preferred deadline, and the current public page or demo URL when one
+exists.
+
+**Can I send private code or credentials?** No. The service uses public-safe
+materials only; do not send credentials, private source, confidential files, or
+payment details through a public issue.
+
 ## Free Evaluation Tools
 
 - Storefront Checker: https://duct-tape2.github.io/storefront-checker/
