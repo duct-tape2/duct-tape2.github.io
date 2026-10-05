@@ -62,3 +62,11 @@ Not included: product development, private repository access, analytics access, 
 Open the paid inquiry form or email the public repository URL. Fit and scope are confirmed first; private payment instructions follow only after scope is accepted.
 
 Do not send private credentials, private analytics, or confidential source code.
+
+## Buyer Questions
+
+Is the price fixed? Yes. The listed scope is $99 USD for one existing public GitHub repository.
+
+What should a buyer send first? A public repository URL, the intended buyer or outcome, a preferred deadline, and the current public page or demo URL when one exists.
+
+Can private code or credentials be used? No. The service uses public-safe materials only.
