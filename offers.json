@@ -1,7 +1,7 @@
 {
   "site": "https://duct-tape2.github.io/",
   "catalog_version": 1,
-  "updated": "2026-10-01",
+  "updated": "2026-10-06",
   "feed_url": "https://duct-tape2.github.io/feed.xml",
   "image_url": "https://duct-tape2.github.io/repo-launch/assets/github-repo-product-page-1600x900.png",
   "primary_offer": "github-repo-product-page-service",
@@ -26,6 +26,13 @@
       "area_served": "Worldwide",
       "available_language": "English",
       "delivery_days": 4,
+      "buyer_inputs": [
+        "Public repository URL",
+        "Intended buyer or outcome",
+        "Preferred deadline",
+        "Current public page or demo URL when available"
+      ],
+      "public_safe_materials_only": true,
       "details_url": "https://duct-tape2.github.io/repo-launch/",
       "image_url": "https://duct-tape2.github.io/repo-launch/assets/github-repo-product-page-1600x900.png",
       "service_brief_url": "https://github.com/duct-tape2/duct-tape2.github.io/releases/tag/v1.0-repo-product-page-service",
