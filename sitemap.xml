@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url><loc>https://duct-tape2.github.io/</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url>
     <loc>https://duct-tape2.github.io/repo-launch/</loc>
-    <lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://duct-tape2.github.io/repo-launch/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://duct-tape2.github.io/repo-launch/" />
+    <lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>1.0</priority>
     <image:image>
       <image:loc>https://duct-tape2.github.io/repo-launch/assets/github-repo-product-page-1600x900.png</image:loc>
       <image:title>GitHub Repo Product Page Service - fixed $99 scope</image:title>
