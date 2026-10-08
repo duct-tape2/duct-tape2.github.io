@@ -1,7 +1,7 @@
 {
   "site": "https://duct-tape2.github.io/",
   "catalog_version": 1,
-  "updated": "2026-10-06",
+  "updated": "2026-10-08",
   "feed_url": "https://duct-tape2.github.io/feed.xml",
   "image_url": "https://duct-tape2.github.io/repo-launch/assets/github-repo-product-page-1600x900.png",
   "primary_offer": "github-repo-product-page-service",
@@ -25,6 +25,13 @@
       "currency": "USD",
       "area_served": "Worldwide",
       "available_language": "English",
+      "keywords": [
+        "GitHub repo landing page",
+        "GitHub Pages product page",
+        "open-source product page",
+        "developer tool landing page",
+        "README offer cleanup"
+      ],
       "delivery_days": 4,
       "buyer_inputs": [
         "Public repository URL",
