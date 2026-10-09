@@ -26,6 +26,11 @@
       "currency": "USD",
       "area_served": "Worldwide",
       "available_language": "English",
+      "audience": [
+        "Open-source maintainers",
+        "Indie software makers",
+        "Developer-tool founders"
+      ],
       "keywords": [
         "GitHub repo landing page",
         "GitHub Pages product page",
