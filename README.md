@@ -31,7 +31,20 @@ Payment acceptance is confirmed individually after scope fit. Do not pay until a
 - Delivery notes and one copy-correction pass
 - Four-calendar-day target after the public repo, scope, assets, and payment are confirmed
 
-Best fit: an existing public GitHub repo for a CLI, template, browser tool, local-first utility, documentation pack, course asset, or other small software product with a specific buyer.
+## Best Fit For Repo Owners
+
+This focused service is for an existing public project that already works but
+needs a clearer buyer path. Typical requests include:
+
+- a GitHub Pages landing page for an existing public repository
+- an open-source product page or developer-tool launch page
+- README conversion cleanup with one clear buyer inquiry path
+
+Small CLIs, templates, browser tools, local-first utilities, documentation
+packs, course assets, and other focused software products are strong fits when
+they already have a specific buyer. The public
+[storefront case study](https://duct-tape2.github.io/examples/storefront-starter-case-study/)
+shows the page structure and validation work before you inquire.
 
 Not included: new product development, sales guarantees, paid advertising, private credential handling, security or vulnerability work, crypto, spam, fake engagement, personal-data scraping, academic cheating, or payment-account setup.
 
