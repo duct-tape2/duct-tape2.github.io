@@ -1,7 +1,7 @@
 {
   "site": "https://duct-tape2.github.io/",
   "catalog_version": 1,
-  "updated": "2026-10-09",
+  "updated": "2026-10-13",
   "feed_url": "https://duct-tape2.github.io/feed.xml",
   "image_url": "https://duct-tape2.github.io/repo-launch/assets/github-repo-product-page-1600x900.png",
   "primary_offer": "github-repo-product-page-service",
@@ -34,6 +34,8 @@
       "keywords": [
         "GitHub repo landing page",
         "GitHub Pages product page",
+        "GitHub README to product page",
+        "README to GitHub Pages",
         "open-source product page",
         "developer tool landing page",
         "README offer cleanup"
@@ -70,7 +72,7 @@
         "Delivery notes and one copy-correction pass"
       ],
       "delivery_target": "Four calendar days after the public repo, scope, assets, and payment are confirmed.",
-      "best_for": "An existing public GitHub repo for a CLI, template, browser tool, local-first utility, documentation pack, course asset, or other small software product with a specific buyer.",
+      "best_for": "An existing public GitHub repo and README for a CLI, template, browser tool, local-first utility, documentation pack, course asset, or other small software product with a specific buyer.",
       "payment_status": "private_instructions_after_scope_acceptance",
       "payment_note": "Fit and scope are confirmed first; private payment instructions follow after scope is accepted."
     }
