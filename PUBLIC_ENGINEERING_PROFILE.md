@@ -52,6 +52,7 @@ layouts, JSON-LD, inquiry routing, sample reports, and release-ready assets.
 
 - Storefront starter: https://github.com/duct-tape2/github-pages-storefront-starter
 - Live example: https://duct-tape2.github.io/storefront-starter/
+- Case study: https://duct-tape2.github.io/examples/storefront-starter-case-study/
 - Storefront checker: https://duct-tape2.github.io/storefront-checker/
 
 ### Japanese Anki packaging workflow
@@ -78,4 +79,4 @@ Scope, acceptance criteria, payout route, and delivery terms are agreed before
 implementation. I do not accept credential handling, private data, unauthorized
 copyrighted material, security exploitation, or payment-account workarounds.
 
-Last public evidence review: 2026-09-25.
+Last public evidence review: 2026-10-14.
