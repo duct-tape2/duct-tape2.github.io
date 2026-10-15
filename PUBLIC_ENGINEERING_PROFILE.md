@@ -4,6 +4,7 @@ South Korea | Remote collaboration | Public working name
 
 - Web profile: https://duct-tape2.github.io/work/
 - GitHub: https://github.com/duct-tape2
+- Fixed $99 Repo Launch: https://duct-tape2.github.io/repo-launch/
 - Paid project inquiry: https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml
 
 ## Summary
@@ -79,4 +80,4 @@ Scope, acceptance criteria, payout route, and delivery terms are agreed before
 implementation. I do not accept credential handling, private data, unauthorized
 copyrighted material, security exploitation, or payment-account workarounds.
 
-Last public evidence review: 2026-10-14.
+Last public evidence review: 2026-10-15.
