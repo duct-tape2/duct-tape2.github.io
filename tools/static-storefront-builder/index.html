@@ -3,22 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Static Storefront Page Builder</title>
+  <link rel="icon" href="https://duct-tape2.github.io/favicon.svg" type="image/svg+xml">
+  <title>Static Storefront Page Builder | duct-tape2</title>
   <meta name="description" content="Generate a copy-ready static product page, buyer inquiry path, product schema, and README block for a small digital product.">
   <link rel="canonical" href="https://duct-tape2.github.io/tools/static-storefront-builder/">
   <link rel="alternate" type="application/json" href="https://duct-tape2.github.io/offers.json" title="duct-tape2 offer catalog">
   <link rel="alternate" type="text/plain" href="https://duct-tape2.github.io/llms.txt" title="duct-tape2 LLM-readable offer summary">
   <link rel="alternate" type="application/atom+xml" href="https://duct-tape2.github.io/feed.xml" title="duct-tape2 Repo Launch feed">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="duct-tape2">
   <meta property="og:title" content="Static Storefront Page Builder">
   <meta property="og:description" content="Build a static product page with a buyer inquiry path, schema, and README copy from one form.">
   <meta property="og:url" content="https://duct-tape2.github.io/tools/static-storefront-builder/">
-  <meta property="og:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
+  <meta property="og:image" content="https://duct-tape2.github.io/repo-launch/assets/github-repo-product-page-1600x900.png">
+  <meta property="og:image:alt" content="GitHub Repo Product Page Service - fixed $99 scope">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="900">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Static Storefront Page Builder">
   <meta name="twitter:description" content="Generate a buyer-ready static product page and inquiry block from one form.">
-  <meta name="twitter:image" content="https://duct-tape2.github.io/ai-money-stack/assets/repo-to-revenue-setup-1600x900.png">
+  <meta name="twitter:image" content="https://duct-tape2.github.io/repo-launch/assets/github-repo-product-page-1600x900.png">
+  <meta name="twitter:image:alt" content="GitHub Repo Product Page Service - fixed $99 scope">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,7 +46,8 @@
     },
     "isRelatedTo": {
       "@type": "Service",
-      "name": "GitHub Repo Product Page Setup",
+      "@id": "https://duct-tape2.github.io/repo-launch/#service",
+      "name": "GitHub Repo Product & Landing Page Service",
       "url": "https://duct-tape2.github.io/repo-launch/",
       "areaServed": "Worldwide",
       "availableLanguage": "English",
@@ -328,6 +335,16 @@
       .wrap { width: min(100% - 20px, 680px); }
       .split, .result-grid, .sales { grid-template-columns: 1fr; }
       button, .btn, .mini { width: 100%; }
+    }
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid #ffbf47;
+      outline-offset: 2px;
+      box-shadow: 0 0 0 6px #171714;
     }
   </style>
 </head>

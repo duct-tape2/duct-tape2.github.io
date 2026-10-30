@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GitHub Repo Product Page Audit Checklist</title>
-  <meta name="description" content="A 10-minute audit for a GitHub repo product page: check offer clarity, public evidence, inquiry paths, delivery scope, support copy, and buyer readiness before sending traffic.">
+  <link rel="icon" href="https://duct-tape2.github.io/favicon.svg" type="image/svg+xml">
+  <title>GitHub Repo Product Page Audit Checklist | duct-tape2</title>
+  <meta name="description" content="A 10-minute audit for a GitHub repo product page: check offer clarity, public evidence, inquiry path, delivery scope, and support copy before sending traffic.">
   <link rel="canonical" href="https://duct-tape2.github.io/guides/digital-product-storefront-audit/">
   <link rel="alternate" type="application/json" href="https://duct-tape2.github.io/offers.json" title="Service offer catalog">
   <link rel="alternate" type="text/plain" href="https://duct-tape2.github.io/llms.txt" title="LLM-readable service summary">
@@ -31,7 +32,7 @@
       {
         "@type": "Article",
         "headline": "GitHub Repo Product Page Audit Checklist",
-        "description": "A 10-minute audit for a GitHub repo product page: check offer clarity, public evidence, inquiry paths, delivery scope, support copy, and buyer readiness before sending traffic.",
+        "description": "A 10-minute audit for a GitHub repo product page: check offer clarity, public evidence, inquiry path, delivery scope, and support copy before sending traffic.",
         "image": "https://duct-tape2.github.io/repo-launch/assets/github-repo-product-page-1600x900.png",
         "datePublished": "2026-07-09",
         "dateModified": "2026-09-29",
@@ -45,7 +46,7 @@
       {
         "@type": "Service",
         "@id": "https://duct-tape2.github.io/repo-launch/#service",
-        "name": "GitHub Repo Product Page",
+        "name": "GitHub Repo Product & Landing Page Service",
         "description": "Turn one existing public GitHub repo into a buyer-ready product page with landing copy, README cleanup, public evidence, a tested inquiry path, and a delivery handoff.",
         "url": "https://duct-tape2.github.io/repo-launch/",
         "subjectOf": {
@@ -57,7 +58,6 @@
           "@type": "Offer",
           "price": "99",
           "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
           "url": "https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml"
         }
       },
@@ -68,18 +68,23 @@
         "step": [
           {
             "@type": "HowToStep",
-            "name": "Check the offer",
-            "text": "Confirm that the page names the product, price, buyer, result, and refund/support terms without asking for private payment details in public."
+            "name": "Name the exact result",
+            "text": "Say what the buyer gets, who it is for, the fixed scope, delivery timing, and what is not promised. Avoid vague claims like guaranteed traffic, sales, or ranking."
           },
           {
             "@type": "HowToStep",
-            "name": "Check inquiry and aftercare",
-            "text": "Open the buyer inquiry path, confirm the fixed scope is clear, and make sure the buyer can send private context by email. Confirm scope and fit before arranging payment privately."
+            "name": "Put evidence near the inquiry button",
+            "text": "Link a preview, screenshot, live example, public work page, or case study before the inquiry button. Buyers should not have to trust an unsupported claim."
           },
           {
             "@type": "HowToStep",
-            "name": "Check evidence",
-            "text": "Verify that a free sample, preview, screenshot, live demo, or written case study is visible near the inquiry button."
+            "name": "Make the scope and next step unambiguous",
+            "text": "Ask only for a public repo URL, buyer outcome, and public-safe context. Use the listed email for private scope details, then confirm scope and fit before arranging payment privately."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Show delivery and support terms",
+            "text": "A short delivery and support boundary reduces buyer risk and prevents avoidable disputes. Keep private payment details out of public GitHub issues."
           }
         ]
       },
@@ -249,6 +254,16 @@
       .grid { grid-template-columns: 1fr; }
       .btn, .mini { width: 100%; }
     }
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid #ffbf47;
+      outline-offset: 2px;
+      box-shadow: 0 0 0 6px #171714;
+    }
   </style>
 </head>
 <body>
@@ -333,6 +348,14 @@
       </div>
     </section>
 
+    <section id="faq">
+      <h2>Questions</h2>
+      <h3>What is the fastest useful storefront audit?</h3>
+      <p class="note">Check that the buyer can understand the offer, inspect public evidence, use a scoped inquiry, send private context by email, and understand delivery and support boundaries.</p>
+      <h3>When should I request the fixed $99 setup?</h3>
+      <p class="note">Request the fixed setup when one existing public repo needs landing copy, README cleanup, public evidence, a tested inquiry path, and a delivery handoff implemented for you.</p>
+    </section>
+
     <section>
       <h2>Safe Scope</h2>
       <p class="note">This checklist is for legitimate public product pages, small digital downloads, learning decks, and fixed-price setup work. Do not request security, vulnerability, exploit, bypass, spam, fake-review, credential, private analytics, or personal-data scraping work.</p>
@@ -340,7 +363,7 @@
   </main>
 
   <footer>
-    <p><a href="https://duct-tape2.github.io/repo-launch/">$99 service</a> · <a href="https://duct-tape2.github.io/work/">Public work</a> · <a href="https://github.com/duct-tape2/duct-tape2/blob/main/PUBLIC_ENGINEERING_PROFILE.md">Engineering profile</a> · <a href="mailto:sks7178@gmail.com?subject=Repo%20Launch%20%2499%20inquiry&amp;body=Public%20repo%20URL:%20%0AIntended%20buyer%20or%20outcome:%20%0ACurrent%20public%20page%20or%20demo%20URL%20(optional):%20%0APreferred%20deadline:%20">sks7178@gmail.com</a></p>
+    <p><a href="https://duct-tape2.github.io/repo-launch/">$99 service</a> · <a href="https://duct-tape2.github.io/work/">Public work</a> · <a href="https://duct-tape2.github.io/PUBLIC_ENGINEERING_PROFILE.md">Engineering profile</a> · <a href="mailto:sks7178@gmail.com?subject=Repo%20Launch%20%2499%20inquiry&amp;body=Public%20repo%20URL:%20%0AIntended%20buyer%20or%20outcome:%20%0ACurrent%20public%20page%20or%20demo%20URL%20(optional):%20%0APreferred%20deadline:%20">sks7178@gmail.com</a></p>
   </footer>
 </body>
 </html>
