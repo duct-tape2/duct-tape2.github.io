@@ -316,6 +316,21 @@
       color: #f0eee7;
       font-size: 20px;
     }
+    .hero-note {
+      max-width: 720px;
+      margin: 14px 0 0;
+      color: #f0eee7;
+      font-size: 16px;
+    }
+    .closing {
+      padding-top: 0;
+    }
+    .closing .button.secondary {
+      border-color: var(--teal);
+      color: var(--teal);
+      background: transparent;
+    }
+    .closing .button.secondary:hover { background: rgba(13, 102, 113, .08); }
     .actions {
       display: flex;
       flex-wrap: wrap;
@@ -556,7 +571,8 @@
     <div class="hero-copy shell">
       <p class="eyebrow">Fixed-price GitHub product page service</p>
       <h1>Turn Your GitHub Repo Into a Buyer-Ready Product Page</h1>
-      <p class="lead">For open-source maintainers, indie software makers, and developer-tool founders, one existing public repo and README become one clear GitHub Pages offer: landing page, README cleanup, public sample, buyer inquiry path, and delivery checklist. Fixed $99 scope, delivered in four days after scope confirmation.</p>
+      <p class="lead">Send one existing public repo and README. You get one clear GitHub Pages offer: landing page, README cleanup, public sample, buyer inquiry path, and delivery checklist. Fixed $99 scope, delivered in four days after scope confirmation.</p>
+      <p class="hero-note">For open-source maintainers, indie software makers, and developer-tool founders. No payment until fit and scope are confirmed.</p>
       <div class="actions">
         <a class="button source-aware" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Request the $99 setup</a>
         <a class="button secondary" href="https://duct-tape2.github.io/examples/storefront-starter-case-study/">See a live case study</a>
@@ -708,6 +724,17 @@
             <summary>How does payment work?</summary>
             <p>Start with the request or email path. After scope fit, I confirm a working private payment path before requesting payment and do not begin work until payment is confirmed.</p>
           </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="shell">
+        <h2 id="closing-title">Ready to send your repo?</h2>
+        <p>Share the public repository URL, the intended buyer or outcome, and your preferred deadline. Fit and scope are confirmed before any payment.</p>
+        <div class="actions">
+          <a class="button source-aware" href="https://github.com/duct-tape2/duct-tape2/issues/new?template=paid-inquiry.yml">Request the $99 setup</a>
+          <a class="button secondary source-email" href="mailto:sks7178@gmail.com?subject=Repo%20Launch%20%2499%20inquiry&amp;body=Public%20repo%20URL:%20%0AIntended%20buyer%20or%20outcome:%20%0ACurrent%20public%20page%20or%20demo%20URL%20(optional):%20%0APreferred%20deadline:%20">Ask privately by email</a>
         </div>
       </div>
     </section>
