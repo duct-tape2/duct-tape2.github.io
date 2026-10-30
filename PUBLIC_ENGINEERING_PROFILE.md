@@ -52,7 +52,7 @@ tools for offer selection and storefront checks. The pages include responsive
 layouts, JSON-LD, inquiry routing, sample reports, and release-ready assets.
 
 - Storefront starter: https://github.com/duct-tape2/github-pages-storefront-starter
-- Live example: https://duct-tape2.github.io/storefront-starter/
+- Live example: https://duct-tape2.github.io/github-pages-storefront-starter/
 - Case study: https://duct-tape2.github.io/examples/storefront-starter-case-study/
 - Storefront checker: https://duct-tape2.github.io/storefront-checker/
 
