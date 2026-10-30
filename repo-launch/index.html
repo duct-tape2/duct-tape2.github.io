@@ -230,7 +230,7 @@
       --ink: #171714;
       --paper: #f4f0e8;
       --white: #fffefa;
-      --signal: #d8462f;
+      --signal: #cf432d;
       --signal-dark: #a92f20;
       --teal: #0d6671;
       --line: #cfc7b9;
@@ -530,6 +530,16 @@
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .button { transition: none; }
+    }
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid #ffbf47;
+      outline-offset: 2px;
+      box-shadow: 0 0 0 6px #171714;
     }
   </style>
 </head>

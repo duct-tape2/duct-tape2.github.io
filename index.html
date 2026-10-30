@@ -221,6 +221,15 @@
       background: rgba(255,255,255,.08);
     }
     .wrap { padding: 36px 22px 58px; }
+    .wrap .btn {
+      border-color: #165e6f;
+      color: #fff;
+      background: #165e6f;
+    }
+    .wrap .btn.secondary {
+      color: #165e6f;
+      background: transparent;
+    }
     section {
       padding: 28px 0;
       border-bottom: 1px solid #ded9ce;
@@ -310,6 +319,16 @@
       .hero { min-height: 82vh; }
       .grid, .delivery-list { grid-template-columns: 1fr; }
       .btn, .mini { width: 100%; }
+    }
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid #ffbf47;
+      outline-offset: 2px;
+      box-shadow: 0 0 0 6px #171714;
     }
   </style>
 </head>
